@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class CityMap : MonoBehaviour
 {
-    [SerializeField] private GameObject housesList;
+    [SerializeField] private GameObject houses;
 }
