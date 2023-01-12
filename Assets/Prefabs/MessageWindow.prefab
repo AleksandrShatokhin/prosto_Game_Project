@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6978466184772754807}
   - component: {fileID: 6978466184772754804}
   - component: {fileID: 6978466184772754805}
+  - component: {fileID: 7233305155207497182}
   m_Layer: 5
   m_Name: MessageWindow
   m_TagString: Untagged
@@ -103,6 +104,19 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &7233305155207497182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6978466184772754810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3504b2be51711e844a450e6d3ac9bfb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabCityMap: {fileID: 4328257710976788062, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
 --- !u!1 &6978466184833344283
 GameObject:
   m_ObjectHideFlags: 0
@@ -435,7 +449,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6978466186359775941}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7233305155207497182}
+        m_TargetAssemblyTypeName: MessageWindow, Assembly-CSharp
+        m_MethodName: ClickComeBack
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6978466186741591478
 GameObject:
   m_ObjectHideFlags: 0
