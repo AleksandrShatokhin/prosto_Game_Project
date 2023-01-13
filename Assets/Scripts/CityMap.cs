@@ -11,8 +11,12 @@ public class CityMap : MonoBehaviour
     [SerializeField] private int maximumTimeForLiveHouseOnMap;
     [SerializeField] private int minimumDelay, maximumDelay;
 
+    private bool isPause;
+
     private void Start()
     {
+        isPause = false;
+
         foreach (Transform house in houses.transform)
         {
             house.gameObject.SetActive(false);
@@ -30,10 +34,10 @@ public class CityMap : MonoBehaviour
 
             yield return new WaitForSeconds(delay);
 
-            if (!CheckStateHouse(numberHouse))
+            if (!CheckStateHouse(numberHouse) && !isPause)
             {
                 houses.transform.GetChild(numberHouse).gameObject.SetActive(true);
-                houses.transform.GetChild(numberHouse).GetComponent<HouseOnCityMap>().StartTimer(maximumTimeForLiveHouseOnMap);
+                houses.transform.GetChild(numberHouse).GetComponent<HouseOnCityMap>().StartTimer(maximumTimeForLiveHouseOnMap, this);
             }
         }
     }
@@ -46,6 +50,12 @@ public class CityMap : MonoBehaviour
 
     public void ClickOnHouse()
     {
-        GameController.GetInstance().SwitchWindow(this.gameObject, prefabMessageWindow);
+        //GameController.GetInstance().SwitchWindow(this.gameObject, prefabMessageWindow);
+        isPause = true;
+        GameObject prefabMessage = Instantiate(prefabMessageWindow, prefabMessageWindow.transform.position, prefabMessageWindow.transform.rotation);
+        prefabMessage.GetComponent<MessageWindow>().SetCityMap(this);
     }
+
+    public bool IsPause() => isPause;
+    public void IsPause_Off() => isPause = false;
 }

@@ -1,14 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class HouseOnCityMap : MonoBehaviour
 {
+    private CityMap cityMap;
+
     private int timer = 0;
     private int second = 1;
 
-    public void StartTimer(int maxTime)
+    public void StartTimer(int maxTime, CityMap cityMap)
     {
+        this.cityMap = cityMap;
         StartCoroutine(Timer(maxTime));
     }
 
@@ -16,13 +20,17 @@ public class HouseOnCityMap : MonoBehaviour
     {
         while (true)
         {
-            if (timer == 5)
+            if (timer == maxTime)
             {
                 this.gameObject.SetActive(false);
                 timer = 0;
             }
 
-            timer += second;
+            if (!this.cityMap.IsPause())
+            {
+                timer += second;
+            }
+            
             yield return new WaitForSeconds(second);
         }
     }
