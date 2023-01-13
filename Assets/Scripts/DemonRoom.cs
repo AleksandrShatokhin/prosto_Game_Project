@@ -9,4 +9,10 @@ public class DemonRoom : MonoBehaviour
     {
         puzzleWindow.gameObject.SetActive(true);
     }
+
+    public void ClickComeBack(GameObject prefabCityMap)
+    {
+        Instantiate(prefabCityMap, prefabCityMap.transform.position, prefabCityMap.transform.rotation);
+        Destroy(this.gameObject);
+    }
 }

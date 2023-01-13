@@ -191,7 +191,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textOnButton: {fileID: 9177407352535545673}
 --- !u!1 &9177407351079127038
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,7 +608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textOnButton: {fileID: 9177407351926664772}
 --- !u!1 &9177407351792147359
 GameObject:
   m_ObjectHideFlags: 0
@@ -1130,7 +1128,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textOnButton: {fileID: 9177407351079127036}
 --- !u!1 &9177407352039039042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1278,7 +1275,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textOnButton: {fileID: 9177407352573489942}
 --- !u!1 &9177407352535545675
 GameObject:
   m_ObjectHideFlags: 0
@@ -1539,10 +1535,10 @@ MonoBehaviour:
       - m_Target: {fileID: 4227601982915040924}
         m_TargetAssemblyTypeName: ComeBack, Assembly-CSharp
         m_MethodName: StepBack
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

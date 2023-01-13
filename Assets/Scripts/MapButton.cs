@@ -11,6 +11,6 @@ public class MapButton : MonoBehaviour
     public void MapClick()
     {
         Instantiate(CityMap, new Vector3(0, 0, 0), Quaternion.identity);
-        
+        Destroy(this.transform.parent.gameObject);
     }
 }
