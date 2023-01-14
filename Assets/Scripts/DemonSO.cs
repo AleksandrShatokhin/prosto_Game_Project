@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,13 +5,7 @@ using UnityEngine;
 public class DemonSO : ScriptableObject
 {
     public Sprite demonSprite;
+
+    //Список предметов, которые необходимо выбрать игроку для получения подсказки/упрощения головоломки
     public List<Items> neededItems;
-}
-
-public enum Items
-{
-    HolyWater,
-    Cross,
-    Garlic
-
 }
