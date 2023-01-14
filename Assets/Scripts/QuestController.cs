@@ -7,8 +7,6 @@ public class QuestController : MonoBehaviour
 {
     [SerializeField] private DemonSO currentDemon;
     private PlayerInventory playerInventory;
-    [SerializeField] private GameObject messageWindow;
-
 
     private void Start()
     {
