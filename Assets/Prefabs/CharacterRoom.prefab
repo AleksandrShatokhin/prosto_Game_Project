@@ -121,7 +121,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5517757000984632766}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4342230212861558765}
+        m_TargetAssemblyTypeName: QuestController, Assembly-CSharp
+        m_MethodName: OnCheckItemsButtonClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1963943631231675564
 GameObject:
   m_ObjectHideFlags: 0
@@ -292,7 +304,6 @@ RectTransform:
   - {fileID: 8388735611645945185}
   - {fileID: 4286312484590923219}
   - {fileID: 2601803066209529444}
-  - {fileID: 4985691665970989934}
   m_Father: {fileID: 2131405559661061199}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -510,7 +521,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 1
-  playerInventory: {fileID: 2811710916798382682}
 --- !u!1 &2748678308524890030
 GameObject:
   m_ObjectHideFlags: 0
@@ -659,52 +669,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 2
-  playerInventory: {fileID: 2811710916798382682}
---- !u!1 &3603646096853693472
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4985691665970989934}
-  - component: {fileID: 2811710916798382682}
-  m_Layer: 0
-  m_Name: PlayerInventory
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4985691665970989934
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3603646096853693472}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 9141485732377190279}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2811710916798382682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3603646096853693472}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 759588b9367b5c940892c424f15019db, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  items: 
 --- !u!1 &5504403890158992257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1123,7 +1087,52 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 0
-  playerInventory: {fileID: 2811710916798382682}
+--- !u!1 &6480886639086736377
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1341793650857190611}
+  - component: {fileID: 4342230212861558765}
+  m_Layer: 0
+  m_Name: QuestController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1341793650857190611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6480886639086736377}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 612.9851, y: 256.02054, z: 2.7283692}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2131405559661061199}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4342230212861558765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6480886639086736377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26cf362629d0b3a48ba148a55857f318, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentDemon: {fileID: 11400000, guid: aa496c13cca78ab4c8fd777fcfe70710, type: 2}
+  messageWindow: {fileID: 6978466184772754810, guid: d5fc4349a81c3294bba5a9e546df5b33, type: 3}
 --- !u!1 &6713193321752110196
 GameObject:
   m_ObjectHideFlags: 0
@@ -1435,6 +1444,7 @@ Transform:
   - {fileID: 6713193322143341311}
   - {fileID: 6713193321752110194}
   - {fileID: 9141485732377190279}
+  - {fileID: 1341793650857190611}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
