@@ -659,6 +659,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 1
+  buttonText: {fileID: 7296859630727807605}
 --- !u!1 &2748678308524890030
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 2
+  buttonText: {fileID: 4363875842388244795}
 --- !u!1 &5504403890158992257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1225,6 +1227,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemType: 0
+  buttonText: {fileID: 7279593807609333470}
 --- !u!1 &6480886639086736377
 GameObject:
   m_ObjectHideFlags: 0
