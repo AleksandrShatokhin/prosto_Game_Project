@@ -8,14 +8,14 @@ public class PlayerInventory : MonoBehaviour
 
     public void AddItemToInventory(Items itemToAdd)
     {
-        takenItems.Add(itemToAdd);
-        Debug.Log("Added " + itemToAdd.ToString() + " to inventory");
-    }
-
-    public void RemoveItemFromInventory(Items itemToRemove)
-    {
-        takenItems.Remove(itemToRemove);
-        Debug.Log("Item already exists in your inventory, putting it back");
+        if (!takenItems.Contains(itemToAdd))
+        {
+            takenItems.Add(itemToAdd);
+        }
+        else
+        {
+            Debug.Log("Item already exists in your inventory");
+        }
     }
 
     public List<Items> TakenItems => takenItems;
