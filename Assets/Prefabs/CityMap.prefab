@@ -4524,7 +4524,8 @@ MonoBehaviour:
   houses: {fileID: 9177407351801270157}
   maximumTimeForLiveHouseOnMap: 5
   minimumDelay: 2
-  maximumDelay: 10
+  maximumDelay: 7
+  maximumCountCallsOnMap: 3
 --- !u!1 &9177407351926664774
 GameObject:
   m_ObjectHideFlags: 0
