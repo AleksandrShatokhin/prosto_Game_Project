@@ -8,6 +8,7 @@ public class PlayerRoomUi : MonoBehaviour
     [SerializeField] private GameObject cityMap;
     [SerializeField] private GameObject inventoryScreen;
     [SerializeField] private GameObject playerRoomCanvas;
+    [SerializeField] private GameObject necronomiconCanvas;
 
     public void OnOpenMapClick()
     {
@@ -24,5 +25,17 @@ public class PlayerRoomUi : MonoBehaviour
     {
         playerRoomCanvas.SetActive(true);
         inventoryScreen.SetActive(false);
+    }
+
+    public void OnOpenNecronomiconButtonClicked()
+    {
+        necronomiconCanvas.SetActive(true);
+        playerRoomCanvas.SetActive(false); 
+    }
+
+    public void OnCloseNecronomiconButtonClicked()
+    {
+        necronomiconCanvas.SetActive(false);
+        playerRoomCanvas.SetActive(true); 
     }
 }
