@@ -6,12 +6,8 @@ using UnityEditor;
 public class QuestController : MonoBehaviour
 {
     [SerializeField] private DemonSO currentDemon;
-    private PlayerInventory playerInventory;
+    [SerializeField] private PlayerInventory playerInventory;
 
-    private void Start()
-    {
-        playerInventory = GameObject.FindGameObjectWithTag("PlayerInventory").GetComponent<PlayerInventory>();
-    }
     public void OnCheckItemsButtonClicked()
     {
         foreach (var item in currentDemon.neededItems)

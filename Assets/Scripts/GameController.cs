@@ -16,7 +16,7 @@ public class GameController : MonoBehaviour
 
     private void Start()
     {
-        Instantiate(firstWindow, firstWindow.transform.position, firstWindow.transform.rotation);
+        firstWindow.SetActive(true);
     }
 
     public void SwitchWindow(GameObject currentWindow, GameObject newWindow)
