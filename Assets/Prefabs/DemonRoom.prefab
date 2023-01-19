@@ -604,7 +604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &212137728097794542
 Transform:
   m_ObjectHideFlags: 0
@@ -637,6 +637,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf43f0dbceac9314d9297919f91bff26, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cityMap: {fileID: 0}
   puzzleWindow: {fileID: 5798629763290000932}
   currentDemonSO: {fileID: 11400000, guid: aa496c13cca78ab4c8fd777fcfe70710, type: 2}
   demonSpriteRenderer: {fileID: 6986492930961780918}

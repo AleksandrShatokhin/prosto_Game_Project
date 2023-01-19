@@ -1,26 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MessageWindow : MonoBehaviour
 {
-    [SerializeField] private GameObject prefabCityMap;
-    [SerializeField] private GameObject prefabNextRoom;
-    private CityMap cityMap;
+    [SerializeField] private GameObject cityMapWindow;
+    [SerializeField] private GameObject demonRoom;
 
-    public void SetCityMap(CityMap cityMap) => this.cityMap = cityMap;
+    [SerializeField] private Image citizenImage;
+    [SerializeField] private TextMeshProUGUI textMessage;
+
+    private DemonSO demonSO;
+
+    public void OnStartMessageWindow(DemonSO demonSO, int numberMessage, int numberCitizen)
+    {
+        this.demonSO = demonSO;
+
+        textMessage.text = this.demonSO.message[numberMessage];
+        citizenImage.sprite = this.demonSO.citizenSprite[numberCitizen];
+    }
 
     public void ClickComeBack()
     {
-        //GameController.GetInstance().SwitchWindow(this.gameObject, prefabCityMap);
-        cityMap.IsPause_Off();
-        Destroy(this.gameObject);
+        GameController.GetInstance().SwitchWindow(cityMapWindow, this.gameObject);
+        cityMapWindow.GetComponent<CityMap>().IsPause_Off();
     }
 
-    public void ClickNetRoom()
+    public void ClickNextRoom()
     {
-        Destroy(cityMap.gameObject);
-        Destroy(this.gameObject);
-        Instantiate(prefabNextRoom, prefabNextRoom.transform.position, prefabNextRoom.transform.rotation);
+        GameController.GetInstance().SwitchWindow(demonRoom, this.gameObject);
+        demonRoom.GetComponent<DemonRoom>().OnStartDemonRoom(this.demonSO);
+        cityMapWindow.SetActive(false);
     }
 }

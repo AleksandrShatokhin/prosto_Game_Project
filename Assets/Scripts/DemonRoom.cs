@@ -4,12 +4,15 @@ using UnityEngine;
 
 public class DemonRoom : MonoBehaviour
 {
+    [SerializeField] private GameObject cityMap;
     [SerializeField] private GameObject puzzleWindow;
     [SerializeField] private DemonSO currentDemonSO;
     [SerializeField] private SpriteRenderer demonSpriteRenderer;
 
-    private void Start()
+    public void OnStartDemonRoom(DemonSO demonSO)
     {
+        this.currentDemonSO = demonSO;
+
         demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
     }
 
@@ -18,9 +21,8 @@ public class DemonRoom : MonoBehaviour
         puzzleWindow.gameObject.SetActive(true);
     }
 
-    public void ClickComeBack(GameObject prefabCityMap)
+    public void ClickComeBack()
     {
-        Instantiate(prefabCityMap, prefabCityMap.transform.position, prefabCityMap.transform.rotation);
-        Destroy(this.gameObject);
+        GameController.GetInstance().SwitchWindow(cityMap, this.gameObject);
     }
 }

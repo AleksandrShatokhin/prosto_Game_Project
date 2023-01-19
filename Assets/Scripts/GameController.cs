@@ -8,6 +8,7 @@ public class GameController : MonoBehaviour
     public static GameController GetInstance() => instance;
 
     [SerializeField] private GameObject firstWindow;
+    [SerializeField] private DemonDataBase demonDataBase;
 
     private void Awake()
     {
@@ -17,11 +18,14 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         firstWindow.SetActive(true);
+        demonDataBase = this.GetComponent<DemonDataBase>();
     }
 
-    public void SwitchWindow(GameObject currentWindow, GameObject newWindow)
+    public void SwitchWindow(GameObject toOpen, GameObject toClose)
     {
-        Destroy(currentWindow);
-        Instantiate(newWindow, newWindow.transform.position, newWindow.transform.rotation);
+        toOpen.SetActive(true);
+        toClose.SetActive(false);
     }
+
+    public DemonDataBase GetDemonDataBase() => demonDataBase;
 }

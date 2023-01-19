@@ -6,6 +6,12 @@ public class DemonSO : ScriptableObject
 {
     public Sprite demonSprite;
 
-    //Список предметов, которые необходимо выбрать игроку для получения подсказки/упрощения головоломки
+    // Список предметов, которые необходимо выбрать игроку для получения подсказки/упрощения головоломки
     public List<Items> neededItems;
+
+    // Список возможных сообщений к конкретному демону от горожан
+    public List<string> message;
+
+    // Варианты спрайтов горожан
+    public List<Sprite> citizenSprite;
 }

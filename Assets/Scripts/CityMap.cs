@@ -5,29 +5,25 @@ using UnityEngine;
 
 public class CityMap : MonoBehaviour
 {
-    [SerializeField] private GameObject prefabMessageWindow;
+    [SerializeField] private GameObject playerRoom;
+    [SerializeField] private GameObject messageWindow;
 
     [SerializeField] private GameObject houses;
     [SerializeField] private int maximumTimeForLiveHouseOnMap;
     [SerializeField] private int minimumDelay, maximumDelay;
     [SerializeField] private int maximumCountCallsOnMap;
 
-    private bool isPause;
+    [SerializeField] private bool isPause;
 
     private void Start()
     {
         isPause = false;
-        
-        ClearMap();
-        StartCoroutine(CallCreator());
     }
 
-    void ClearMap()
+    private void OnEnable()
     {
-        foreach (Transform house in houses.transform)
-        {
-            house.gameObject.SetActive(false);
-        }
+        isPause = false;
+        StartCoroutine(CallCreator());
     }
 
     private IEnumerator CallCreator()
@@ -42,7 +38,6 @@ public class CityMap : MonoBehaviour
             if (!CheckStateHouse(numberHouse) && !isPause && CheckCountCallsOnMap())
             {
                 houses.transform.GetChild(numberHouse).gameObject.SetActive(true);
-                houses.transform.GetChild(numberHouse).GetComponent<HouseOnCityMap>().StartTimer(maximumTimeForLiveHouseOnMap, this);
             }
         }
     }
@@ -69,13 +64,11 @@ public class CityMap : MonoBehaviour
         return countCallsAcceptable;
     }
 
-    public void ClickOnCall()
-    {
-        isPause = true;
-        GameObject prefabMessage = Instantiate(prefabMessageWindow, prefabMessageWindow.transform.position, prefabMessageWindow.transform.rotation);
-        prefabMessage.GetComponent<MessageWindow>().SetCityMap(this);
-    }
-
+    public GameObject GetMessageWindow() => messageWindow;
+    public int GetMaxTime() => maximumTimeForLiveHouseOnMap;
     public bool IsPause() => isPause;
+    public void IsPause_On() => isPause = true;
     public void IsPause_Off() => isPause = false;
+
+    public void ComeBackToPlayerRoom() => GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject);
 }

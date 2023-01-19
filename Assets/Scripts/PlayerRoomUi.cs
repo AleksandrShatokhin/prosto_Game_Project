@@ -12,30 +12,26 @@ public class PlayerRoomUi : MonoBehaviour
 
     public void OnOpenMapClick()
     {
-        Instantiate(cityMap, new Vector3(0, 0, 0), Quaternion.identity);
+        GameController.GetInstance().SwitchWindow(cityMap, this.gameObject);
     }
 
     public void OnOpenInventoryButtonClicked()
     {
-        inventoryScreen.SetActive(true);
-        playerRoomCanvas.SetActive(false);
+        GameController.GetInstance().SwitchWindow(inventoryScreen, playerRoomCanvas);
     }
 
     public void OnCloseInventoryButtonClicked()
     {
-        playerRoomCanvas.SetActive(true);
-        inventoryScreen.SetActive(false);
+        GameController.GetInstance().SwitchWindow(playerRoomCanvas, inventoryScreen);
     }
 
     public void OnOpenNecronomiconButtonClicked()
     {
-        necronomiconCanvas.SetActive(true);
-        playerRoomCanvas.SetActive(false); 
+        GameController.GetInstance().SwitchWindow(necronomiconCanvas, playerRoomCanvas);
     }
 
     public void OnCloseNecronomiconButtonClicked()
     {
-        necronomiconCanvas.SetActive(false);
-        playerRoomCanvas.SetActive(true); 
+        GameController.GetInstance().SwitchWindow(playerRoomCanvas, necronomiconCanvas);
     }
 }

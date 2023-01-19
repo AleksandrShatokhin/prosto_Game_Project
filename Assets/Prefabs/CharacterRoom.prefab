@@ -1465,7 +1465,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 2798188681971022744}
         m_TargetAssemblyTypeName: PlayerRoomUi, Assembly-CSharp
         m_MethodName: OnCloseInventoryButtonClicked
         m_Mode: 1
@@ -2301,7 +2301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29aa35a952f92b2439f52567d06c4621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cityMap: {fileID: 9177407351804303385, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+  cityMap: {fileID: 0}
   inventoryScreen: {fileID: 8979124602474654346}
   playerRoomCanvas: {fileID: 1541786908177126400}
   necronomiconCanvas: {fileID: 4278727430674322436}
