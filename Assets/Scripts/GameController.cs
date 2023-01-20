@@ -7,8 +7,10 @@ public class GameController : MonoBehaviour
     private static GameController instance;
     public static GameController GetInstance() => instance;
 
+    // ссылки на основные компоненты
+    private DemonDataBase demonDataBase;
     [SerializeField] private GameObject firstWindow;
-    [SerializeField] private DemonDataBase demonDataBase;
+    [SerializeField] private MainUIController mainUIController;
 
     private void Awake()
     {
@@ -28,4 +30,5 @@ public class GameController : MonoBehaviour
     }
 
     public DemonDataBase GetDemonDataBase() => demonDataBase;
+    public MainUIController GetMainUIController() => mainUIController;
 }
