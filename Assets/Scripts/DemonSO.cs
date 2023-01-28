@@ -14,7 +14,4 @@ public class DemonSO : ScriptableObject
 
     // Варианты спрайтов горожан
     public List<Sprite> citizenSprite;
-
-    //Префаб головоломки для данного демона
-    public GameObject puzzlePrefab;
 }
