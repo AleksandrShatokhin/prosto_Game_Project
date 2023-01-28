@@ -14,6 +14,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   demonSprite: {fileID: 21300000, guid: 1b91ba61191cad141b4cf2a0e11b04b4, type: 3}
   neededItems: 0000000001000000
-  message: []
-  citizenSprite: []
-  puzzlePrefab: {fileID: 5687920361564749532, guid: 74932698ac6a02d46af6ea254773912b, type: 3}

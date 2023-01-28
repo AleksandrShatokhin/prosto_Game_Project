@@ -27,5 +27,7 @@ MonoBehaviour:
     \u041F\u0440\u043E\u0448\u0443 \u0441\u043A\u043E\u0440\u0435\u0435 \u043F\u043E\u0435\u0445\u0430\u043B\u0438
     \u043A\u043E \u043C\u043D\u0435 \u0434\u043E\u043C\u043E\u0439..."
   citizenSprite:
-  - {fileID: 21300000, guid: fdaefdce9f04f8641ab9e8a2f46fe129, type: 3}
-  puzzlePrefab: {fileID: 5687920361564749532, guid: 74932698ac6a02d46af6ea254773912b, type: 3}
+  - {fileID: 21300000, guid: b8ac20f310e37d5468b397bb85df1190, type: 3}
+  - {fileID: 21300000, guid: a5cfc27c233496845aac63de05329e32, type: 3}
+  - {fileID: 21300000, guid: f7822f6053805aa4a93c055d11014771, type: 3}
+  - {fileID: 21300000, guid: fd87bdc11198bcf468994c4321c3186f, type: 3}
