@@ -29,4 +29,3 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f7822f6053805aa4a93c055d11014771, type: 3}
   - {fileID: 21300000, guid: fd87bdc11198bcf468994c4321c3186f, type: 3}
   puzzlePrefab: {fileID: 5687920361564749532, guid: 74932698ac6a02d46af6ea254773912b, type: 3}
-
