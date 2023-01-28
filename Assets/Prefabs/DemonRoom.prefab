@@ -604,7 +604,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &212137728097794542
 Transform:
   m_ObjectHideFlags: 0
@@ -820,6 +820,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Pentagramm
       objectReference: {fileID: 0}
+    - target: {fileID: 3788381651168527884, guid: a2a4f999e7b3daf4dbc6d39750c1d3ab, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5177562911900350678, guid: a2a4f999e7b3daf4dbc6d39750c1d3ab, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -872,6 +876,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6963969172765248237, guid: a2a4f999e7b3daf4dbc6d39750c1d3ab, type: 3}
+      propertyPath: demonRoom
+      value: 
+      objectReference: {fileID: -2348663319683730611}
     - target: {fileID: 7375569307322413141, guid: a2a4f999e7b3daf4dbc6d39750c1d3ab, type: 3}
       propertyPath: m_Name
       value: Puzzle Window

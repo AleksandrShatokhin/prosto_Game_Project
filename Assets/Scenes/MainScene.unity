@@ -134,6 +134,10 @@ PrefabInstance:
       propertyPath: cityMap
       value: 
       objectReference: {fileID: 1795648198}
+    - target: {fileID: -2348663319683730611, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: demonRoomUi
+      value: 
+      objectReference: {fileID: 589960796}
     - target: {fileID: 212137728097794542, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -178,6 +182,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1912821259336922614, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2311781144758514419, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2475848198774378104, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2812027208976750463, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223934299488094605, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4223934299488094605, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4357555094631715649, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
       value: 1
@@ -190,9 +218,65 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5798629763290000932, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5798629763290000932, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235070036623496348, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: demonRoomUI
+      value: 
+      objectReference: {fileID: 589960796}
+    - target: {fileID: 6384002657756269942, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6630380548343083515, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_SortingLayer
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6630380548343083515, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_SortingLayerID
+      value: -1913209911
+      objectReference: {fileID: 0}
     - target: {fileID: 6986492929824674334, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
       propertyPath: m_Name
       value: DemonRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986492929824674334, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986492930961780917, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6986492930961780918, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212859486279247527, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212859486279247527, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212859486279247527, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8212859486279247527, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8399794663798292631, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
@@ -613,6 +697,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &589960796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 342912149, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+  m_PrefabInstance: {fileID: 84535671}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &727277866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1323,6 +1412,10 @@ PrefabInstance:
     - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_Name
       value: CharacterRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7435074125991213307, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: playerInventory
