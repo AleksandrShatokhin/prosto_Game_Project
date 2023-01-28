@@ -6,6 +6,7 @@ public class PuzzleWindow : MonoBehaviour
 {
     [SerializeField] private DemonRoom demonRoom;
     [SerializeField] private GameObject demonRoomUI;
+    
     private void OnEnable()
     {
         Instantiate(demonRoom.GetCurrentDemonSO.puzzlePrefab, transform.position, Quaternion.identity, this.transform);

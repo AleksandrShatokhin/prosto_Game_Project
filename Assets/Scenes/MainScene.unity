@@ -138,6 +138,10 @@ PrefabInstance:
       propertyPath: demonRoomUi
       value: 
       objectReference: {fileID: 589960796}
+    - target: {fileID: -2348663319683730611, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: currentDemonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
     - target: {fileID: 212137728097794542, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -1405,6 +1409,10 @@ PrefabInstance:
       propertyPath: cityMap
       value: 
       objectReference: {fileID: 1795648198}
+    - target: {fileID: 4342230212861558765, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: currentDemon
+      value: 
+      objectReference: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
     - target: {fileID: 4342230212861558765, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: playerInventory
       value: 
