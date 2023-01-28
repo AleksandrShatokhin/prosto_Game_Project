@@ -25,3 +25,4 @@ MonoBehaviour:
     \u041F\u043E\u043C\u043E\u0433\u0438...."
   citizenSprite:
   - {fileID: 21300000, guid: fdaefdce9f04f8641ab9e8a2f46fe129, type: 3}
+  puzzlePrefab: {fileID: 5687920361564749532, guid: 74932698ac6a02d46af6ea254773912b, type: 3}
