@@ -25,6 +25,7 @@ public class MessageWindow : MonoBehaviour
     public void ClickComeBack()
     {
         GameController.GetInstance().SwitchWindow(cityMapWindow, this.gameObject);
+        cityMapWindow.GetComponent<CityMap>().IsPause_Off();
     }
 
     public void ClickNextRoom()

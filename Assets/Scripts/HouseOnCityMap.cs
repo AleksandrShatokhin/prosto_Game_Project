@@ -46,8 +46,8 @@ public class HouseOnCityMap : MonoBehaviour
         if (demonSO == null)
         {
             demonSO = GameController.GetInstance().GetDemonDataBase().GetDemon(0); // потенциально решить как выбирать номер демона (пока тестово номер 0)
-            numberMessageToDemon = Random.Range(0, demonSO.message.Count);
-            numberCitizenSprite = Random.Range(0, demonSO.citizenSprite.Count);
+            numberMessageToDemon = Random.Range(0, 3);
+            numberCitizenSprite = 0; // потенциально сделать случайную генерацию номера
         }
     }
 
