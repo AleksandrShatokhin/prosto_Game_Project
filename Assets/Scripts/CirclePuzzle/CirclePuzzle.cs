@@ -28,7 +28,7 @@ public class CirclePuzzle : MonoBehaviour
     private int openedLetter = 100;
 
     //Testing
-    private List<GameObject> letterCircleToDestroy = new List<GameObject>();
+    private List<GameObject> createdCircleLetters = new List<GameObject>();
 
     private void Awake()
     {
@@ -46,7 +46,7 @@ public class CirclePuzzle : MonoBehaviour
             GameObject createdLetter = GameObject.Instantiate(circleLetterPrefab, letterPosition, Quaternion.identity, this.transform);
 
             //Testing
-            letterCircleToDestroy.Add(createdLetter);
+            createdCircleLetters.Add(createdLetter);
             //Delete later
 
             currentAngle += circleLetterStepDegrees;
@@ -68,7 +68,7 @@ public class CirclePuzzle : MonoBehaviour
     {
         float x = transform.position.x + circleRadius * Mathf.Cos(currentAngle * Mathf.Deg2Rad);
         float y = transform.position.y + circleRadius * Mathf.Sin(currentAngle * Mathf.Deg2Rad);
-        return new Vector2(x, y);
+        return new Vector2(x + circlePosition.x, y + circlePosition.y);
     }
 
     private void CheckAnswer()
@@ -91,6 +91,11 @@ public class CirclePuzzle : MonoBehaviour
         playerAnswer = null;
         mouseHandler.ResetLine();
         currentLetterNumber = 0;
+
+        foreach (var item in createdCircleLetters)
+        {
+            item.GetComponent<TMP_Text>().color = Color.white;
+        }
 
         for (var i = 0; i < chosenLetters.Count; i++)
         {
@@ -116,7 +121,7 @@ public class CirclePuzzle : MonoBehaviour
 
     private void ClearPuzzleScreen()
     {
-        foreach (var item in letterCircleToDestroy)
+        foreach (var item in createdCircleLetters)
         {
             Destroy(item);
         }

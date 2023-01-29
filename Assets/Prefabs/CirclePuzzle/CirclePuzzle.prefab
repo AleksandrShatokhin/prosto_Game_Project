@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1306977377684352215
 RectTransform:
   m_ObjectHideFlags: 0
@@ -326,8 +326,8 @@ MonoBehaviour:
   answerWord: DEMON
   circleLetters: 44005a004f004e004f0045004f004f004f004d00
   circleLetterPrefab: {fileID: 7945435039589287311, guid: 48f30dc3e20e4b340979344e2f780894, type: 3}
-  circleRadius: 3.28
-  circlePosition: {x: 0, y: 0}
+  circleRadius: 2.62
+  circlePosition: {x: -3.89, y: 0}
   chosenLettersPosition: {fileID: 5687920360778254263}
   chosenLettersDistance: 1
   chosenLetterPrefab: {fileID: 5625283938574358736, guid: e1363a9a22956a048ac8d4855b4c7b97, type: 3}
@@ -371,7 +371,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 230, y: -120}
+  m_AnchoredPosition: {x: 182, y: -74.2}
   m_SizeDelta: {x: 335.3435, y: 115.1181}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1469181789542004027
@@ -429,8 +429,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
