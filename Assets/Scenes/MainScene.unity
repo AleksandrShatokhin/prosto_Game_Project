@@ -1036,6 +1036,18 @@ PrefabInstance:
       propertyPath: demonRoom
       value: 
       objectReference: {fileID: 330432046}
+    - target: {fileID: 479955262, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 479955262, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 479955262, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 9177407351804303362, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: m_Pivot.x
       value: 0
