@@ -14,6 +14,7 @@ public class DemonRoom : MonoBehaviour
     {
         this.currentDemonSO = demonSO;
 
+        demonRoomUi.SetActive(true);
         demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
     }
 

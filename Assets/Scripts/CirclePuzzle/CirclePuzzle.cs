@@ -19,7 +19,9 @@ public class CirclePuzzle : MonoBehaviour
     [SerializeField] private MouseHandler mouseHandler;
     private List<GameObject> chosenLetters = new List<GameObject>();
 
-    [SerializeField] GameObject congratulationsText;
+    [SerializeField] GameObject infoWindow;
+    public DemonRoom demonRoom;
+    public GameObject puzzleWindow;
 
     private string playerAnswer = null;
     private int currentLetterNumber = 0;
@@ -74,8 +76,9 @@ public class CirclePuzzle : MonoBehaviour
         if (playerAnswer == answerWord)
         {
             ClearPuzzleScreen();
-            congratulationsText.SetActive(true);
-            //Destroy(this.gameObject);
+            GameObject createdWindow = Instantiate(infoWindow, transform.position, Quaternion.identity, this.transform);
+            createdWindow.GetComponent<InformationWindow>().SetWindowText("Демон: 'О нет я изогнан'");
+            StartCoroutine(WindowCloseTimer());
         }
         else
         {
@@ -90,6 +93,14 @@ public class CirclePuzzle : MonoBehaviour
             }
         }
     }
+
+    private IEnumerator WindowCloseTimer()
+    {
+        yield return new WaitForSeconds(2f);
+        puzzleWindow.SetActive(false);
+        demonRoom.ClickComeBack();
+    }
+
 
     private void ClearPuzzleScreen()
     {
