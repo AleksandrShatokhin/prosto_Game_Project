@@ -1429,6 +1429,10 @@ PrefabInstance:
       propertyPath: playerInventory
       value: 
       objectReference: {fileID: 727277867}
+    - target: {fileID: 4342230212861558765, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: informationWindowPrefab
+      value: 
+      objectReference: {fileID: 633329307799652759, guid: 668d5a53347a5c14c93303a3853f9864, type: 3}
     - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_Name
       value: CharacterRoom

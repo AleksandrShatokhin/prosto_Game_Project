@@ -7,6 +7,7 @@ public class QuestController : MonoBehaviour
 {
     [SerializeField] private DemonSO currentDemon;
     [SerializeField] private PlayerInventory playerInventory;
+    [SerializeField] private GameObject informationWindowPrefab;
 
     public void OnCheckItemsButtonClicked()
     {
@@ -14,11 +15,13 @@ public class QuestController : MonoBehaviour
         {
             if (!playerInventory.TakenItems.Contains(item))
             {
-                EditorUtility.DisplayDialog("PopUp", "Wrong items were chosen", "Ok");
+                GameObject wrongWindow = Instantiate(informationWindowPrefab, transform.position, Quaternion.identity);
+                wrongWindow.GetComponent<InformationWindow>().SetWindowText("Вы выбрали неправильные предметы");
                 return;
             }
         }
-        EditorUtility.DisplayDialog("PopUp", "Correct items were chosen", "Ok");
-        return;
+
+        GameObject correctWindow = Instantiate(informationWindowPrefab, transform.position, Quaternion.identity);
+        correctWindow.GetComponent<InformationWindow>().SetWindowText("Вы выбрали правильные предметы");
     }
 }
