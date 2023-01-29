@@ -234,6 +234,10 @@ PrefabInstance:
       propertyPath: demonRoomUI
       value: 
       objectReference: {fileID: 589960796}
+    - target: {fileID: 6235070036623496348, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 727277867}
     - target: {fileID: 6384002657756269942, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -735,6 +739,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 759588b9367b5c940892c424f15019db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxNumberOfItemsInInventory: 2
+  infoWindow: {fileID: 633329307799652759, guid: 668d5a53347a5c14c93303a3853f9864, type: 3}
 --- !u!224 &727277868
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1235,7 +1241,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 23.65
+  m_fontSize: 23.45
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1

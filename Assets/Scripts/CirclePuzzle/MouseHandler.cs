@@ -33,7 +33,6 @@ public class MouseHandler : MonoBehaviour
 
     private void ConnectNewLetter(RaycastHit2D hit)
     {
-        Debug.Log("IncresingLetterAmmount");
         lineRenderer.positionCount++;
         lineRenderer.SetPosition(numberOfLinePositions, hit.collider.transform.position);
         numberOfLinePositions++;

@@ -5,11 +5,23 @@ using UnityEngine;
 public class PlayerInventory : MonoBehaviour
 {
     private List<Items> takenItems = new List<Items>();
+    [SerializeField] private int maxNumberOfItemsInInventory = 2;
+    [SerializeField] GameObject infoWindow;
 
-    public void AddItemToInventory(Items itemToAdd)
+    public bool AddItemToInventory(Items itemToAdd)
     {
-        takenItems.Add(itemToAdd);
-        Debug.Log("Added " + itemToAdd.ToString() + " to inventory");
+        if (!(takenItems.Count >= maxNumberOfItemsInInventory))
+        {
+            takenItems.Add(itemToAdd);
+            Debug.Log("Added " + itemToAdd.ToString() + " to inventory");
+            return true;
+        }
+        else
+        {
+            infoWindow.GetComponent<InformationWindow>().SetWindowText("Ваш инвентарь заполнен");
+            Instantiate(infoWindow, transform.position, Quaternion.identity);
+            return false;
+        }
     }
 
     public void RemoveItemFromInventory(Items itemToRemove)

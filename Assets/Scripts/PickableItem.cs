@@ -14,8 +14,10 @@ public class PickableItem : MonoBehaviour
     {
         if (!playerInventory.TakenItems.Contains(itemType))
         {
-            playerInventory.AddItemToInventory(itemType);
-            buttonText.text = "Put " + itemType.ToString() + " back";
+            if (playerInventory.AddItemToInventory(itemType))
+            {
+                buttonText.text = "Put " + itemType.ToString() + " back";
+            }
         }
         else
         {

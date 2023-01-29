@@ -18,19 +18,19 @@ public class CirclePuzzle : MonoBehaviour
 
     [SerializeField] private MouseHandler mouseHandler;
     private List<GameObject> chosenLetters = new List<GameObject>();
-
     [SerializeField] GameObject infoWindow;
+    [SerializeField] GameObject hintTextObject;
     public DemonRoom demonRoom;
     public GameObject puzzleWindow;
 
     private string playerAnswer = null;
     private int currentLetterNumber = 0;
-
+    private int openedLetter = 100;
 
     //Testing
     private List<GameObject> letterCircleToDestroy = new List<GameObject>();
 
-    private void Start()
+    private void Awake()
     {
         CreateCirleOfLetters();
         CreateChosenLettersSlots();
@@ -77,22 +77,34 @@ public class CirclePuzzle : MonoBehaviour
         {
             ClearPuzzleScreen();
             GameObject createdWindow = Instantiate(infoWindow, transform.position, Quaternion.identity, this.transform);
-            createdWindow.GetComponent<InformationWindow>().SetWindowText("Демон: 'О нет я изогнан'");
+            createdWindow.GetComponent<InformationWindow>().SetWindowText("Демон: 'О нет я изгнан'");
             StartCoroutine(WindowCloseTimer());
         }
         else
         {
-            Debug.Log("Checking for answer, reseting stuff");
-            Debug.Log("Wrong answer");
-            playerAnswer = null;
-            mouseHandler.ResetLine();
-            currentLetterNumber = 0;
-            foreach (GameObject letterSlot in chosenLetters)
+            ResetPuzzle();
+        }
+    }
+
+    private void ResetPuzzle()
+    {
+        playerAnswer = null;
+        mouseHandler.ResetLine();
+        currentLetterNumber = 0;
+
+        for (var i = 0; i < chosenLetters.Count; i++)
+        {
+            if (i != openedLetter)
             {
-                letterSlot.GetComponentInChildren<TMP_Text>().text = null;
+                chosenLetters[i].GetComponentInChildren<TMP_Text>().text = null;
+            }
+            else
+            {
+                chosenLetters[i].GetComponentInChildren<TMP_Text>().text = answerWord[openedLetter].ToString();
             }
         }
     }
+
 
     private IEnumerator WindowCloseTimer()
     {
@@ -131,6 +143,31 @@ public class CirclePuzzle : MonoBehaviour
         if (playerAnswer.Length == answerWord.Length)
         {
             CheckAnswer();
+        }
+    }
+
+    public void OpenRandomLetter()
+    {
+        int randomLetterIndex = Random.Range(0, answerWord.Length);
+        openedLetter = randomLetterIndex;
+        chosenLetters[randomLetterIndex].GetComponentInChildren<TMP_Text>().text = answerWord[randomLetterIndex].ToString();
+    }
+
+    public void OpenTextHint()
+    {
+        hintTextObject.SetActive(true);
+    }
+
+    //Временный рофлан. Сделать базовый абстрактный класс головоломки, с переопределенными методами HandleHints и т.д., чтобы можно было обращаться к любой головоломке через parent класс.
+    public void HandleHints(int numberOfHints)
+    {
+        if (numberOfHints > 0)
+        {
+            OpenRandomLetter();
+        }
+        if (numberOfHints == 2)
+        {
+            OpenTextHint();
         }
     }
 }
