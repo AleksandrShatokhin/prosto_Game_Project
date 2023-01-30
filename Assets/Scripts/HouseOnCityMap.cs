@@ -6,11 +6,12 @@ using TMPro;
 
 public class HouseOnCityMap : MonoBehaviour
 {
+    [SerializeField] private TextMeshProUGUI timerText;
     private Button buttonToNextRoom;
     private CityMap cityMap;
 
     private int maxTimeLiveCall;
-    private int timer = 0;
+    private int timer;
     private int second = 1;
 
     private DemonSO demonSO;
@@ -37,6 +38,7 @@ public class HouseOnCityMap : MonoBehaviour
     {
         this.maxTimeLiveCall = this.transform.GetComponentInParent<CityMap>().GetMaxTime();
         this.cityMap = this.transform.GetComponentInParent<CityMap>();
+        timer = this.transform.GetComponentInParent<CityMap>().GetMaxTime();
         GenerateDemon();
         StartCoroutine(Timer(maxTimeLiveCall));
     }
@@ -55,16 +57,17 @@ public class HouseOnCityMap : MonoBehaviour
     {
         while (true)
         {
-            if (timer == maxTime)
+            if (timer == 0)
             {
                 demonSO = null;
-                timer = 0;
+                timer = maxTime;
                 this.gameObject.SetActive(false);
             }
 
             if (!this.cityMap.IsPause())
             {
-                timer += second;
+                timerText.text = timer.ToString();
+                timer -= second;
             }
             
             yield return new WaitForSeconds(second);
