@@ -64,13 +64,28 @@ public class HouseOnCityMap : MonoBehaviour
                 this.gameObject.SetActive(false);
             }
 
-            if (!this.cityMap.IsPause())
+            if (!this.cityMap.IsPause() && second != 0)
             {
                 timerText.text = timer.ToString();
                 timer -= second;
             }
             
             yield return new WaitForSeconds(second);
+        }
+    }
+
+    public int GetCurrentSecond() => second;
+    public void SwitchHouseTimer(int newVariable)
+    {
+        second = newVariable;
+
+        if (newVariable == 0)
+        {
+            timerText.text = "wait";
+        }
+        else
+        {
+            timerText.text = timer.ToString();
         }
     }
 }
