@@ -12,11 +12,14 @@ public class MessageWindow : MonoBehaviour
     [SerializeField] private Image citizenImage;
     [SerializeField] private TextMeshProUGUI textMessage;
 
+    private GameObject houseOnMap;
+
     private DemonSO demonSO;
 
-    public void OnStartMessageWindow(DemonSO demonSO, int numberMessage, int numberCitizen)
+    public void OnStartMessageWindow(DemonSO demonSO, int numberMessage, int numberCitizen, GameObject house)
     {
         this.demonSO = demonSO;
+        this.houseOnMap = house;
 
         textMessage.text = this.demonSO.message[numberMessage];
         citizenImage.sprite = this.demonSO.citizenSprite[numberCitizen];
@@ -30,8 +33,10 @@ public class MessageWindow : MonoBehaviour
 
     public void ClickNextRoom()
     {
+        GameController.GetInstance().GetCallCounter().AddToCounter();
         GameController.GetInstance().SwitchWindow(demonRoom, this.gameObject);
         demonRoom.GetComponent<DemonRoom>().OnStartDemonRoom(this.demonSO);
+        houseOnMap.SetActive(false);
         cityMapWindow.SetActive(false);
     }
 }

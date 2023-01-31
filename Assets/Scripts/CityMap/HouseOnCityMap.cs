@@ -21,17 +21,17 @@ public class HouseOnCityMap : MonoBehaviour
     private void Start()
     {
         buttonToNextRoom = this.GetComponent<Button>();
-        buttonToNextRoom.onClick.AddListener(ClickNextRoom);
+        buttonToNextRoom.onClick.AddListener(OpenMessageWindow);
     }
 
-    private void ClickNextRoom()
+    private void OpenMessageWindow()
     {
         CityMap cityMap = this.transform.GetComponentInParent<CityMap>();
         GameObject messageWindow = cityMap.GetMessageWindow();
 
         cityMap.IsPause_On();
         messageWindow.SetActive(true);
-        messageWindow.GetComponent<MessageWindow>().OnStartMessageWindow(demonSO, numberMessageToDemon, numberCitizenSprite);
+        messageWindow.GetComponent<MessageWindow>().OnStartMessageWindow(demonSO, numberMessageToDemon, numberCitizenSprite, this.gameObject);
     }
 
     private void OnEnable()

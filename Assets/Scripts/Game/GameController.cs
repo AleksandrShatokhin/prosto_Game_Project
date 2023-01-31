@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
 
     // ссылки на основные компоненты
     private DemonDataBase demonDataBase;
+    private CallCounter callCounter;
     [SerializeField] private GameObject firstWindow;
     [SerializeField] private MainUIController mainUIController;
 
@@ -20,6 +21,7 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         firstWindow.SetActive(true);
+        callCounter = this.GetComponent<CallCounter>();
         demonDataBase = this.GetComponent<DemonDataBase>();
     }
 
@@ -29,6 +31,7 @@ public class GameController : MonoBehaviour
         toClose.SetActive(false);
     }
 
+    public CallCounter GetCallCounter() => callCounter;
     public DemonDataBase GetDemonDataBase() => demonDataBase;
     public MainUIController GetMainUIController() => mainUIController;
 }
