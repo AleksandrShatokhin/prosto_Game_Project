@@ -5,6 +5,8 @@ using UnityEngine;
 public class CallCounter : MonoBehaviour
 {
     [SerializeField] List<SymbolSO> symbols;
+    [SerializeField] List<NewspaperSO> newspapers;
+
     private int counter;
     private int step = 1;
 
@@ -19,6 +21,19 @@ public class CallCounter : MonoBehaviour
     }
 
     public void AddToCounter() => counter += step;
+
+    public NewspaperSO GetNewspaper()
+    {
+        foreach (NewspaperSO newspaper in newspapers)
+        {
+            if (counter == newspaper.CallNumber)
+            {
+                return newspaper;
+            }
+        }
+
+        return null;
+    }
 
     public Sprite GetSymbolSprite()
     {

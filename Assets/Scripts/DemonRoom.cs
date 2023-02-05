@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -11,14 +12,32 @@ public class DemonRoom : MonoBehaviour
     [SerializeField] private SpriteRenderer demonSpriteRenderer;
     [SerializeField] private GameObject demonRoomUi;
     [SerializeField] private Image symbol;
+    [SerializeField] private Image newspaper;
+
+    private NewspaperSO newspaperSO;
 
     public void OnStartDemonRoom(DemonSO demonSO)
     {
         this.currentDemonSO = demonSO;
         
+        CreateNewspaperInRoom();
         CreateSymbolInRoom();
         demonRoomUi.SetActive(true);
         demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
+    }
+
+    private void CreateNewspaperInRoom()
+    {
+        newspaperSO = GameController.GetInstance().GetCallCounter().GetNewspaper();
+
+        if (newspaperSO == null)
+        {
+            newspaper.gameObject.SetActive(false);
+        }
+        else
+        {
+            newspaper.gameObject.SetActive(true);
+        }
     }
 
     private void CreateSymbolInRoom()
@@ -44,6 +63,13 @@ public class DemonRoom : MonoBehaviour
     public void ClickComeBack()
     {
         GameController.GetInstance().SwitchWindow(cityMap, this.gameObject);
+    }
+
+    public void ClickNewspaper(GameObject windowNewspaper)
+    {
+        windowNewspaper.SetActive(true);
+        string note = newspaperSO.Text.ToString();
+        windowNewspaper.GetComponent<NewspaperManager>().SetTextNewspaper(note);
     }
 
     public DemonSO GetCurrentDemonSO => currentDemonSO;
