@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,7 +5,7 @@ using UnityEngine;
 public class SymbolSO : ScriptableObject
 {
     // список символов дл€ создани€
-    public List<string> Symbols;
+    public List<Sprite> Sprites;
 
     // индикатор указывающий на номер из списка символов дл€ создани€
     public int IndicatorSymbols;

@@ -18,5 +18,11 @@ MonoBehaviour:
   - GreenSymbol_3
   - GreenSymbol_4
   - GreenSymbol_5
+  Sprites:
+  - {fileID: 21300000, guid: 252dec2c6a551044290debc160f7f900, type: 3}
+  - {fileID: 21300000, guid: 696c4f8e0f88fde4e8b435f917de74d8, type: 3}
+  - {fileID: 21300000, guid: 8e4f51e98b2615f43afb51622963449f, type: 3}
+  - {fileID: 21300000, guid: a61b4a66bf80d7a408a022a2ff8b5d5c, type: 3}
+  - {fileID: 21300000, guid: 38474d99102572c4987581129a175833, type: 3}
   IndicatorSymbols: 1
   CallNumbers: 060000000700000008000000090000000a000000

@@ -38,7 +38,8 @@ public class HouseOnCityMap : MonoBehaviour
     {
         this.maxTimeLiveCall = this.transform.GetComponentInParent<CityMap>().GetMaxTime();
         this.cityMap = this.transform.GetComponentInParent<CityMap>();
-        timer = this.transform.GetComponentInParent<CityMap>().GetMaxTime();
+
+        timer = maxTimeLiveCall;
         GenerateDemon();
         StartCoroutine(Timer(maxTimeLiveCall));
     }

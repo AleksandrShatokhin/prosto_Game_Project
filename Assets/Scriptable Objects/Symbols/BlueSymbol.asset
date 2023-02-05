@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 775970111bd4c0547b7e9b9e6aeb4206, type: 3}
   m_Name: BlueSymbol
   m_EditorClassIdentifier: 
-  Symbols:
-  - BlueSymbol_1
-  - BlueSymbol_2
-  - BlueSymbol_3
-  - BlueSymbol_4
-  - BlueSymbol_5
-  IndicatorSymbols: 3
+  Sprites:
+  - {fileID: 21300000, guid: 1cf2a7209d1949d4288a9fc7787ed31b, type: 3}
+  - {fileID: 21300000, guid: bbaaed8a193abf1459b051ee42673234, type: 3}
+  - {fileID: 21300000, guid: b3641227a34fcab4091136ae27000aca, type: 3}
+  - {fileID: 21300000, guid: dff26c572891bd349975f7e2c2740fad, type: 3}
+  - {fileID: 21300000, guid: 13f69267a39edc544bdfe2aed5b107ac, type: 3}
+  IndicatorSymbols: 1
   CallNumbers: 0100000002000000030000000400000005000000

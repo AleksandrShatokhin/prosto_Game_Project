@@ -76,6 +76,7 @@ public class MessageWindow : MonoBehaviour
         GameController.GetInstance().GetCallCounter().AddToCounter();
         GameController.GetInstance().SwitchWindow(demonRoom, this.gameObject);
         demonRoom.GetComponent<DemonRoom>().OnStartDemonRoom(this.demonSO);
+        ClickAccept();
         houseOnMap.SetActive(false);
         cityMapWindow.SetActive(false);
     }

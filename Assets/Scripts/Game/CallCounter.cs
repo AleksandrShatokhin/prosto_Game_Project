@@ -20,23 +20,22 @@ public class CallCounter : MonoBehaviour
 
     public void AddToCounter() => counter += step;
 
-    public void CheckCallCounter()
+    public Sprite GetSymbolSprite()
     {
+        Sprite currentSymbol = null;
+
         foreach (SymbolSO symbol in symbols)
         {
-            CheckCurrentSymbol(symbol);
-        }
-    }
-
-    private void CheckCurrentSymbol(SymbolSO symbol)
-    {
-        foreach (int variable in symbol.CallNumbers)
-        {
-            if (counter == variable)
+            foreach (int variable in symbol.CallNumbers)
             {
-                Debug.Log(symbol.Symbols[symbol.IndicatorSymbols] + " has been created!");
-                symbol.IndicatorSymbols += 1;
+                if (counter == variable)
+                {
+                    currentSymbol = symbol.Sprites[symbol.IndicatorSymbols];
+                    symbol.IndicatorSymbols += 1;
+                }
             }
         }
+
+        return currentSymbol;
     }
 }

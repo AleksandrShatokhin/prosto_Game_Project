@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DemonRoom : MonoBehaviour
 {
@@ -9,14 +10,29 @@ public class DemonRoom : MonoBehaviour
     [SerializeField] private DemonSO currentDemonSO;
     [SerializeField] private SpriteRenderer demonSpriteRenderer;
     [SerializeField] private GameObject demonRoomUi;
+    [SerializeField] private Image symbol;
 
     public void OnStartDemonRoom(DemonSO demonSO)
     {
         this.currentDemonSO = demonSO;
-
-        GameController.GetInstance().GetCallCounter().CheckCallCounter();
+        
+        CreateSymbolInRoom();
         demonRoomUi.SetActive(true);
         demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
+    }
+
+    private void CreateSymbolInRoom()
+    {
+        symbol.sprite = GameController.GetInstance().GetCallCounter().GetSymbolSprite();
+
+        if (symbol.sprite == null)
+        {
+            symbol.gameObject.SetActive(false);
+        }
+        else
+        {
+            symbol.gameObject.SetActive(true);
+        }
     }
 
     public void OnStartPuzzleButtonClicked()
