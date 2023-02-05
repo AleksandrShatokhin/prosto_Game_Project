@@ -94,8 +94,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3504b2be51711e844a450e6d3ac9bfb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextRoomButton: {fileID: 0}
   cityMapWindow: {fileID: 9177407351804303385}
   demonRoom: {fileID: 0}
+  textButtonAccept: {fileID: 0}
   citizenImage: {fileID: 397602659}
   textMessage: {fileID: 1089062346}
 --- !u!1 &397602657
@@ -6329,8 +6331,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1c613a7ff358c0f4db0d1c138858379b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
