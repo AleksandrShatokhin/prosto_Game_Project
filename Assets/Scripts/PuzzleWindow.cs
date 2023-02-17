@@ -13,7 +13,7 @@ public class PuzzleWindow : MonoBehaviour
     private void OnEnable()
     {
         int numberOfHints = GetNumberOfHints();
-        currentPuzzle = Instantiate(demonRoom.GetCurrentDemonSO.puzzlePrefab, transform.position, Quaternion.identity, this.transform);
+        //currentPuzzle = Instantiate(demonRoom.GetCurrentDemonSO.puzzlePrefab, transform.position, Quaternion.identity, this.transform);
         currentPuzzle.GetComponent<CirclePuzzle>().demonRoom = this.demonRoom;
         currentPuzzle.GetComponent<CirclePuzzle>().puzzleWindow = this.gameObject;
         currentPuzzle.GetComponent<CirclePuzzle>().HandleHints(numberOfHints);

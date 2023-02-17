@@ -13,16 +13,15 @@ public class CityMap : MonoBehaviour
     [SerializeField] private int minimumDelay, maximumDelay;
     [SerializeField] private int maximumCountCallsOnMap;
 
-    [SerializeField] private bool isPause;
+    [SerializeField] private MapStatus currentStatus;
 
     private void Start()
     {
-        isPause = false;
+        currentStatus = MapStatus.Running;
     }
 
     private void OnEnable()
     {
-        isPause = false;
         StartCoroutine(CallCreator());
     }
 
@@ -35,7 +34,7 @@ public class CityMap : MonoBehaviour
 
             yield return new WaitForSeconds(delay);
 
-            if (!CheckStateHouse(numberHouse) && !isPause && CheckCountCallsOnMap())
+            if (!CheckStateHouse(numberHouse) && currentStatus == MapStatus.Running && CheckCountCallsOnMap())
             {
                 houses.transform.GetChild(numberHouse).gameObject.SetActive(true);
             }
@@ -65,10 +64,9 @@ public class CityMap : MonoBehaviour
     }
 
     public GameObject GetMessageWindow() => messageWindow;
-    public int GetMaxTime() => maximumTimeForLiveHouseOnMap;
-    public bool IsPause() => isPause;
-    public void IsPause_On() => isPause = true;
-    public void IsPause_Off() => isPause = false;
+    public void SetMapStatus_Running() => currentStatus = MapStatus.Running;
+    public void SetMapStatus_Stopped() => currentStatus = MapStatus.Stopped;
 
-    public void ComeBackToPlayerRoom() => GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject);
+    // ввызывается по событию на кнопке в редакторе
+    public void ComebackToPlayerRoom() => GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject);
 }

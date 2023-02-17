@@ -4,7 +4,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DemonRoom : MonoBehaviour
+public class DemonRoom : MonoBehaviour, IStartable
 {
     [SerializeField] private GameObject cityMap;
     [SerializeField] private GameObject puzzleWindow;
@@ -16,10 +16,11 @@ public class DemonRoom : MonoBehaviour
 
     private NewspaperSO newspaperSO;
 
-    public void OnStartDemonRoom(DemonSO demonSO)
+    void IStartable.OnStart(DemonSO demonSO, GameObject cityMap)
     {
         this.currentDemonSO = demonSO;
-        
+        this.cityMap = cityMap;
+
         CreateNewspaperInRoom();
         CreateSymbolInRoom();
         demonRoomUi.SetActive(true);
@@ -62,7 +63,9 @@ public class DemonRoom : MonoBehaviour
 
     public void ClickComeBack()
     {
-        GameController.GetInstance().SwitchWindow(cityMap, this.gameObject);
+        cityMap.SetActive(true);
+        Destroy(this.gameObject);
+        cityMap.GetComponent<CityMap>().SetMapStatus_Running();
     }
 
     public void ClickNewspaper(GameObject windowNewspaper)

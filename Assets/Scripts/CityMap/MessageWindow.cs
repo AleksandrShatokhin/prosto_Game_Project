@@ -4,80 +4,90 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class MessageWindow : MonoBehaviour
+public class MessageWindow : MonoBehaviour, IStartable
 {
-    private const string textAccept = "Accept call", textCancel = "Cancel call";
+    private const string textAccept = "Принять", textNextRoom = "Отправиться";
+    private const string textComeback = "На карту", textComehome = "Домой";
 
-    [SerializeField] private GameObject NextRoomButton;
+    private GameObject houseOnMap;
     [SerializeField] private GameObject cityMapWindow;
-    [SerializeField] private GameObject demonRoom;
+    [SerializeField] private GameObject playerRoom;
+
     [SerializeField] private TextMeshProUGUI textButtonAccept;
+    [SerializeField] private TextMeshProUGUI textButtonCameback;
 
     [SerializeField] private Image citizenImage;
     [SerializeField] private TextMeshProUGUI textMessage;
 
-    private GameObject houseOnMap;
+    [SerializeField] private CallStatus currentStatus = CallStatus.Cancelled;
 
     private DemonSO demonSO;
 
-    public void OnStartMessageWindow(DemonSO demonSO, int numberMessage, int numberCitizen, GameObject house)
+    void IStartable.OnStart(DemonSO demonSO, GameObject houseOnMap)
     {
         this.demonSO = demonSO;
-        this.houseOnMap = house;
-        
+        this.houseOnMap = houseOnMap;
+
         CheckIsCallAccept();
 
-        textMessage.text = this.demonSO.message[numberMessage];
-        citizenImage.sprite = this.demonSO.citizenSprite[numberCitizen];
+        textMessage.text = this.demonSO.message;
+        citizenImage.sprite = this.demonSO.citizenSprite;
     }
 
     private void CheckIsCallAccept()
     {
-        bool isCallAccept = (houseOnMap.GetComponent<HouseOnCityMap>().GetCurrentSecond() == 1) ? true : false;
-
-        if (isCallAccept)
+        if (currentStatus == CallStatus.Cancelled)
         {
-            NextRoomButton.SetActive(false);
             textButtonAccept.text = textAccept;
+            textButtonCameback.text = textComeback;
         }
         else
         {
-            NextRoomButton.SetActive(true);
-            textButtonAccept.text = textCancel;
+            textButtonAccept.text = textNextRoom;
+            textButtonCameback.text = textComehome;
         }
     }
 
     public void ClickComeBack()
     {
-        GameController.GetInstance().SwitchWindow(cityMapWindow, this.gameObject);
-        cityMapWindow.GetComponent<CityMap>().IsPause_Off();
+        if (currentStatus == CallStatus.Cancelled)
+        {
+            GameController.GetInstance().SwitchWindow(cityMapWindow, this.gameObject);
+            cityMapWindow.GetComponent<CityMap>().SetMapStatus_Running();
+        }
+        else
+        {
+            GameController.GetInstance().SwitchWindow(playerRoom, cityMapWindow);
+        }
     }
 
     public void ClickAccept()
     {
-        bool isCallAccept = (houseOnMap.GetComponent<HouseOnCityMap>().GetCurrentSecond() == 0) ? true : false;
-
-        if (!isCallAccept)
+        if (currentStatus == CallStatus.Cancelled)
         {
-            NextRoomButton.SetActive(true);
-            houseOnMap.GetComponent<HouseOnCityMap>().SwitchHouseTimer(0);
-            textButtonAccept.text = textCancel;
+            currentStatus = CallStatus.Accepted;
+            textButtonAccept.text = textNextRoom;
+            textButtonCameback.text = textComehome;
         }
         else
         {
-            NextRoomButton.SetActive(false);
-            houseOnMap.GetComponent<HouseOnCityMap>().SwitchHouseTimer(1);
-            textButtonAccept.text = textAccept;
+            GoToTheDemonRoom();
         }
     }
 
-    public void ClickNextRoom()
+    public void GoToTheDemonRoom()
     {
         GameController.GetInstance().GetCallCounter().AddToCounter();
-        GameController.GetInstance().SwitchWindow(demonRoom, this.gameObject);
-        demonRoom.GetComponent<DemonRoom>().OnStartDemonRoom(this.demonSO);
-        ClickAccept();
+        DemonRoomCreator creator = new DemonRoomCreator(demonSO, cityMapWindow);
+        creator.CreateRoom();
+        ResetVariables();
+    }
+
+    private void ResetVariables()
+    {
+        currentStatus = CallStatus.Cancelled;
         houseOnMap.SetActive(false);
+        this.gameObject.SetActive(false);
         cityMapWindow.SetActive(false);
     }
 }
