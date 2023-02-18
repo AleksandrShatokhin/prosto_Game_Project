@@ -12,8 +12,12 @@ public class MainUIController : MonoBehaviour
     [SerializeField] private int hours, minutes;
     [SerializeField] private int countMoney;
 
+    private bool isPauseMode;
+    [SerializeField] GameObject pauseWindow;
+
     private void Start()
     {
+        isPauseMode = false;
         moneyCountText.text = countMoney.ToString();
 
         StartCoroutine(Timer());
@@ -39,6 +43,22 @@ public class MainUIController : MonoBehaviour
             timerText.text = string.Format("{0:00}:{1:00}", hours, minutes);
 
             yield return new WaitForSeconds(trySecond);
+        }
+    }
+
+    public void PauseMode()
+    {
+        if (isPauseMode)
+        {
+            isPauseMode = false;
+            pauseWindow.SetActive(false);
+            Time.timeScale = 1.0f;
+        }
+        else
+        {
+            isPauseMode = true;
+            pauseWindow.SetActive(true);
+            Time.timeScale = 0.0f;
         }
     }
 }
