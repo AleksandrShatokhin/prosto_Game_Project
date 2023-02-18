@@ -94,12 +94,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3504b2be51711e844a450e6d3ac9bfb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextRoomButton: {fileID: 479955260}
   cityMapWindow: {fileID: 9177407351804303385}
-  demonRoom: {fileID: 0}
+  playerRoom: {fileID: 0}
   textButtonAccept: {fileID: 3750615982476813499}
+  textButtonCameback: {fileID: 1856393480}
   citizenImage: {fileID: 397602659}
   textMessage: {fileID: 1089062346}
+  currentStatus: 1
 --- !u!1 &397602657
 GameObject:
   m_ObjectHideFlags: 0
@@ -133,10 +134,10 @@ RectTransform:
   m_Father: {fileID: 342275503}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -310, y: 0}
-  m_SizeDelta: {x: 450, y: 450}
+  m_AnchorMin: {x: 0.038000003, y: 0.086316764}
+  m_AnchorMax: {x: 0.4265458, y: 0.91331685}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &397602660
 CanvasRenderer:
@@ -211,10 +212,10 @@ RectTransform:
   m_Father: {fileID: 342275503}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125, y: -65}
-  m_SizeDelta: {x: 170, y: 50}
+  m_AnchorMin: {x: 0.5343178, y: 0.33463347}
+  m_AnchorMax: {x: 0.6813178, y: 0.42663348}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &479955264
 CanvasRenderer:
@@ -344,10 +345,10 @@ RectTransform:
   m_Father: {fileID: 342275503}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 366.56848, y: 14.2983}
-  m_SizeDelta: {x: 276.0867, y: 419.4074}
+  m_AnchorMin: {x: 0.698, y: 0.13984163}
+  m_AnchorMax: {x: 0.9364094, y: 0.91147524}
+  m_AnchoredPosition: {x: -0.43151855, y: 0.29830933}
+  m_SizeDelta: {x: 0.08670044, y: -0.59259033}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &645223695
 CanvasRenderer:
@@ -557,10 +558,10 @@ RectTransform:
   m_Father: {fileID: 342275503}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125, y: -190}
-  m_SizeDelta: {x: 170, y: 50}
+  m_AnchorMin: {x: 0.5343178, y: 0.105000004}
+  m_AnchorMax: {x: 0.68045425, y: 0.19700001}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1068186175
 CanvasRenderer:
@@ -946,7 +947,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8047681188407228755
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1081,7 +1082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &258407529001355838
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1216,7 +1217,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1839426862961963189
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1346,7 +1347,7 @@ GameObject:
   - component: {fileID: 554026904696592133}
   - component: {fileID: 188815455310719945}
   - component: {fileID: 8662652931099985869}
-  - component: {fileID: 5091614917771780021}
+  - component: {fileID: 151406057}
   m_Layer: 5
   m_Name: House_11
   m_TagString: Untagged
@@ -1469,7 +1470,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &5091614917771780021
+--- !u!114 &151406057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1478,10 +1479,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1106598326146166182}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 4455784051585282827}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &1290329428768505323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1494,7 +1495,7 @@ GameObject:
   - component: {fileID: 8613976926880927903}
   - component: {fileID: 6459821843077857239}
   - component: {fileID: 4336803538466448933}
-  - component: {fileID: 3786871752734208714}
+  - component: {fileID: 1004528335}
   m_Layer: 5
   m_Name: House_10
   m_TagString: Untagged
@@ -1617,7 +1618,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3786871752734208714
+--- !u!114 &1004528335
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1626,10 +1627,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1290329428768505323}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 2323928138508861835}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &1571821703563324085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1642,7 +1643,7 @@ GameObject:
   - component: {fileID: 1323885908729823812}
   - component: {fileID: 4250459791268627507}
   - component: {fileID: 8037273304874115179}
-  - component: {fileID: 1456406886203717809}
+  - component: {fileID: 255858721}
   m_Layer: 5
   m_Name: House_17
   m_TagString: Untagged
@@ -1765,7 +1766,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1456406886203717809
+--- !u!114 &255858721
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1774,10 +1775,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1571821703563324085}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 305235175383534003}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &1728212628910634599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1790,7 +1791,7 @@ GameObject:
   - component: {fileID: 4403873396607960719}
   - component: {fileID: 2281145897666451723}
   - component: {fileID: 5723671546256691118}
-  - component: {fileID: 8088791052251893849}
+  - component: {fileID: 1814072578}
   m_Layer: 5
   m_Name: House_4
   m_TagString: Untagged
@@ -1913,7 +1914,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &8088791052251893849
+--- !u!114 &1814072578
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1922,10 +1923,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1728212628910634599}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 7989675814875701966}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &1967268234670328275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,7 +1944,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5687135384768199075
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2096,10 +2097,10 @@ RectTransform:
   m_Father: {fileID: 342275503}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 125, y: -125}
-  m_SizeDelta: {x: 170, y: 50}
+  m_AnchorMin: {x: 0.5343178, y: 0.22447515}
+  m_AnchorMax: {x: 0.68045425, y: 0.31631675}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7783883900788113803
 CanvasRenderer:
@@ -2212,7 +2213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5407937986092046802
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2347,7 +2348,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6678743491406933445
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2482,7 +2483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3586398569914529058
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2612,7 +2613,7 @@ GameObject:
   - component: {fileID: 6562463479904342246}
   - component: {fileID: 7390233446511553147}
   - component: {fileID: 6141714156967645469}
-  - component: {fileID: 6019330024766232380}
+  - component: {fileID: 230478163}
   m_Layer: 5
   m_Name: House_9
   m_TagString: Untagged
@@ -2735,7 +2736,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6019330024766232380
+--- !u!114 &230478163
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2744,10 +2745,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3887897520946049103}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 6035437089686513202}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &4024436521391768429
 GameObject:
   m_ObjectHideFlags: 0
@@ -2895,7 +2896,7 @@ GameObject:
   - component: {fileID: 2927845920541238875}
   - component: {fileID: 5160748278788248160}
   - component: {fileID: 6522341089894263455}
-  - component: {fileID: 2697988623771441735}
+  - component: {fileID: 1678670867}
   m_Layer: 5
   m_Name: House_12
   m_TagString: Untagged
@@ -3018,7 +3019,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2697988623771441735
+--- !u!114 &1678670867
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3027,10 +3028,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5194725189099653998}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 5048063671708364463}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &5417893725958809576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3043,7 +3044,7 @@ GameObject:
   - component: {fileID: 4789570968988466730}
   - component: {fileID: 7579081454584367253}
   - component: {fileID: 2090120304000532787}
-  - component: {fileID: 3030619364499836341}
+  - component: {fileID: 460399669}
   m_Layer: 5
   m_Name: House_3
   m_TagString: Untagged
@@ -3166,7 +3167,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3030619364499836341
+--- !u!114 &460399669
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3175,10 +3176,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5417893725958809576}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 6971542849886761934}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &5605568095881004128
 GameObject:
   m_ObjectHideFlags: 0
@@ -3196,7 +3197,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4720210146742354412
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3331,7 +3332,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3780149559365660021
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3461,7 +3462,7 @@ GameObject:
   - component: {fileID: 4014400180070294567}
   - component: {fileID: 328596634630341469}
   - component: {fileID: 8515178074542310441}
-  - component: {fileID: 1404438113164403996}
+  - component: {fileID: 1432469731}
   m_Layer: 5
   m_Name: House_8
   m_TagString: Untagged
@@ -3584,7 +3585,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1404438113164403996
+--- !u!114 &1432469731
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3593,10 +3594,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6375402027156901189}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 8568357565993703874}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &6383926392538633219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3614,7 +3615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6524506720236680562
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3744,7 +3745,7 @@ GameObject:
   - component: {fileID: 6699735188882743627}
   - component: {fileID: 7192366260213737050}
   - component: {fileID: 5733386747725001822}
-  - component: {fileID: 3097428151573961933}
+  - component: {fileID: 2138191620}
   m_Layer: 5
   m_Name: House_13
   m_TagString: Untagged
@@ -3867,7 +3868,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &3097428151573961933
+--- !u!114 &2138191620
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3876,10 +3877,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6702539673020184001}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 7045913389775870949}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &6753212769398372120
 GameObject:
   m_ObjectHideFlags: 0
@@ -3892,7 +3893,7 @@ GameObject:
   - component: {fileID: 9122183302400331357}
   - component: {fileID: 8735245235693121847}
   - component: {fileID: 702699748689259121}
-  - component: {fileID: 9220368154040821244}
+  - component: {fileID: 172909519}
   m_Layer: 5
   m_Name: House_14
   m_TagString: Untagged
@@ -4015,7 +4016,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9220368154040821244
+--- !u!114 &172909519
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4024,10 +4025,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6753212769398372120}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 468992768725714701}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &6860158770761231810
 GameObject:
   m_ObjectHideFlags: 0
@@ -4045,7 +4046,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8588751686318295057
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4175,7 +4176,7 @@ GameObject:
   - component: {fileID: 3484654014566513489}
   - component: {fileID: 2187009808379428412}
   - component: {fileID: 3721854469311476093}
-  - component: {fileID: 9008618110615939635}
+  - component: {fileID: 1431528725}
   m_Layer: 5
   m_Name: House_5
   m_TagString: Untagged
@@ -4298,7 +4299,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9008618110615939635
+--- !u!114 &1431528725
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4307,10 +4308,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6976595842346677204}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 4579538629656858932}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &7432647100774221191
 GameObject:
   m_ObjectHideFlags: 0
@@ -4323,7 +4324,7 @@ GameObject:
   - component: {fileID: 5601310981680381604}
   - component: {fileID: 5883447210067801691}
   - component: {fileID: 4694809351009451557}
-  - component: {fileID: 7493721923781662376}
+  - component: {fileID: 1326655558}
   m_Layer: 5
   m_Name: House_15
   m_TagString: Untagged
@@ -4446,7 +4447,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7493721923781662376
+--- !u!114 &1326655558
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4455,10 +4456,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7432647100774221191}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 6909783190435767757}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &7962069328842269016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4471,7 +4472,7 @@ GameObject:
   - component: {fileID: 3797510798442178524}
   - component: {fileID: 5220362260388320609}
   - component: {fileID: 2192954315300786562}
-  - component: {fileID: 7430606427462379186}
+  - component: {fileID: 1978810177}
   m_Layer: 5
   m_Name: House_16
   m_TagString: Untagged
@@ -4594,7 +4595,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &7430606427462379186
+--- !u!114 &1978810177
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4603,10 +4604,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7962069328842269016}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 5772934581536978777}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &8407245839242982659
 GameObject:
   m_ObjectHideFlags: 0
@@ -4624,7 +4625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6048914453038697250
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4759,7 +4760,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3934675789227229890
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4942,7 +4943,7 @@ GameObject:
   - component: {fileID: 9177407350553699239}
   - component: {fileID: 9177407350553699238}
   - component: {fileID: 9177407350553699257}
-  - component: {fileID: 9177407350553699256}
+  - component: {fileID: 1390443461}
   m_Layer: 5
   m_Name: House_6
   m_TagString: Untagged
@@ -5065,7 +5066,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9177407350553699256
+--- !u!114 &1390443461
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5074,10 +5075,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9177407350553699258}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 9177407352535545673}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &9177407351079127038
 GameObject:
   m_ObjectHideFlags: 0
@@ -5095,7 +5096,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9177407351079127039
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5360,7 +5361,7 @@ GameObject:
   - component: {fileID: 9177407351457793626}
   - component: {fileID: 9177407351457793629}
   - component: {fileID: 9177407351457793628}
-  - component: {fileID: 9177407351457793631}
+  - component: {fileID: 2101896168}
   m_Layer: 5
   m_Name: House_7
   m_TagString: Untagged
@@ -5483,7 +5484,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9177407351457793631
+--- !u!114 &2101896168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5492,10 +5493,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9177407351457793617}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 9177407351926664772}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &9177407351792147359
 GameObject:
   m_ObjectHideFlags: 0
@@ -5696,7 +5697,7 @@ MonoBehaviour:
   minimumDelay: 2
   maximumDelay: 7
   maximumCountCallsOnMap: 3
-  isPause: 0
+  currentStatus: 0
 --- !u!1 &9177407351926664774
 GameObject:
   m_ObjectHideFlags: 0
@@ -5714,7 +5715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9177407351926664775
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5844,7 +5845,7 @@ GameObject:
   - component: {fileID: 9177407351937491437}
   - component: {fileID: 9177407351937491436}
   - component: {fileID: 9177407351937491439}
-  - component: {fileID: 9177407351937491438}
+  - component: {fileID: 795156146}
   m_Layer: 5
   m_Name: House_2
   m_TagString: Untagged
@@ -5967,7 +5968,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9177407351937491438
+--- !u!114 &795156146
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5976,10 +5977,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9177407351937491424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 9177407351079127036}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &9177407352039039042
 GameObject:
   m_ObjectHideFlags: 0
@@ -5992,7 +5993,7 @@ GameObject:
   - component: {fileID: 9177407352039039055}
   - component: {fileID: 9177407352039039054}
   - component: {fileID: 9177407352039039041}
-  - component: {fileID: 9177407352039039040}
+  - component: {fileID: 1246788698}
   m_Layer: 5
   m_Name: House_1
   m_TagString: Untagged
@@ -6115,7 +6116,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &9177407352039039040
+--- !u!114 &1246788698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6124,10 +6125,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 9177407352039039042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbb8bd28521bad24ab17aa02fd9acdfa, type: 3}
+  m_Script: {fileID: 11500000, guid: ee12e090410769043ad656396bc8d735, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timerText: {fileID: 9177407352573489942}
+  demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
 --- !u!1 &9177407352535545675
 GameObject:
   m_ObjectHideFlags: 0
@@ -6145,7 +6146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9177407352535545672
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6387,7 +6388,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 9177407351804303366}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
-        m_MethodName: ComeBackToPlayerRoom
+        m_MethodName: ComebackToPlayerRoom
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6414,7 +6415,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9177407352573490025
 RectTransform:
   m_ObjectHideFlags: 0
