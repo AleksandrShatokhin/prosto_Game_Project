@@ -64,8 +64,9 @@ public class DemonRoom : MonoBehaviour, IStartable
     public void ClickComeBack()
     {
         cityMap.SetActive(true);
+        cityMap.GetComponent<CityMapManager>().ComebackToPlayerRoom();
+        GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_On();
         Destroy(this.gameObject);
-        cityMap.GetComponent<CityMap>().SetMapStatus_Running();
     }
 
     public void ClickNewspaper(GameObject windowNewspaper)

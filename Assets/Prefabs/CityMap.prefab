@@ -647,7 +647,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 342275504}
         m_TargetAssemblyTypeName: MessageWindow, Assembly-CSharp
-        m_MethodName: ClickComeBack
+        m_MethodName: ClickCancel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1458,7 +1458,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -1483,6 +1483,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &1290329428768505323
 GameObject:
   m_ObjectHideFlags: 0
@@ -1606,7 +1608,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -1631,6 +1633,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &1571821703563324085
 GameObject:
   m_ObjectHideFlags: 0
@@ -1754,7 +1758,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -1779,6 +1783,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &1728212628910634599
 GameObject:
   m_ObjectHideFlags: 0
@@ -1902,7 +1908,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -1927,6 +1933,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &1967268234670328275
 GameObject:
   m_ObjectHideFlags: 0
@@ -2187,10 +2195,10 @@ MonoBehaviour:
       - m_Target: {fileID: 342275504}
         m_TargetAssemblyTypeName: MessageWindow, Assembly-CSharp
         m_MethodName: ClickAccept
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -2724,7 +2732,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -2749,6 +2757,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &4024436521391768429
 GameObject:
   m_ObjectHideFlags: 0
@@ -3007,7 +3017,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -3032,6 +3042,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &5417893725958809576
 GameObject:
   m_ObjectHideFlags: 0
@@ -3155,7 +3167,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -3180,6 +3192,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &5605568095881004128
 GameObject:
   m_ObjectHideFlags: 0
@@ -3573,7 +3587,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -3598,6 +3612,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &6383926392538633219
 GameObject:
   m_ObjectHideFlags: 0
@@ -3856,7 +3872,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -3881,6 +3897,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &6753212769398372120
 GameObject:
   m_ObjectHideFlags: 0
@@ -4004,7 +4022,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -4029,6 +4047,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &6860158770761231810
 GameObject:
   m_ObjectHideFlags: 0
@@ -4287,7 +4307,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -4312,6 +4332,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &7432647100774221191
 GameObject:
   m_ObjectHideFlags: 0
@@ -4435,7 +4457,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -4460,6 +4482,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &7962069328842269016
 GameObject:
   m_ObjectHideFlags: 0
@@ -4583,7 +4607,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -4608,6 +4632,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &8407245839242982659
 GameObject:
   m_ObjectHideFlags: 0
@@ -5054,7 +5080,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -5079,6 +5105,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &9177407351079127038
 GameObject:
   m_ObjectHideFlags: 0
@@ -5472,7 +5500,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -5497,6 +5525,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &9177407351792147359
 GameObject:
   m_ObjectHideFlags: 0
@@ -5585,7 +5615,7 @@ GameObject:
   - component: {fileID: 9177407351804303365}
   - component: {fileID: 9177407351804303364}
   - component: {fileID: 9177407351804303367}
-  - component: {fileID: 9177407351804303366}
+  - component: {fileID: 1795648204}
   m_Layer: 5
   m_Name: CityMap
   m_TagString: DeliteObject
@@ -5678,7 +5708,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &9177407351804303366
+--- !u!114 &1795648204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5687,17 +5717,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 9177407351804303385}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 531a841cd2be9fc488c8735485e891fd, type: 3}
+  m_Script: {fileID: 11500000, guid: d9734ad6c3e075346ba89969e5f00f0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerRoom: {fileID: 0}
-  messageWindow: {fileID: 342275500}
   houses: {fileID: 9158063475009907995}
-  maximumTimeForLiveHouseOnMap: 5
-  minimumDelay: 2
-  maximumDelay: 7
-  maximumCountCallsOnMap: 3
-  currentStatus: 0
 --- !u!1 &9177407351926664774
 GameObject:
   m_ObjectHideFlags: 0
@@ -5956,7 +5980,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
         m_MethodName: ClickOnCall
         m_Mode: 1
@@ -5981,6 +6005,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &9177407352039039042
 GameObject:
   m_ObjectHideFlags: 0
@@ -6103,19 +6129,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9177407352039039054}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
-        m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
-        m_MethodName: ClickOnCall
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1246788698
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6129,6 +6143,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonSO: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
+  messageWindow: {fileID: 342275500}
+  cityMap: {fileID: 9177407351804303385}
 --- !u!1 &9177407352535545675
 GameObject:
   m_ObjectHideFlags: 0
@@ -6386,8 +6402,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 9177407351804303366}
-        m_TargetAssemblyTypeName: CityMap, Assembly-CSharp
+      - m_Target: {fileID: 1795648204}
+        m_TargetAssemblyTypeName: CityMapManager, Assembly-CSharp
         m_MethodName: ComebackToPlayerRoom
         m_Mode: 1
         m_Arguments:

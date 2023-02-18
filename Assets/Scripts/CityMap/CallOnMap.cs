@@ -7,6 +7,7 @@ public class CallOnMap : MonoBehaviour
 {
     private Button buttonToNextRoom;
     [SerializeField] DemonSO demonSO;
+    [SerializeField] GameObject messageWindow, cityMap;
 
     private void Start()
     {
@@ -14,13 +15,31 @@ public class CallOnMap : MonoBehaviour
         buttonToNextRoom.onClick.AddListener(OpenMessageWindow);
     }
 
-    private void OpenMessageWindow()
+    public void OpenMessageWindow()
     {
-        CityMap cityMap = this.transform.GetComponentInParent<CityMap>();
-        GameObject messageWindow = cityMap.GetMessageWindow();
+        if (messageWindow.GetComponent<MessageWindow>().GetCurrentStatus() == CallStatus.Accepted)
+        {
+            GoToTheDemonRoom();
+        }
+        else
+        {
+            messageWindow.SetActive(true);
+            messageWindow.GetComponent<IStartable>().OnStart(this.demonSO, this.gameObject);
+        }
+    }
 
-        cityMap.SetMapStatus_Stopped();
-        messageWindow.SetActive(true);
-        messageWindow.GetComponent<IStartable>().OnStart(this.demonSO, this.gameObject);
+    public void GoToTheDemonRoom()
+    {
+        GameController.GetInstance().GetCallCounter().AddToCounter();
+        DemonRoomCreator creator = new DemonRoomCreator(demonSO, cityMap);
+        creator.CreateRoom();
+        ResetVariables();
+    }
+
+    private void ResetVariables()
+    {
+        messageWindow.GetComponent<MessageWindow>().SetCurrentStatus(CallStatus.Cancelled);
+        this.gameObject.SetActive(false);
+        cityMap.SetActive(false);
     }
 }
