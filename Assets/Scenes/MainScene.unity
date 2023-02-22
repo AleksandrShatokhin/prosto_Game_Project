@@ -327,6 +327,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DemonRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 6986492929824674334, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 26a395a795c5e3f469fad4323bcdee36, type: 3}
 --- !u!1 &115837317 stripped
@@ -499,7 +503,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.7
+  m_fontSize: 35.95
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -702,7 +706,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.6
+  m_fontSize: 22.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -922,7 +926,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.120329015, y: 0}
   m_AnchorMax: {x: 0.19746321, y: 0.96651596}
-  m_AnchoredPosition: {x: -0.39752197, y: 0.45880127}
+  m_AnchoredPosition: {x: -0.39746094, y: 0.45880127}
   m_SizeDelta: {x: -0.14129639, y: 7.5284004}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &466548769
@@ -1119,7 +1123,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.33232895, y: 0}
   m_AnchorMax: {x: 0.3587316, y: 1}
-  m_AnchoredPosition: {x: -0.1521759, y: 0.0001296997}
+  m_AnchoredPosition: {x: -0.15216064, y: 0.0001296997}
   m_SizeDelta: {x: 0, y: -0.13500023}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502015048
@@ -1487,7 +1491,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19486581, y: 0}
   m_AnchorMax: {x: 0.26013422, y: 0.96651596}
-  m_AnchoredPosition: {x: -0.3998413, y: 0.49990082}
+  m_AnchoredPosition: {x: -0.39990234, y: 0.49990082}
   m_SizeDelta: {x: 0.10240173, y: -0.20979977}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &812835858
@@ -1537,7 +1541,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.6
+  m_fontSize: 25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1806,7 +1810,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.1262684, y: 0}
   m_AnchorMax: {x: 0.194, y: 0.96651596}
-  m_AnchoredPosition: {x: -0.199646, y: 0.49990082}
+  m_AnchoredPosition: {x: -0.19970703, y: 0.49990082}
   m_SizeDelta: {x: 0.10240173, y: -0.2098}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1280117859
@@ -1913,14 +1917,82 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 151406057, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 172909519, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 230478163, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 255858721, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 342275504, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: playerRoom
       value: 
       objectReference: {fileID: 115837317}
+    - target: {fileID: 460399669, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 795156146, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 1004528335, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 1246788698, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 1326655558, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 1390443461, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 1431528725, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 1432469731, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 1678670867, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 1795648204, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: playerRoom
       value: 
       objectReference: {fileID: 115837317}
+    - target: {fileID: 1814072578, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 1978810177, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 2101896168, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 2138191620, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: demonSO
+      value: 
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 2283697230064242467, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -2012,6 +2084,10 @@ PrefabInstance:
     - target: {fileID: 9177407351804303385, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: m_Name
       value: CityMap
+      objectReference: {fileID: 0}
+    - target: {fileID: 9177407351804303385, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
@@ -2833,6 +2909,10 @@ PrefabInstance:
     - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_Name
       value: CharacterRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7435074125991213307, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: playerInventory

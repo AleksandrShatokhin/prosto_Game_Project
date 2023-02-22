@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class DemonRoom : MonoBehaviour, IStartable
 {
-    [SerializeField] private GameObject cityMap;
+    private GameObject cityMap;
     [SerializeField] private GameObject puzzleWindow;
     [SerializeField] private DemonSO currentDemonSO;
     [SerializeField] private SpriteRenderer demonSpriteRenderer;
