@@ -31,7 +31,7 @@ public class MessageWindow : MonoBehaviour, IStartable
         textButtonAccept.text = textAccept;
         textButtonCameback.text = textCancel;
 
-        textMessage.text = this.demonSO.message;
+        textMessage.text = this.demonSO.message.ToString();
         citizenImage.sprite = this.demonSO.citizenSprite;
     }
 

@@ -11,7 +11,7 @@ public class DemonSO : ScriptableObject
     public List<Items> neededItems;
 
     // Список возможных сообщений к конкретному демону от горожан
-    public string message;
+    public TextAsset message;
 
     // Варианты спрайтов горожан
     public Sprite citizenSprite;

@@ -15,6 +15,11 @@ public class CellNanograms : MonoBehaviour
         cellButton.onClick.AddListener(ClickCell);
 
         SetState_Closed();
+
+        if (status == CellStatus.Correct)
+        {
+            SetState_Open();
+        }
     }
 
     private void ClickCell()

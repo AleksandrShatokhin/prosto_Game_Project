@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   demonSprite: {fileID: 21300000, guid: 205b626f2bc09b0449143bcb5e86447f, type: 3}
   neededItems: 0100000002000000
-  message: "\u0417\u0434\u0440\u0430\u0432\u0441\u0442\u0432\u0443\u0439\u0442\u0435"
+  message: {fileID: 4900000, guid: 51e879216d27f9d489c769a77031b6f4, type: 3}
   citizenSprite: {fileID: 21300000, guid: f7822f6053805aa4a93c055d11014771, type: 3}
   demonRoomPrefab: {fileID: 4760064138631998790, guid: 3953f642612550148bda4c2d0dec055a, type: 3}

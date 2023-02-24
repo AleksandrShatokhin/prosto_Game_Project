@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 public class NanogramsMain : MonoBehaviour
 {
-    [SerializeField] GameObject demonRoom;
-    [SerializeField] Button buttonCheck, buttonReset;
-    [SerializeField] GameObject gameGrid;
+    [SerializeField] private GameObject demonRoom;
+    [SerializeField] private Button buttonCheck, buttonReset;
+    [SerializeField] private GameObject gameGrid;
+    [SerializeField] private int countToWin;
 
     private void Start()
     {
@@ -33,7 +34,7 @@ public class NanogramsMain : MonoBehaviour
             }
         }
 
-        bool isWin = (correctCells == 27 && incorrectCells == 0) ? true : false;
+        bool isWin = (correctCells == countToWin && incorrectCells == 0) ? true : false;
 
         if (isWin == true)
         {
