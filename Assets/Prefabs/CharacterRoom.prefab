@@ -956,7 +956,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4342230212861558765}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: QuestController, Assembly-CSharp
         m_MethodName: OnCheckItemsButtonClicked
         m_Mode: 1
@@ -1140,7 +1140,7 @@ RectTransform:
   - {fileID: 412854682}
   - {fileID: 551069391}
   m_Father: {fileID: 2131405559661061199}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1660,7 +1660,7 @@ RectTransform:
   m_Children:
   - {fileID: 6552209264094471041}
   m_Father: {fileID: 2131405559661061199}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2013,53 +2013,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!1 &6480886639086736377
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1341793650857190611}
-  - component: {fileID: 4342230212861558765}
-  m_Layer: 0
-  m_Name: QuestController
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1341793650857190611
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6480886639086736377}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 612.9851, y: 256.02054, z: 2.7283692}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2131405559661061199}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4342230212861558765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6480886639086736377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26cf362629d0b3a48ba148a55857f318, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentDemon: {fileID: 11400000, guid: 997dc7c6d9c00144f8230ec79833a0b5, type: 2}
-  playerInventory: {fileID: 0}
-  informationWindowPrefab: {fileID: 633329307799652759, guid: 668d5a53347a5c14c93303a3853f9864, type: 3}
 --- !u!1 &6713193322417485373
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,7 +2335,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1341793650857190611}
   - {fileID: 8082114180114808981}
   - {fileID: 5738669536717222910}
   - {fileID: 7039018118721780273}
@@ -2910,7 +2862,7 @@ RectTransform:
   m_Children:
   - {fileID: 80284017022759311}
   m_Father: {fileID: 2131405559661061199}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
