@@ -15,6 +15,7 @@ public class DemonRoom : MonoBehaviour, IStartable
     [SerializeField] private Image symbol;
     [SerializeField] private Image newspaper;
 
+
     private NewspaperSO newspaperSO;
     private int puzzleNumber;
 
@@ -28,7 +29,7 @@ public class DemonRoom : MonoBehaviour, IStartable
         demonRoomUi.SetActive(true);
         demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
 
-        puzzleNumber = Random.Range(0, puzzleWindow.transform.childCount);
+        puzzleWindow.GetComponentInChildren<IPuzzle>().OnPuzzleStart();
     }
 
     private void CreateNewspaperInRoom()
@@ -61,8 +62,8 @@ public class DemonRoom : MonoBehaviour, IStartable
 
     public void OnStartPuzzleButtonClicked()
     {
-        //puzzleWindow.gameObject.SetActive(true);
-        puzzleWindow.transform.GetChild(puzzleNumber).gameObject.SetActive(true);
+        puzzleWindow.gameObject.SetActive(true);
+        //puzzleWindow.transform.GetChild(puzzleNumber).gameObject.SetActive(true);
         demonRoomUi.gameObject.SetActive(false);
     }
 

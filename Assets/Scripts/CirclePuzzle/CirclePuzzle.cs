@@ -22,16 +22,19 @@ public class CirclePuzzle : MonoBehaviour
     [SerializeField] GameObject hintTextObject;
     public DemonRoom demonRoom;
     public GameObject puzzleWindow;
-
+    private LineRenderer lineRenderer;
     private string playerAnswer = null;
     private int currentLetterNumber = 0;
     private int openedLetter = 100;
+    private int numberOfLinePositions = 0;
 
     //Testing
     private List<GameObject> createdCircleLetters = new List<GameObject>();
 
     private void Awake()
     {
+        lineRenderer = GetComponent<LineRenderer>();
+        lineRenderer.positionCount = 0;
         CreateCirleOfLetters();
         CreateChosenLettersSlots();
     }
@@ -89,7 +92,7 @@ public class CirclePuzzle : MonoBehaviour
     private void ResetPuzzle()
     {
         playerAnswer = null;
-        mouseHandler.ResetLine();
+        ResetLine();
         currentLetterNumber = 0;
 
         foreach (var item in createdCircleLetters)
@@ -131,7 +134,7 @@ public class CirclePuzzle : MonoBehaviour
             Destroy(item);
         }
 
-        mouseHandler.ResetLine();
+        ResetLine();
     }
 
     private void OnDrawGizmosSelected()
@@ -174,5 +177,19 @@ public class CirclePuzzle : MonoBehaviour
         {
             OpenTextHint();
         }
+    }
+
+
+    public void ConnectNewLetter(Transform letterTransform)
+    {
+        lineRenderer.positionCount++;
+        lineRenderer.SetPosition(numberOfLinePositions, letterTransform.transform.position);
+        numberOfLinePositions++;
+    }
+
+    public void ResetLine()
+    {
+        lineRenderer.positionCount = 0;
+        numberOfLinePositions = 0;
     }
 }

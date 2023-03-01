@@ -38,15 +38,15 @@ public class NanogramsMain : MonoBehaviour
 
         if (isWin == true)
         {
-            Debug.Log("Успех!");
+            Debug.Log("пїЅпїЅпїЅпїЅпїЅ!");
             demonRoom.GetComponent<DemonRoom>().ClickComeBack();
         }
         else
         {
-            Debug.Log("Неудача!");
+            Debug.Log("пїЅпїЅпїЅпїЅпїЅпїЅпїЅ!");
         }
 
-        Debug.Log("Правильных ячеек: " + correctCells + " / Неправельных ячеек: " + incorrectCells);
+        Debug.Log("пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " + correctCells + " / пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ: " + incorrectCells);
     }
 
     private void ClickReset()

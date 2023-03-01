@@ -1706,6 +1706,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 921898347, guid: 3953f642612550148bda4c2d0dec055a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4760064138631998790, guid: 3953f642612550148bda4c2d0dec055a, type: 3}
       propertyPath: m_Name
       value: DemonRoom_2

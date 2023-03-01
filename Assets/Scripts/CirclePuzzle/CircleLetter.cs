@@ -10,6 +10,7 @@ public class CircleLetter : MonoBehaviour, IClickable
 
     public void OnClick()
     {
+        circlePuzzle.ConnectNewLetter(this.transform);
         GetComponent<TMP_Text>().color = Color.red;
         circlePuzzle.AddLetterToAnswer(letter);
     }
