@@ -706,7 +706,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.6
+  m_fontSize: 22.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1541,7 +1541,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25.6
+  m_fontSize: 25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1985,19 +1985,19 @@ PrefabInstance:
     - target: {fileID: 151406057, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 172909519, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 230478163, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 255858721, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 342275500, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -2017,7 +2017,11 @@ PrefabInstance:
     - target: {fileID: 1004528335, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 1089062346, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 1089062346, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: m_fontSize
       value: 34.55
@@ -2037,7 +2041,7 @@ PrefabInstance:
     - target: {fileID: 1326655558, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 1390443461, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
@@ -2053,7 +2057,7 @@ PrefabInstance:
     - target: {fileID: 1678670867, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 1795648204, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: playerRoom
       value: 
@@ -2062,10 +2066,22 @@ PrefabInstance:
       propertyPath: demonSO
       value: 
       objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+    - target: {fileID: 1856393479, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856393479, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1856393480, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1978810177, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
     - target: {fileID: 2101896168, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
@@ -2073,11 +2089,23 @@ PrefabInstance:
     - target: {fileID: 2138191620, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 3ea2f9604385b9b41b8c518ff0544423, type: 2}
+      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+    - target: {fileID: 836015132268307922, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -14
+      objectReference: {fileID: 0}
+    - target: {fileID: 836015132268307922, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2283697230064242467, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 551069390}
+    - target: {fileID: 3750615982476813499, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9177407351804303362, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: m_Pivot.x
       value: 0

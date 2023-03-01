@@ -15,9 +15,7 @@ public class DemonRoom : MonoBehaviour, IStartable
     [SerializeField] private Image symbol;
     [SerializeField] private Image newspaper;
 
-
     private NewspaperSO newspaperSO;
-    private int puzzleNumber;
 
     void IStartable.OnStart(DemonSO demonSO, GameObject cityMap)
     {
@@ -63,7 +61,6 @@ public class DemonRoom : MonoBehaviour, IStartable
     public void OnStartPuzzleButtonClicked()
     {
         puzzleWindow.gameObject.SetActive(true);
-        //puzzleWindow.transform.GetChild(puzzleNumber).gameObject.SetActive(true);
         demonRoomUi.gameObject.SetActive(false);
     }
 

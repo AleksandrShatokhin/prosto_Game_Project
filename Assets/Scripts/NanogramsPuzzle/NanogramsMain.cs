@@ -38,15 +38,15 @@ public class NanogramsMain : MonoBehaviour
 
         if (isWin == true)
         {
-            Debug.Log("�����!");
+            Debug.Log("Success!");
             demonRoom.GetComponent<DemonRoom>().ClickComeBack();
         }
         else
         {
-            Debug.Log("�������!");
+            Debug.Log("Failure!");
         }
 
-        Debug.Log("���������� �����: " + correctCells + " / ������������ �����: " + incorrectCells);
+        Debug.Log("Corrent cells: " + correctCells + " / Incorrect cells: " + incorrectCells);
     }
 
     private void ClickReset()
