@@ -18,6 +18,7 @@ public class MouseHandler : MonoBehaviour
             if (hit.collider != null)
             {
                 hit.collider.gameObject?.GetComponent<IClickable>().OnClick();
+                Debug.Log(hit.transform.gameObject.name);
             }
         }
     }
