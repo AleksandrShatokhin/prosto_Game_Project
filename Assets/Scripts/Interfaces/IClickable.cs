@@ -1,3 +1,4 @@
+
 interface IClickable
 {
     void OnClick();

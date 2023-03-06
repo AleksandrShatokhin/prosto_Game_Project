@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PhoneInPlayerRoom : MonoBehaviour
+public class PhoneInPlayerRoom : MonoBehaviour, IClickable
 {
     [SerializeField] GameObject playerRoom, cityMap, houses;
 
@@ -12,7 +12,12 @@ public class PhoneInPlayerRoom : MonoBehaviour
     {
         this.numberHouse = numberHouse;
 
-        this.gameObject.GetComponent<UnityEngine.UI.Image>().color = Color.green;
+        this.gameObject.GetComponent<SpriteRenderer>().color = Color.green;
+    }
+
+    public void OnClick()
+    {
+        OpenMessageWimdow();
     }
 
     public void OpenMessageWimdow()

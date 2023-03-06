@@ -14,7 +14,7 @@ public class CallCreator : MonoBehaviour
 
     private void Start()
     {
-        defaultColor = phone.GetComponent<Image>().color;
+        defaultColor = phone.GetComponent<SpriteRenderer>().color;
         currentStatus = MapStatus.Running;
         StartCoroutine(CreateCall());
     }
@@ -40,7 +40,7 @@ public class CallCreator : MonoBehaviour
     {
         phone.SetActive(true);
         currentStatus = MapStatus.Running;
-        phone.GetComponent<Image>().color = defaultColor;
+        phone.GetComponent<SpriteRenderer>().color = defaultColor;
     }
 
     public bool IsCallCreated()
