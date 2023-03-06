@@ -3,26 +3,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PickableItem : MonoBehaviour
+public abstract class PickableItem : MonoBehaviour, IClickable
 {
-    [SerializeField] private Items itemType;
     [SerializeField] private PlayerInventory playerInventory;
-    private bool wasItemPicked = false;
-    [SerializeField] private TMP_Text buttonText;
-
-    public void OnAddItemButtonClicked()
+    public void OnClick()
     {
-        if (!playerInventory.TakenItems.Contains(itemType))
-        {
-            if (playerInventory.AddItemToInventory(itemType))
-            {
-                buttonText.text = "Put " + itemType.ToString() + " back";
-            }
-        }
-        else
-        {
-            playerInventory.RemoveItemFromInventory(itemType);
-            buttonText.text = "Take " + itemType.ToString();
-        }
+        playerInventory.AddItemToInventory(this);
     }
+
+    public void OnItemRemove()
+    {
+        playerInventory.RemoveItemFromInventory(this);
+    }
+
+    public abstract void OnItemCombineAttempt();
 }
