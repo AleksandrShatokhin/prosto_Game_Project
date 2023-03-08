@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+//
+
 public class InventoryItemSlot : MonoBehaviour, IClickable
 {
     [SerializeField] private Image itemIcon;

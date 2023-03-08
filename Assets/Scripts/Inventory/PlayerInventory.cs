@@ -9,7 +9,11 @@ public class PlayerInventory : MonoBehaviour
     private List<PickableItem> takenItems = new List<PickableItem>();
     [SerializeField] private int maxNumberOfItemsInInventory = 5;
     [SerializeField] GameObject infoWindow;
-    [SerializeField] InventoryItemSlot[] itemSlots;
+    private InventoryItemSlot[] itemSlots;
+
+    private void Awake() {
+        itemSlots = GetComponentsInChildren<InventoryItemSlot>();
+    }
 
     public bool AddItemToInventory(PickableItem itemToAdd)
     {
