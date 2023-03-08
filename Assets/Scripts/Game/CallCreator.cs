@@ -7,14 +7,11 @@ public class CallCreator : MonoBehaviour
 {
     [SerializeField] GameObject phone, cityMap, houses;
 
-    private Color defaultColor;
-
     [SerializeField] private int minimumDelay, maximumDelay;
     [SerializeField] private MapStatus currentStatus;
 
     private void Start()
     {
-        defaultColor = phone.GetComponent<SpriteRenderer>().color;
         currentStatus = MapStatus.Running;
         StartCoroutine(CreateCall());
     }
@@ -30,22 +27,32 @@ public class CallCreator : MonoBehaviour
 
             if (currentStatus == MapStatus.Running)
             {
-                currentStatus = MapStatus.Stopped;
-                phone.GetComponent<PhoneInPlayerRoom>().CallCame(numberHouse);
+                GenerateCall_Complete(numberHouse);
             }
         }
     }
 
+    private void GenerateCall_Complete(int numberHouse)
+    {
+        currentStatus = MapStatus.Stopped;
+        phone.GetComponent<PhoneInPlayerRoom>().CallCame(numberHouse);
+    }
+
+    public void GenerateCall_Off()
+    {
+        currentStatus = MapStatus.Stopped;
+        phone.GetComponent<PhoneInPlayerRoom>().CallCancel();
+    }
+
     public void GenerateCall_On()
     {
-        phone.SetActive(true);
         currentStatus = MapStatus.Running;
-        phone.GetComponent<SpriteRenderer>().color = defaultColor;
+        phone.GetComponent<PhoneInPlayerRoom>().CallStatus_NotAccept();
     }
 
     public bool IsCallCreated()
     {
-        bool callCreater = (currentStatus == MapStatus.Running) ? true : false;
-        return callCreater;
+        bool isCallCreated = (currentStatus == MapStatus.Running) ? true : false;
+        return isCallCreated;
     }
 }

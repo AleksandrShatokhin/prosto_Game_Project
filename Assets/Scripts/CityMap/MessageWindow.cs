@@ -35,10 +35,10 @@ public class MessageWindow : MonoBehaviour, IStartable
         citizenImage.sprite = this.demonSO.citizenSprite;
     }
 
-    public void ClickAccept(GameObject phone)
+    public void ClickAccept()
     {
         SetCurrentStatus(CallStatus.Accepted);
-        phone.SetActive(false);
+        GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_Off();
         cityMapWindow.SetActive(false);
         GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject);
     }
