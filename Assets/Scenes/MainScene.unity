@@ -1350,7 +1350,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &727277867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1365,7 +1365,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxNumberOfItemsInInventory: 2
   infoWindow: {fileID: 633329307799652759, guid: 668d5a53347a5c14c93303a3853f9864, type: 3}
-  itemSlots: []
 --- !u!224 &727277868
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3402,7 +3401,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 7435074125991213307, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+    - {fileID: 7533137755228936851, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+    - {fileID: 477920878366097154, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
 --- !u!1 &2050914695
 GameObject:

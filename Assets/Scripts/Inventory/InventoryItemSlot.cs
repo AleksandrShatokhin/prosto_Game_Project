@@ -8,6 +8,9 @@ using UnityEngine.UI;
 
 public class InventoryItemSlot : MonoBehaviour, IClickable
 {
+    private bool isItemSelected;
+    private Color defaultColor;
+
     [SerializeField] private Image itemIcon;
     private PickableItem itemInSlot = null;
     public PickableItem ItemInSlot
@@ -32,11 +35,33 @@ public class InventoryItemSlot : MonoBehaviour, IClickable
         }
     }
 
-    public void OnClick()
+    private void Start()
     {
-        if (ItemInSlot != null)
-            ItemInSlot.OnItemRemove();
+        isItemSelected = false;
+        defaultColor = this.gameObject.GetComponent<UnityEngine.UI.Image>().color;
     }
 
+    public void OnClick()
+    {
+        //if (ItemInSlot != null)
+        //{
+        //    ItemInSlot.OnItemRemove();
+        //}
 
+        if (ItemInSlot == null)
+        {
+            return;
+        }
+
+        if (isItemSelected == false)
+        {
+            isItemSelected = true;
+            this.gameObject.GetComponent<Image>().color = Color.cyan;
+        }
+        else
+        {
+            isItemSelected = false;
+            this.gameObject.GetComponent<Image>().color = defaultColor;
+        }
+    }
 }
