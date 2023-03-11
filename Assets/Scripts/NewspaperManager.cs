@@ -5,14 +5,14 @@ using UnityEngine;
 
 public class NewspaperManager : MonoBehaviour
 {
-    [SerializeField] private TextMeshProUGUI textNewspaper;
+    [SerializeField] TextMeshProUGUI textNewspaper;
 
-    public void SetTextNewspaper(string text)
+    public void OnStart(NewspaperSO newspaperSO)
     {
-        textNewspaper.text = text;
+        textNewspaper.text = newspaperSO.Text.ToString();
     }
 
-    public void CloseWindowNewspaper()
+    public void CloseNewspaper()
     {
         this.gameObject.SetActive(false);
     }

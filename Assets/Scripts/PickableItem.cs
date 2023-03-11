@@ -10,7 +10,7 @@ public abstract class PickableItem : MonoBehaviour, IClickable
 {
     
     [SerializeField] private PlayerInventory playerInventory;
-    public void OnClick()
+    public virtual void OnClick()
     {
         playerInventory.AddItemToInventory(this);
     }

@@ -22,40 +22,10 @@ public class DemonRoom : MonoBehaviour, IStartable
         this.currentDemonSO = demonSO;
         this.cityMap = cityMap;
 
-        CreateNewspaperInRoom();
-        CreateSymbolInRoom();
         demonRoomUi.SetActive(true);
         demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
 
         puzzleWindow.GetComponentInChildren<IPuzzle>().OnPuzzleStart();
-    }
-
-    private void CreateNewspaperInRoom()
-    {
-        newspaperSO = GameController.GetInstance().GetCallCounter().GetNewspaper();
-
-        if (newspaperSO == null)
-        {
-            newspaper.gameObject.SetActive(false);
-        }
-        else
-        {
-            newspaper.gameObject.SetActive(true);
-        }
-    }
-
-    private void CreateSymbolInRoom()
-    {
-        symbol.sprite = GameController.GetInstance().GetCallCounter().GetSymbolSprite();
-
-        if (symbol.sprite == null)
-        {
-            symbol.gameObject.SetActive(false);
-        }
-        else
-        {
-            symbol.gameObject.SetActive(true);
-        }
     }
 
     public void OnStartPuzzleButtonClicked()
@@ -70,13 +40,6 @@ public class DemonRoom : MonoBehaviour, IStartable
         cityMap.GetComponent<CityMapManager>().ComebackToPlayerRoom();
         GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_On();
         Destroy(this.gameObject);
-    }
-
-    public void ClickNewspaper(GameObject windowNewspaper)
-    {
-        windowNewspaper.SetActive(true);
-        string note = newspaperSO.Text.ToString();
-        windowNewspaper.GetComponent<NewspaperManager>().SetTextNewspaper(note);
     }
 
     public DemonSO GetCurrentDemonSO => currentDemonSO;

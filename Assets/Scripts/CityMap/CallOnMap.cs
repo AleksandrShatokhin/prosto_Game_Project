@@ -30,7 +30,6 @@ public class CallOnMap : MonoBehaviour
 
     public void GoToTheDemonRoom()
     {
-        GameController.GetInstance().GetCallCounter().AddToCounter();
         DemonRoomCreator creator = new DemonRoomCreator(demonSO, cityMap);
         creator.CreateRoom();
         ResetVariables();
