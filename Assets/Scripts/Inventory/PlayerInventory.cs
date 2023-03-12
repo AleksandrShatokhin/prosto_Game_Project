@@ -57,5 +57,17 @@ public class PlayerInventory : MonoBehaviour
             }
         }
     }
+
+    public void CheckIsSelectedItemInInventory()
+    {
+        foreach (InventoryItemSlot slot in itemSlots)
+        {
+            if (slot.IsItemSelected == true)
+            {
+                slot.DeselectItem();
+                return;
+            }
+        }
+    }
 }
 

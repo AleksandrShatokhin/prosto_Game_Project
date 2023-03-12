@@ -65,6 +65,7 @@ public class InventoryItemSlot : MonoBehaviour, IClickable
 
     private void SelectItem()
     {
+        this.GetComponentInParent<PlayerInventory>().CheckIsSelectedItemInInventory();
         IsItemSelected = true;
         this.gameObject.GetComponent<Image>().color = Color.cyan;
     }
