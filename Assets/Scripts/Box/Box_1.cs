@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class Box_1 : BoxManager
 {
     [SerializeField] PlayerInventory inventory;
-    [SerializeField] private CircleForBox circleForBox;
+    [SerializeField] private SliderItemClickable sliderItemPickable;
 
     [SerializeField] Button buttonLeft, buttonRight, buttonOpenBox;
     [SerializeField] Slider slider;
@@ -94,7 +94,7 @@ public class Box_1 : BoxManager
         {
             if (slot.IsItemSelected == true)
             {
-                if (slot.ItemInSlot == circleForBox)
+                if (slot.ItemInSlot == sliderItemPickable)
                 {
                     image.sprite = slot.ItemInSlot.GetComponent<SpriteRenderer>().sprite;
                     inventory.RemoveItemFromInventory(slot.ItemInSlot);
