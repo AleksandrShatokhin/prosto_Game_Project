@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class ButtonOnPanel : MonoBehaviour
 {
-    [SerializeField] private int valueButton;
+    [SerializeField] private ButtonColor valueButtonColor;
     [SerializeField] private PickableItem item;
 
     public void SetItem(PickableItem item) => this.item = item;
@@ -21,9 +21,9 @@ public class ButtonOnPanel : MonoBehaviour
         if (this.GetComponent<Image>().sprite != item.GetComponent<SpriteRenderer>().sprite)
         {
             this.GetComponent<Image>().sprite = item.GetComponent<SpriteRenderer>().sprite;
-            valueButton = item.GetComponent<ButtonWithNumber>().GetValue();
+            valueButtonColor = item.GetComponent<ButtonWithNumber>().GetButtonColor();
         }
 
-        GetComponentInParent<BoxManager>().CounterSumOfClick(valueButton);
+        GetComponentInParent<BoxManager>().SetClickOnButton(valueButtonColor);
     }
 }

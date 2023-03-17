@@ -11686,7 +11686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
-  value: 1
+  buttonColor: 0
 --- !u!1 &642708411
 GameObject:
   m_ObjectHideFlags: 0
@@ -19913,7 +19913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
-  value: -3
+  buttonColor: 2
 --- !u!1 &1005060750
 GameObject:
   m_ObjectHideFlags: 0
@@ -24577,7 +24577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
-  value: 8
+  buttonColor: 1
 --- !u!1 &1290545169
 GameObject:
   m_ObjectHideFlags: 0
@@ -72055,7 +72055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc35bde243a7b4a408f064c97a1417db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valueButton: 0
+  valueButtonColor: 0
   item: {fileID: 0}
 --- !u!1 &3120309761933399169
 GameObject:
@@ -72364,7 +72364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc35bde243a7b4a408f064c97a1417db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valueButton: 0
+  valueButtonColor: 0
   item: {fileID: 0}
 --- !u!1 &3164523958897753961
 GameObject:
@@ -84130,6 +84130,8 @@ MonoBehaviour:
   button_N1: {fileID: 7481924169433659974}
   button_N2: {fileID: 6307181173662731348}
   button_N3: {fileID: 3359554948956214214}
+  correctColors: 000000000200000001000000
+  buttonColors: 
 --- !u!1 &4338331434803571220
 GameObject:
   m_ObjectHideFlags: 0
@@ -101478,7 +101480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc35bde243a7b4a408f064c97a1417db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  valueButton: 0
+  valueButtonColor: 0
   item: {fileID: 0}
 --- !u!1 &6233033293352524223
 GameObject:
@@ -119299,8 +119301,8 @@ MonoBehaviour:
   m_HandleRect: {fileID: 6439795426405868360}
   m_Direction: 0
   m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MaxValue: 2
+  m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
     m_PersistentCalls:

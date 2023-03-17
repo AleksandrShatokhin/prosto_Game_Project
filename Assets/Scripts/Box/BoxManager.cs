@@ -11,9 +11,8 @@ public class BoxManager : MonoBehaviour
         sumOfClick = 0;
     }
 
-    public virtual void CounterSumOfClick(int value)
+    public virtual void SetClickOnButton(ButtonColor value)
     {
-        sumOfClick += value;
-        Debug.Log(sumOfClick);
+        
     }
 }

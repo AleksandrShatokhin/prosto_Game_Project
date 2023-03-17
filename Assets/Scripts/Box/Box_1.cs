@@ -7,14 +7,20 @@ using UnityEngine.UI;
 
 public class Box_1 : BoxManager
 {
+    // элементы инвентаря
     [SerializeField] PlayerInventory inventory;
     [SerializeField] private SliderItemClickable sliderItemPickable;
 
+    // основные компоненты элементов на шкатулке
     [SerializeField] Button buttonLeft, buttonRight, buttonOpenBox;
     [SerializeField] Slider slider;
     [SerializeField] Button button_N1, button_N2, button_N3;
 
+    // Параметры для разгадывания кнопочного шифра
     private PickableItem localVariableItemForButtonOnBackPanel;
+    [SerializeField] private List<ButtonColor> correctColors;
+    [SerializeField] private List<ButtonColor> buttonColors;
+    private int indicatorColorList = 0;
 
     void Start()
     {
@@ -38,21 +44,36 @@ public class Box_1 : BoxManager
 
     private void ClickOpenBox()
     {
-        if (slider.value == 1 && sumOfClick == 6)
+        if (slider.value == 2 && CheckListButtonColors())
         {
             Debug.Log("Box is open!");
         }
         else
         {
-            sumOfClick = 0;
+            buttonColors.Clear();
+            indicatorColorList = 0;
             Debug.Log("Box is not open!");
         }
     }
 
-    public override void CounterSumOfClick(int value)
+    public override void SetClickOnButton(ButtonColor color)
     {
-        sumOfClick += value;
-        Debug.Log(sumOfClick);
+        if (correctColors[indicatorColorList] == color)
+        {
+            buttonColors.Add(color);
+            indicatorColorList += 1;
+        }
+        else
+        {
+            buttonColors.Clear();
+            indicatorColorList = 0;
+        }
+    }
+
+    private bool CheckListButtonColors()
+    {
+        bool isCorrectCombination = (buttonColors.Count == correctColors.Count) ? true : false;
+        return isCorrectCombination;
     }
 
     // Вызываю на кнопках через Event
