@@ -32,4 +32,9 @@ public class CupsPuzzle : MonoBehaviour, IPuzzle
     public void OnPuzzleStart()
     {
     }
+
+    public void OnPuzzleEnd()
+    {
+        
+    }
 }

@@ -36,10 +36,11 @@ public class DemonRoom : MonoBehaviour, IStartable
 
     public void ClickComeBack()
     {
-        cityMap.SetActive(true);
+
+        //cityMap.SetActive(true);
         cityMap.GetComponent<CityMapManager>().ComebackToPlayerRoom();
         GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_On();
-        Destroy(this.gameObject);
+        Destroy(this.gameObject,1f);
     }
 
     public DemonSO GetCurrentDemonSO => currentDemonSO;

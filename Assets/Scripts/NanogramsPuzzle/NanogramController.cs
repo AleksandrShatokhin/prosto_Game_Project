@@ -12,4 +12,10 @@ public class NanogramController : MonoBehaviour, IPuzzle
         puzzleNumber = Random.Range(0, maxValue);
         this.gameObject.transform.GetChild(puzzleNumber).gameObject.SetActive(true);
     }
+
+    public void OnPuzzleEnd()
+    {
+
+    }
+
 }

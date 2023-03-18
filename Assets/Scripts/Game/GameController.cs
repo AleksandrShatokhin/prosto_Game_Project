@@ -7,10 +7,12 @@ public class GameController : MonoBehaviour
     private static GameController instance;
     public static GameController GetInstance() => instance;
 
+    [SerializeField] private Animator loadingCircleAnimator;
+
     private bool isPauseMode;
     [SerializeField] GameObject pauseWindow;
 
-    // ссылки на основные компоненты
+    // пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
     [SerializeField] private GameObject firstWindow;
     [SerializeField] private MainUIController mainUIController;
 
@@ -32,10 +34,26 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void SwitchWindow(GameObject toOpen, GameObject toClose)
+    public void SwitchWindow(GameObject toOpen, GameObject toClose, bool playAnimation = false)
     {
+        if (playAnimation)
+        {
+            StartCoroutine(SwitchWindowCour(toOpen, toClose));
+        }
+        else
+        {
+            toOpen.SetActive(true);
+            toClose.SetActive(false);
+        }
+    }
+
+    private IEnumerator SwitchWindowCour(GameObject toOpen, GameObject toClose)
+    {
+        loadingCircleAnimator.SetTrigger("StartLoadingAnimTrigger");
+        yield return new WaitForSeconds(1f);
         toOpen.SetActive(true);
         toClose.SetActive(false);
+        loadingCircleAnimator.SetTrigger("FinishedLoadingTrigger");
     }
 
     public MainUIController GetMainUIController() => mainUIController;

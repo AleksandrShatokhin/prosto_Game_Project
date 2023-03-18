@@ -14,7 +14,7 @@ public class DemonRoomCreator
     public void CreateRoom()
     {
         GameObject demonRoom = GameObject.Instantiate(demonSO.demonRoomPrefab, demonSO.demonRoomPrefab.transform.position, Quaternion.identity) as GameObject;
-        demonRoom.SetActive(true);
+        GameController.GetInstance().SwitchWindow(demonRoom, cityMapWindow, true);
         demonRoom.GetComponent<IStartable>().OnStart(this.demonSO, this.cityMapWindow);
     }
 }

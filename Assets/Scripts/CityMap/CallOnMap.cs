@@ -39,6 +39,6 @@ public class CallOnMap : MonoBehaviour
     {
         messageWindow.GetComponent<MessageWindow>().SetCurrentStatus(CallStatus.Cancelled);
         this.gameObject.SetActive(false);
-        cityMap.SetActive(false);
+        //cityMap.SetActive(false);
     }
 }

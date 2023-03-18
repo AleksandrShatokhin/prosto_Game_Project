@@ -18,5 +18,5 @@ public class CityMapManager : MonoBehaviour
         GameController.GetInstance().gameObject.GetComponent<CallCreator>().GenerateCall_On();
     }
 
-    public void ComebackToPlayerRoom() => GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject);
+    public void ComebackToPlayerRoom() => GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject, true);
 }
