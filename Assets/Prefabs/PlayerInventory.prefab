@@ -795,12 +795,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxNumberOfItemsInInventory: 5
   infoWindow: {fileID: 633329307799652759, guid: 668d5a53347a5c14c93303a3853f9864, type: 3}
-  itemSlots:
-  - {fileID: 1309712251737729295}
-  - {fileID: 189338710567524362}
-  - {fileID: 1155535239904908273}
-  - {fileID: 2273769530731499815}
-  - {fileID: 3838903299047764727}
 --- !u!1 &7075799610090350852
 GameObject:
   m_ObjectHideFlags: 0

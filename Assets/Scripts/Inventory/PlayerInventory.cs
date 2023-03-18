@@ -11,6 +11,10 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] GameObject infoWindow;
     private InventoryItemSlot[] itemSlots;
 
+    [SerializeField] private Color colorToSelect, colorToDefoult;
+    [SerializeField] private Sprite circleSprite, itemSpriteDefoult;
+    public Sprite GetCircleSprite() => circleSprite;
+
     private void Awake() {
         itemSlots = GetComponentsInChildren<InventoryItemSlot>();
     }
@@ -68,6 +72,32 @@ public class PlayerInventory : MonoBehaviour
                 return;
             }
         }
+    }
+
+    // Для работы с EventTrigger
+    public void ColorStripToSelected(Image strip)
+    {
+        strip.color = colorToSelect;
+    }
+
+    public void ColorStripToDeselected(Image strip)
+    {
+        strip.color = colorToDefoult;
+    }
+
+    public void AddedCircleToSelected(Image itemImage)
+    {
+        itemImage.sprite = circleSprite;
+    }
+
+    public void RemoveCircleToDeselected(Image itemImage)
+    {
+        if (itemImage.gameObject.GetComponent<InventoryItemSlot>().IsItemSelected)
+        {
+            return;
+        }
+
+        itemImage.sprite = itemSpriteDefoult;
     }
 }
 
