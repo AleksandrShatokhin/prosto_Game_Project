@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7ccc23b60a1e3140b3476c139ce9112, type: 3}
+  m_Name: Demon_4
+  m_EditorClassIdentifier: 
+  demonSprite: {fileID: 21300000, guid: 8d6cf7da2e96a1844ac4d636224300e3, type: 3}
+  neededItems: 
+  message: {fileID: 4900000, guid: 51e879216d27f9d489c769a77031b6f4, type: 3}
+  citizenSprite: {fileID: 21300000, guid: fd87bdc11198bcf468994c4321c3186f, type: 3}
+  demonRoomPrefab: {fileID: 4215208817220533852, guid: 7355e867b4d8cd34da0c984641986f1b, type: 3}

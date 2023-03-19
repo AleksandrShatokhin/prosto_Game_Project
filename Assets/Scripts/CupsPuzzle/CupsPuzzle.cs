@@ -26,7 +26,7 @@ public class CupsPuzzle : MonoBehaviour, IPuzzle
                 return;
             }
         }
-        demonRoom.GetComponent<DemonRoom>().ClickComeBack();
+        OnPuzzleEnd();
     }
 
     public void OnPuzzleStart()
@@ -35,6 +35,6 @@ public class CupsPuzzle : MonoBehaviour, IPuzzle
 
     public void OnPuzzleEnd()
     {
-        
+        demonRoom.GetComponent<DemonRoom>().ClickComeBack();
     }
 }

@@ -1189,7 +1189,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 741a0c48f8d8ae342bc6dd690a4756f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1293,7 +1293,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 5922bf277c66d5d40b8cea790952a16c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1315,11 +1315,11 @@ PrefabInstance:
     - target: {fileID: 151406057, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 172909519, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 230478163, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
@@ -1327,7 +1327,7 @@ PrefabInstance:
     - target: {fileID: 255858721, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 342275500, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1379,7 +1379,7 @@ PrefabInstance:
     - target: {fileID: 1326655558, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 1390443461, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
@@ -1395,7 +1395,7 @@ PrefabInstance:
     - target: {fileID: 1678670867, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 1795648204, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: playerRoom
       value: 
@@ -1419,7 +1419,7 @@ PrefabInstance:
     - target: {fileID: 1978810177, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 2101896168, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
@@ -1427,7 +1427,7 @@ PrefabInstance:
     - target: {fileID: 2138191620, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 836015132268307922, guid: 0e25f91d803498d42b13d27e017e6a12, type: 3}
       propertyPath: m_SizeDelta.x
       value: -14
@@ -1753,7 +1753,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: ce9e196b5289a1642bd1368eca71583e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2022,7 +2022,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: a0a68f64d69572b4c9933efa32699413, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2053,6 +2053,10 @@ PrefabInstance:
       propertyPath: playerInventory
       value: 
       objectReference: {fileID: 727277867}
+    - target: {fileID: 489701002129694483, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1518392195548939757, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: houses
       value: 
