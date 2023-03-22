@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class DemonRoom : MonoBehaviour, IStartable
 {
-    private GameObject cityMap;
+    private GameObject playerRoom;
     [SerializeField] private GameObject puzzleWindow;
     [SerializeField] private DemonSO currentDemonSO;
     [SerializeField] private SpriteRenderer demonSpriteRenderer;
@@ -17,10 +17,10 @@ public class DemonRoom : MonoBehaviour, IStartable
 
     private NewspaperSO newspaperSO;
 
-    void IStartable.OnStart(DemonSO demonSO, GameObject cityMap)
+    void IStartable.OnStart(DemonSO demonSO, GameObject playerRoom)
     {
         this.currentDemonSO = demonSO;
-        this.cityMap = cityMap;
+        this.playerRoom = playerRoom;
 
         demonRoomUi.SetActive(true);
         demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
@@ -36,11 +36,9 @@ public class DemonRoom : MonoBehaviour, IStartable
 
     public void ClickComeBack()
     {
-
-        //cityMap.SetActive(true);
-        cityMap.GetComponent<CityMapManager>().ComebackToPlayerRoom();
+        GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject, true);
         GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_On();
-        Destroy(this.gameObject,1f);
+        Destroy(this.gameObject,1.1f);
     }
 
     public DemonSO GetCurrentDemonSO => currentDemonSO;

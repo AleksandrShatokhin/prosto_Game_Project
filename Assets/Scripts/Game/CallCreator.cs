@@ -41,7 +41,7 @@ public class CallCreator : MonoBehaviour
     public void GenerateCall_Off()
     {
         currentStatus = MapStatus.Stopped;
-        phone.GetComponent<PhoneInPlayerRoom>().CallCancel();
+        phone.GetComponent<PhoneInPlayerRoom>().CallStatus_Accept();
     }
 
     public void GenerateCall_On()

@@ -3,18 +3,18 @@ using UnityEngine;
 public class DemonRoomCreator
 {
     private DemonSO demonSO;
-    private GameObject cityMapWindow;
+    private GameObject playerRoom;
 
-    public DemonRoomCreator(DemonSO demonSO, GameObject cityMapWindow)
+    public DemonRoomCreator(DemonSO demonSO, GameObject playerRoom)
     {
         this.demonSO = demonSO;
-        this.cityMapWindow = cityMapWindow;
+        this.playerRoom = playerRoom;
     }
 
     public void CreateRoom()
     {
         GameObject demonRoom = GameObject.Instantiate(demonSO.demonRoomPrefab, demonSO.demonRoomPrefab.transform.position, Quaternion.identity) as GameObject;
-        GameController.GetInstance().SwitchWindow(demonRoom, cityMapWindow, true);
-        demonRoom.GetComponent<IStartable>().OnStart(this.demonSO, this.cityMapWindow);
+        GameController.GetInstance().SwitchWindow(demonRoom, this.playerRoom, true);
+        demonRoom.GetComponent<IStartable>().OnStart(this.demonSO, this.playerRoom);
     }
 }

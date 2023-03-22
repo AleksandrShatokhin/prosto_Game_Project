@@ -9,7 +9,7 @@ public class PhoneInPlayerRoom : MonoBehaviour, IClickable
     private Animator anim_Phone;
     private int numberHouse;
 
-    [SerializeField] GameObject playerRoom, cityMap, houses;
+    [SerializeField] GameObject playerRoom, houses;
 
     private void Start()
     {
@@ -38,12 +38,6 @@ public class PhoneInPlayerRoom : MonoBehaviour, IClickable
         CallAnimation_On();
     }
 
-    public void CallCancel()
-    {
-        CallAnimation_Off();
-        currentCallStatus = callStatus.Accept;
-    }
-
     public void OnClick()
     {
         OpenMessageWimdow();
@@ -56,12 +50,16 @@ public class PhoneInPlayerRoom : MonoBehaviour, IClickable
             return;
         }
 
-        GameController.GetInstance().SwitchWindow(cityMap, playerRoom);
+        GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_Off();
         GameObject house = houses.transform.GetChild(numberHouse).gameObject;
-        house.SetActive(true);
-        house.GetComponent<CallOnMap>().OpenMessageWindow();
+        house.GetComponent<CallOnMiniMap>().OpenMessageWindow();
     }
 
+    public void CallStatus_Accept()
+    {
+        currentCallStatus = callStatus.Accept;
+        CallAnimation_Off();
+    }
     public void CallStatus_NotAccept()
     {
         currentCallStatus = callStatus.NotAccept;

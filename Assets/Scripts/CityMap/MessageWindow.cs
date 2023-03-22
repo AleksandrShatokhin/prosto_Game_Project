@@ -6,50 +6,48 @@ using UnityEngine.UI;
 
 public class MessageWindow : MonoBehaviour, IStartable
 {
-    private const string textAccept = "Принять";
-    private const string textCancel = "Отказать";
-
-    private GameObject houseOnMap;
-    [SerializeField] private GameObject cityMapWindow;
-    [SerializeField] private GameObject playerRoom;
-
-    [SerializeField] private TextMeshProUGUI textButtonAccept;
-    [SerializeField] private TextMeshProUGUI textButtonCameback;
-
-    [SerializeField] private Image citizenImage;
-    [SerializeField] private TextMeshProUGUI textMessage;
-
-    [SerializeField] private CallStatus currentStatus = CallStatus.Cancelled;
-
+    private Animator anim_window;
     private DemonSO demonSO;
+    private GameObject callOnMiniMap;
+    [SerializeField] private Button buttonAccept, buttonCancel;
 
-    void IStartable.OnStart(DemonSO demonSO, GameObject houseOnMap)
+    private void Start()
+    {
+        anim_window = GetComponent<Animator>();
+
+        buttonAccept.onClick.AddListener(ClickAccept);
+        buttonCancel.onClick.AddListener(ClickCancel);
+    }
+
+    public void OnStart(DemonSO demonSO, GameObject callOnMiniMap)
     {
         this.demonSO = demonSO;
-        this.houseOnMap = houseOnMap;
-
-        textButtonAccept.text = textAccept;
-        textButtonCameback.text = textCancel;
-
-        textMessage.text = this.demonSO.message.ToString();
-        citizenImage.sprite = this.demonSO.citizenSprite;
+        this.callOnMiniMap = callOnMiniMap;
     }
 
-    public void ClickAccept()
+    private void ClickAccept()
     {
-        SetCurrentStatus(CallStatus.Accepted);
-        GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_Off();
-        cityMapWindow.SetActive(false);
-        GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject);
+        anim_window.SetBool("isCallAccept", true);
     }
-
-    public void ClickCancel()
+    private void ClickCancel()
     {
-        cityMapWindow.GetComponent<CityMapManager>().DeleteCall();
-        cityMapWindow.SetActive(false);
-        GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject);
+        CallCreator callCreator = GameController.GetInstance().GetComponent<CallCreator>();
+        callCreator.GenerateCall_On();
+
+        Destroy(this.gameObject);
     }
 
-    public CallStatus GetCurrentStatus() => currentStatus;
-    public void SetCurrentStatus(CallStatus value) => currentStatus = value;
+    public void ClickText()
+    {
+        PlayAnimator();
+    }
+
+    public void AnimationOver()
+    {
+        Destroy(this.gameObject, 1.3f);
+        callOnMiniMap.SetActive(true);
+    }
+
+    public void StopAnimator() => anim_window.enabled = false;
+    public void PlayAnimator() => anim_window.enabled = true;
 }
