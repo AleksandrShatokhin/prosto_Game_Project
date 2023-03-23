@@ -7,14 +7,8 @@ public class DemonSO : ScriptableObject
     // Внешний вид демона
     public Sprite demonSprite;
 
-    // Список предметов, которые необходимо выбрать игроку для получения подсказки/упрощения головоломки
-    public List<Items> neededItems;
-
     // Список возможных сообщений к конкретному демону от горожан
     public GameObject messageWindowPrefab;
-
-    // Варианты спрайтов горожан
-    public Sprite citizenSprite;
 
     //Префаб комнаты для данного демона
     public GameObject demonRoomPrefab;

@@ -87180,7 +87180,7 @@ GameObject:
   - component: {fileID: 3333882743192443491}
   - component: {fileID: 5987624391426838757}
   m_Layer: 0
-  m_Name: DemonRoom_2
+  m_Name: DemonRoom_Nonogram
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

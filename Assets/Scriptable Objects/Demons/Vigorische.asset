@@ -10,10 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7ccc23b60a1e3140b3476c139ce9112, type: 3}
-  m_Name: Demon_4
+  m_Name: Vigorische
   m_EditorClassIdentifier: 
-  demonSprite: {fileID: 21300000, guid: 8d6cf7da2e96a1844ac4d636224300e3, type: 3}
-  neededItems: 
-  messageWindowPrefab: {fileID: 2488334316183349770, guid: 3ef2e3049686ba14d935a93f742d7477, type: 3}
-  citizenSprite: {fileID: 21300000, guid: fd87bdc11198bcf468994c4321c3186f, type: 3}
+  demonSprite: {fileID: 21300000, guid: 54f4e3c2f6afcc849aa6ec2f0b34262f, type: 3}
+  messageWindowPrefab: {fileID: 7784462232860241664, guid: fb1adad49370a4e42ba1e9cbfa40007f, type: 3}
   demonRoomPrefab: {fileID: 4215208817220533852, guid: 7355e867b4d8cd34da0c984641986f1b, type: 3}
