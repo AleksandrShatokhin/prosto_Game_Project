@@ -9,7 +9,7 @@ public class Box_1 : BoxManager
 {
     // элементы инвентаря
     [SerializeField] PlayerInventory inventory;
-    [SerializeField] private SliderItemClickable sliderItemPickable;
+    [SerializeField] private SliderItemClickable sliderItemClicable;
 
     // основные компоненты элементов на шкатулке
     [SerializeField] Button buttonLeft, buttonRight, buttonOpenBox;
@@ -32,21 +32,20 @@ public class Box_1 : BoxManager
         localVariableItemForButtonOnBackPanel = null;
     }
 
-    private void ClickButtonLeft()
-    {
-        this.gameObject.transform.Rotate(0.0f, 90.0f, 0.0f);
-    }
-
-    private void ClickButtonRight()
-    {
-        this.gameObject.transform.Rotate(0.0f, -90.0f, 0.0f);
-    }
+    private void ClickButtonLeft() => this.gameObject.transform.Rotate(0.0f, 90.0f, 0.0f);
+    private void ClickButtonRight() => this.gameObject.transform.Rotate(0.0f, -90.0f, 0.0f);
 
     private void ClickOpenBox()
     {
         if (slider.value == 2 && CheckListButtonColors())
         {
             Debug.Log("Box is open!");
+
+            GameObject boxWindow = this.transform.parent.gameObject;
+            boxWindow.transform.rotation = Quaternion.Euler(-45.0f, -45.0f, 45.0f);
+            buttonLeft.gameObject.SetActive(false);
+            buttonRight.gameObject.SetActive(false);
+            buttonOpenBox.gameObject.SetActive(false);
         }
         else
         {
@@ -115,7 +114,7 @@ public class Box_1 : BoxManager
         {
             if (slot.IsItemSelected == true)
             {
-                if (slot.ItemInSlot == sliderItemPickable)
+                if (slot.ItemInSlot == sliderItemClicable)
                 {
                     image.sprite = slot.ItemInSlot.GetComponent<SpriteRenderer>().sprite;
                     inventory.RemoveItemFromInventory(slot.ItemInSlot);

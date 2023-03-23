@@ -12,8 +12,6 @@ public class DemonRoom : MonoBehaviour, IStartable
     [SerializeField] private DemonSO currentDemonSO;
     [SerializeField] private SpriteRenderer demonSpriteRenderer;
     [SerializeField] private GameObject demonRoomUi;
-    [SerializeField] private Image symbol;
-    [SerializeField] private Image newspaper;
 
     private NewspaperSO newspaperSO;
 
