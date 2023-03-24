@@ -55,4 +55,14 @@ public class DemonRoom : MonoBehaviour, IStartable
     }
 
     public DemonSO GetCurrentDemonSO => currentDemonSO;
+
+    // ¬ременно добавл€ю метод, чтоб можно было в игре выйти из комнаты
+    // кнопки  UI управлени€ убрал с экрана
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            ClickComeBack();
+        }
+    }
 }
