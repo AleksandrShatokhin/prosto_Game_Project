@@ -430,6 +430,7 @@ GameObject:
   - component: {fileID: 7415286669266959563}
   - component: {fileID: 3333882743192443491}
   - component: {fileID: 5987624391426838757}
+  - component: {fileID: 1680450816}
   m_Layer: 0
   m_Name: DemonRoom_CupsPuzzle
   m_TagString: Untagged
@@ -487,8 +488,26 @@ MonoBehaviour:
   currentDemonSO: {fileID: 0}
   demonSpriteRenderer: {fileID: 3057806224817422524}
   demonRoomUi: {fileID: 7691723613994595250}
-  symbol: {fileID: 0}
-  newspaper: {fileID: 0}
+--- !u!95 &1680450816
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760064138631998790}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d2f3ac4c2e27eb846b65b75d95ef09c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &5012908094940828794
 GameObject:
   m_ObjectHideFlags: 0
@@ -1414,6 +1433,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7415286669266959563}
     m_Modifications:
+    - target: {fileID: 1319794291955474279, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1319794291955474279, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450627052834548085, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2450627052834548085, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3198237216896473054, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -1459,14 +1494,55 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5032563909183998028, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5032563909183998028, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 7691723613994595250}
+    - target: {fileID: 5032563910360979616, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098578519571298032, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098578519571298032, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 5987624391426838757}
+    - target: {fileID: 5098578519571298032, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartAnimationDemonAppearance
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098578519571298032, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DemonRoom, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5098578519571298032, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 5484934709613193893}
+    - target: {fileID: 5098578519571298032, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 6624177851028197468, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
       propertyPath: m_Name
       value: BoxWindow_CupRoom
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 7730652352442138869, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7730652352442138869, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5032563909388532791, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
 --- !u!4 &4292425687525223719 stripped
 Transform:
@@ -1478,6 +1554,35 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6624177851028197468, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
   m_PrefabInstance: {fileID: 1725909614475590393}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6537977923387732892 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5568764635586267493, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+  m_PrefabInstance: {fileID: 1725909614475590393}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &7932619445612873619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8783702613043658090, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+  m_PrefabInstance: {fileID: 1725909614475590393}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4897444911773662856
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7932619445612873619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 614709c95b426a343b49b0eea8068257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonOpenBox: {fileID: 6537977923387732892}
 --- !u!1001 &2253885621744120754
 PrefabInstance:
   m_ObjectHideFlags: 0

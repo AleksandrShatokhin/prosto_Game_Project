@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class DemonRoom : MonoBehaviour, IStartable
 {
+    private Animator anim_DemonRoom;
+
     private GameObject playerRoom;
     [SerializeField] private GameObject puzzleWindow;
     [SerializeField] private DemonSO currentDemonSO;
@@ -15,6 +17,11 @@ public class DemonRoom : MonoBehaviour, IStartable
 
     private NewspaperSO newspaperSO;
 
+    private void Start()
+    {
+        anim_DemonRoom = GetComponent<Animator>();
+    }
+
     void IStartable.OnStart(DemonSO demonSO, GameObject playerRoom)
     {
         this.currentDemonSO = demonSO;
@@ -22,6 +29,7 @@ public class DemonRoom : MonoBehaviour, IStartable
 
         demonRoomUi.SetActive(true);
         demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
+        demonSpriteRenderer.gameObject.SetActive(false);
 
         puzzleWindow.GetComponentInChildren<IPuzzle>().OnPuzzleStart();
     }
@@ -37,6 +45,13 @@ public class DemonRoom : MonoBehaviour, IStartable
         GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject, true);
         GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_On();
         Destroy(this.gameObject,1.1f);
+    }
+
+    public void StartAnimationDemonAppearance(GameObject box)
+    {
+        box.GetComponentInChildren<BoxManager>().CloseBox();
+        demonRoomUi.SetActive(false);
+        anim_DemonRoom.SetTrigger("isDemonAppearance");
     }
 
     public DemonSO GetCurrentDemonSO => currentDemonSO;

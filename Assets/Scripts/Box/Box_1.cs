@@ -35,14 +35,13 @@ public class Box_1 : BoxManager
     private void ClickButtonLeft() => this.gameObject.transform.Rotate(0.0f, 90.0f, 0.0f);
     private void ClickButtonRight() => this.gameObject.transform.Rotate(0.0f, -90.0f, 0.0f);
 
-    private void ClickOpenBox()
+    public override void ClickOpenBox()
     {
         if (slider.value == 2 && CheckListButtonColors())
         {
             Debug.Log("Box is open!");
 
-            GameObject boxWindow = this.transform.parent.gameObject;
-            boxWindow.transform.rotation = Quaternion.Euler(-45.0f, -45.0f, 45.0f);
+            base.ClickOpenBox();
             buttonLeft.gameObject.SetActive(false);
             buttonRight.gameObject.SetActive(false);
             buttonOpenBox.gameObject.SetActive(false);
@@ -102,11 +101,16 @@ public class Box_1 : BoxManager
         }
     }
 
-    public void ClickToCloseBox(GameObject roomCanvas)
+    public override void CloseBox()
     {
-        this.gameObject.transform.parent.gameObject.SetActive(false);
-        roomCanvas.SetActive(true);
+        base.CloseBox();
     }
+
+    //public void ClickToCloseBox(GameObject roomCanvas)
+    //{
+    //    this.gameObject.transform.parent.gameObject.SetActive(false);
+    //    //roomCanvas.SetActive(true);
+    //}
 
     public void ClickOnSliderHandler(Image image)
     {

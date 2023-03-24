@@ -398,6 +398,7 @@ GameObject:
   - component: {fileID: 4215208817220533825}
   - component: {fileID: 4215208817220533854}
   - component: {fileID: 4215208817220533855}
+  - component: {fileID: 284251465}
   m_Layer: 0
   m_Name: DemonRoomLabyrinthPuzzle
   m_TagString: Untagged
@@ -455,8 +456,26 @@ MonoBehaviour:
   currentDemonSO: {fileID: 0}
   demonSpriteRenderer: {fileID: 4215208819014924495}
   demonRoomUi: {fileID: 4215208817034247185}
-  symbol: {fileID: 0}
-  newspaper: {fileID: 0}
+--- !u!95 &284251465
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4215208817220533852}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d2f3ac4c2e27eb846b65b75d95ef09c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &4215208817255751988
 GameObject:
   m_ObjectHideFlags: 0
@@ -4497,6 +4516,30 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 4215208817034247185}
+    - target: {fileID: 8858280071282119206, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858280071282119206, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 4215208817220533855}
+    - target: {fileID: 8858280071282119206, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: StartAnimationDemonAppearance
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858280071282119206, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DemonRoom, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8858280071282119206, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8245592655183184664}
+    - target: {fileID: 8858280071282119206, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
 --- !u!4 &423795419450180762 stripped
@@ -4504,6 +4547,35 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1174682081021063944, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
   m_PrefabInstance: {fileID: 1561852493229651858}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5793333915765403182 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5029076101879142844, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
+  m_PrefabInstance: {fileID: 1561852493229651858}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1351013872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5793333915765403182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1060b1223b8a68a4aa7d45bc4c46a89a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonOpenBox: {fileID: 7263124859480758817}
+--- !u!114 &7263124859480758817 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8171531946303303091, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
+  m_PrefabInstance: {fileID: 1561852493229651858}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8245592655183184664 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7476795911251784842, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}

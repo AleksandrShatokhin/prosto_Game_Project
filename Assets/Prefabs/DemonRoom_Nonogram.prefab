@@ -59312,7 +59312,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &6364711563154243763
 RectTransform:
   m_ObjectHideFlags: 0
@@ -85249,6 +85249,7 @@ GameObject:
   - component: {fileID: 7415286669266959563}
   - component: {fileID: 3333882743192443491}
   - component: {fileID: 5987624391426838757}
+  - component: {fileID: 2048197586}
   m_Layer: 0
   m_Name: DemonRoom_Nonogram
   m_TagString: Untagged
@@ -85306,8 +85307,26 @@ MonoBehaviour:
   currentDemonSO: {fileID: 0}
   demonSpriteRenderer: {fileID: 3057806224817422524}
   demonRoomUi: {fileID: 7691723613994595250}
-  symbol: {fileID: 0}
-  newspaper: {fileID: 0}
+--- !u!95 &2048197586
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760064138631998790}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d2f3ac4c2e27eb846b65b75d95ef09c4, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &4762390016358887352
 GameObject:
   m_ObjectHideFlags: 0
@@ -87119,7 +87138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3130903314323658979
 Transform:
   m_ObjectHideFlags: 0
@@ -87128,7 +87147,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5012908094940828794}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -1.1, z: -0.01}
+  m_LocalPosition: {x: 1.85, y: -1.1, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -87181,7 +87200,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.74, y: 2.9}
+  m_Size: {x: 8, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
@@ -120686,7 +120705,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2920365890598468157
 RectTransform:
   m_ObjectHideFlags: 0
@@ -124688,10 +124707,66 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 642474360}
+    - target: {fileID: 2453916796634564638, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.13800001
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453916796634564638, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.59215844
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453916796634564638, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.033673573
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453916796634564638, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.40831676
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453916796634564638, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453916796634564638, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2453916796634564638, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3387465186983065449, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 1283972414}
+    - target: {fileID: 3519925582425156174, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.9661448
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519925582425156174, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.59215844
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519925582425156174, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.86221766
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519925582425156174, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.40831676
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519925582425156174, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519925582425156174, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3519925582425156174, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6204450737563543803, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -124700,10 +124775,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: BoxWindow_NonogramRoom
       objectReference: {fileID: 0}
+    - target: {fileID: 7403819797990045778, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684394184085708866, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684394184085708866, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CloseBox
+      objectReference: {fileID: 0}
     - target: {fileID: 8684394184085708866, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
-      objectReference: {fileID: 7691723613994595250}
+      objectReference: {fileID: 0}
+    - target: {fileID: 8684394184085708866, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8684394185349223481, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: inventory
       value: 
@@ -124713,20 +124804,28 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 570765313339529081}
     - target: {fileID: 8904639489184587518, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8904639489184587518, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 5987624391426838757}
     - target: {fileID: 8904639489184587518, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnStartPuzzleButtonClicked
+      value: StartAnimationDemonAppearance
       objectReference: {fileID: 0}
     - target: {fileID: 8904639489184587518, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: DemonRoom, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 8904639489184587518, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
+      value: 
+      objectReference: {fileID: 8255023888376735426}
+    - target: {fileID: 8904639489184587518, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
+      value: UnityEngine.GameObject, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}

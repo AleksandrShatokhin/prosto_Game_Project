@@ -1424,7 +1424,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8788887761572026593}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
         m_MethodName: ClickButtonOnBackPanel
         m_Mode: 2
@@ -1436,7 +1436,7 @@ MonoBehaviour:
           m_StringArgument: 2
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8788887761572026593}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
         m_MethodName: ClickButtonOnBackPanel
         m_Mode: 2
@@ -1595,7 +1595,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8788887761572026593}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
         m_MethodName: ClickOnSliderHandler
         m_Mode: 2
@@ -2148,7 +2148,7 @@ GameObject:
   - component: {fileID: 8058458477049461711}
   - component: {fileID: 9194767643998923754}
   - component: {fileID: 4510372567190036374}
-  - component: {fileID: 8788887761572026593}
+  - component: {fileID: 7624733847458171561}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -2239,7 +2239,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &8788887761572026593
+--- !u!114 &7624733847458171561
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2248,20 +2248,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5029076101879142844}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 803b943ff87df1a43aa1fc9c4d6b8bee, type: 3}
+  m_Script: {fileID: 11500000, guid: 1060b1223b8a68a4aa7d45bc4c46a89a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  sliderItemClicable: {fileID: 0}
-  buttonLeft: {fileID: 3412229078056088759}
-  buttonRight: {fileID: 5729843664478432239}
   buttonOpenBox: {fileID: 8171531946303303091}
-  slider: {fileID: 8558785133505438830}
-  button_N1: {fileID: 2174469781529349539}
-  button_N2: {fileID: 3350674853141330865}
-  button_N3: {fileID: 6298266176691676195}
-  correctColors: 000000000200000001000000
-  buttonColors: 
 --- !u!1 &5040926928932422767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2595,7 +2585,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8788887761572026593}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
         m_MethodName: ClickButtonOnBackPanel
         m_Mode: 2
@@ -2607,7 +2597,7 @@ MonoBehaviour:
           m_StringArgument: 1
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8788887761572026593}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
         m_MethodName: ClickButtonOnBackPanel
         m_Mode: 2
@@ -2768,7 +2758,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8788887761572026593}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
         m_MethodName: ClickButtonOnBackPanel
         m_Mode: 2
@@ -2780,7 +2770,7 @@ MonoBehaviour:
           m_StringArgument: 3
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8788887761572026593}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
         m_MethodName: ClickButtonOnBackPanel
         m_Mode: 2
@@ -4250,7 +4240,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 8788887761572026593}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
         m_MethodName: ClickToCloseBox
         m_Mode: 2

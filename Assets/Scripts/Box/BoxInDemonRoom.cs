@@ -9,6 +9,7 @@ public class BoxInDemonRoom : MonoBehaviour, IClickable
 
     void IClickable.OnClick()
     {
-        GameController.GetInstance().SwitchWindow(boxWindow, canvas);
+        //GameController.GetInstance().SwitchWindow(boxWindow, canvas);
+        boxWindow.SetActive(true);
     }
 }
