@@ -15,8 +15,6 @@ public class DemonRoom : MonoBehaviour, IStartable
     [SerializeField] private SpriteRenderer demonSpriteRenderer;
     [SerializeField] private GameObject demonRoomUi;
 
-    private NewspaperSO newspaperSO;
-
     private void Start()
     {
         anim_DemonRoom = GetComponent<Animator>();
@@ -63,6 +61,11 @@ public class DemonRoom : MonoBehaviour, IStartable
         if (Input.GetKeyDown(KeyCode.Backspace))
         {
             ClickComeBack();
+        }
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            OnStartPuzzleButtonClicked();
         }
     }
 }

@@ -5,11 +5,11 @@ using UnityEngine.UI;
 
 public class Box_3 : BoxManager
 {
-    [SerializeField] private Button buttonOpenBox;
-
     private void Start()
     {
         buttonOpenBox.onClick.AddListener(ClickOpenBox);
+        buttonLeft.onClick.AddListener(ClickButtonLeft);
+        buttonRight.onClick.AddListener(ClickButtonRight);
     }
 
     public override void ClickOpenBox()

@@ -12,7 +12,6 @@ public class Box_1 : BoxManager
     [SerializeField] private SliderItemClickable sliderItemClicable;
 
     // основные компоненты элементов на шкатулке
-    [SerializeField] Button buttonLeft, buttonRight, buttonOpenBox;
     [SerializeField] Slider slider;
     [SerializeField] Button button_N1, button_N2, button_N3;
 
@@ -31,9 +30,6 @@ public class Box_1 : BoxManager
         slider.interactable = false;
         localVariableItemForButtonOnBackPanel = null;
     }
-
-    private void ClickButtonLeft() => this.gameObject.transform.Rotate(0.0f, 90.0f, 0.0f);
-    private void ClickButtonRight() => this.gameObject.transform.Rotate(0.0f, -90.0f, 0.0f);
 
     public override void ClickOpenBox()
     {
