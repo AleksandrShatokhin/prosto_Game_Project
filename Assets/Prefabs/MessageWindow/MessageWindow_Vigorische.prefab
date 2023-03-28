@@ -732,6 +732,7 @@ GameObject:
   - component: {fileID: 7784462232860241791}
   - component: {fileID: 7784462232860241790}
   - component: {fileID: 1283439649308104011}
+  - component: {fileID: 2442108274858610180}
   m_Layer: 0
   m_Name: MessageWindow_Vigorische
   m_TagString: Untagged
@@ -789,6 +790,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonAccept: {fileID: 7784462232710901215}
   buttonCancel: {fileID: 7784462233496495348}
+--- !u!114 &2442108274858610180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7784462232860241664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7784462232991203850
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,3 +9,9 @@ public enum MapStatus
     Running,
     Stopped
 }
+
+public enum StateMouseHandler
+{
+    Allowed,
+    Forbidden
+}

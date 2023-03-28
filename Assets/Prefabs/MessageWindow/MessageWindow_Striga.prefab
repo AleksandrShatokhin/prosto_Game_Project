@@ -472,6 +472,7 @@ GameObject:
   - component: {fileID: 5429891945532054217}
   - component: {fileID: 5429891945532054216}
   - component: {fileID: 3932380604159238397}
+  - component: {fileID: -6190805426877623257}
   m_Layer: 0
   m_Name: MessageWindow_Striga
   m_TagString: Untagged
@@ -529,6 +530,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonAccept: {fileID: 5429891945680345193}
   buttonCancel: {fileID: 5429891946370158914}
+--- !u!114 &-6190805426877623257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5429891945532054198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5429891945640618624
 GameObject:
   m_ObjectHideFlags: 0

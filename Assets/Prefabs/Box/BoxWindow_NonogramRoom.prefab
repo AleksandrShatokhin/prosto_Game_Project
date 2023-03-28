@@ -652,8 +652,8 @@ RectTransform:
   m_Father: {fileID: 2883071474040818690}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
-  m_AnchorMin: {x: 0.86100006, y: 0.40831676}
-  m_AnchorMax: {x: 0.966, y: 0.5923168}
+  m_AnchorMin: {x: 0.86221766, y: 0.40831676}
+  m_AnchorMax: {x: 0.9661448, y: 0.59215844}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2327,16 +2327,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 803b943ff87df1a43aa1fc9c4d6b8bee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventory: {fileID: 0}
-  sliderItemClicable: {fileID: 0}
   buttonLeft: {fileID: 3325874110662752367}
   buttonRight: {fileID: 5690635477450778423}
   buttonOpenBox: {fileID: 8077858663074111851}
+  toCloseWindow: {fileID: 0}
+  toOpenWindow: {fileID: 0}
+  inventory: {fileID: 0}
+  sliderItemClicable: {fileID: 0}
   slider: {fileID: 8627671063369509046}
   button_N1: {fileID: 2256312328499937659}
   button_N2: {fileID: 3387465186983065449}
   button_N3: {fileID: 6204450737563543803}
-  correctColors: 000000000200000001000000
+  correctColors: 000000000200000001000000020000000200000000000000
   buttonColors: 
 --- !u!1 &5420426138324715914
 GameObject:
@@ -2460,13 +2462,25 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
+      - m_Target: {fileID: 8684394185349223481}
+        m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
+        m_MethodName: ClickButtonOnUpPanel
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: DemonRoom, Assembly-CSharp
+        m_MethodName: StartAnimationDemonAppearance
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7403819797990045778}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3090,8 +3104,8 @@ RectTransform:
   m_Father: {fileID: 2883071474040818690}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.034, y: 0.40831676}
-  m_AnchorMax: {x: 0.13745075, y: 0.5923168}
+  m_AnchorMin: {x: 0.033673573, y: 0.40831676}
+  m_AnchorMax: {x: 0.13800001, y: 0.59215844}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3458,6 +3472,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1238493764863197136}
+  - component: {fileID: 7139911081173461929}
   m_Layer: 0
   m_Name: BoxWindow_NonogramRoom
   m_TagString: Untagged
@@ -3482,6 +3497,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7139911081173461929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7403819797990045778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7513913180650282915
 GameObject:
   m_ObjectHideFlags: 0
@@ -3653,7 +3680,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Back
+  m_text: Up
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4252,11 +4279,11 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 8684394185349223481}
         m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
-        m_MethodName: ClickToCloseBox
-        m_Mode: 2
+        m_MethodName: CloseBox
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

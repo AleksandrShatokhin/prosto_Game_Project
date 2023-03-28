@@ -2316,13 +2316,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Box_1, Assembly-CSharp
-        m_MethodName: ClickToCloseBox
-        m_Mode: 2
+      - m_Target: {fileID: 7341606756520390920}
+        m_TargetAssemblyTypeName: BoxManager, Assembly-CSharp
+        m_MethodName: CloseBox
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -3256,6 +3256,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3198237216896473054}
+  - component: {fileID: 3805756881654311528}
   m_Layer: 0
   m_Name: BoxWindow_CupRoom
   m_TagString: Untagged
@@ -3280,6 +3281,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3805756881654311528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6624177851028197468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7095651903646912482
 GameObject:
   m_ObjectHideFlags: 0
@@ -3401,7 +3414,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1432603473966698063}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8783702613043658090}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7192145465628059593
 GameObject:
   m_ObjectHideFlags: 0
@@ -4108,12 +4133,12 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
+        m_TargetAssemblyTypeName: DemonRoom, Assembly-CSharp
+        m_MethodName: StartAnimationDemonAppearance
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgument: {fileID: 6624177851028197468}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -4310,6 +4335,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 614709c95b426a343b49b0eea8068257, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  buttonLeft: {fileID: 1402177115440287841}
+  buttonRight: {fileID: 8334855147079913273}
   buttonOpenBox: {fileID: 5568764635586267493}
 --- !u!1 &9127251068702747747
 GameObject:

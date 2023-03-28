@@ -979,6 +979,7 @@ GameObject:
   - component: {fileID: 2414582285775058829}
   - component: {fileID: 2414582285775058828}
   - component: {fileID: 6650153553701621177}
+  - component: {fileID: -4524989366094806301}
   m_Layer: 0
   m_Name: MessageWindow_Liho
   m_TagString: Untagged
@@ -1036,6 +1037,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   buttonAccept: {fileID: 2414582285927707949}
   buttonCancel: {fileID: 2414582285740686342}
+--- !u!114 &-4524989366094806301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2414582285775058930}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2414582285842790363
 GameObject:
   m_ObjectHideFlags: 0
