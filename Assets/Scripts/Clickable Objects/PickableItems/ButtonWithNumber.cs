@@ -7,6 +7,9 @@ public class ButtonWithNumber : PickableItem
     [SerializeField] private ButtonColor buttonColor;
     public ButtonColor GetButtonColor() => buttonColor;
 
+    [SerializeField] private Sprite spriteToBox;
+    public Sprite GetSpriteToBox() => spriteToBox;
+
     public override void OnClick()
     {
         base.OnClick();

@@ -7,8 +7,10 @@ using UnityEngine.UI;
 
 public class Box_1 : BoxManager
 {
+    [SerializeField] private GameObject toCloseWindow, toOpenWindow;
+
     // элементы инвентаря
-    [SerializeField] PlayerInventory inventory;
+    [SerializeField] private PlayerInventory inventory;
     [SerializeField] private SliderItemClickable sliderItemClicable;
 
     // основные компоненты элементов на шкатулке
@@ -52,6 +54,11 @@ public class Box_1 : BoxManager
 
     public override void SetClickOnButton(ButtonColor color)
     {
+        if (indicatorColorList == correctColors.Count)
+        {
+            return;
+        }
+
         if (correctColors[indicatorColorList] == color)
         {
             buttonColors.Add(color);
@@ -102,12 +109,6 @@ public class Box_1 : BoxManager
         base.CloseBox();
     }
 
-    //public void ClickToCloseBox(GameObject roomCanvas)
-    //{
-    //    this.gameObject.transform.parent.gameObject.SetActive(false);
-    //    //roomCanvas.SetActive(true);
-    //}
-
     public void ClickOnSliderHandler(Image image)
     {
         foreach (InventoryItemSlot slot in inventory.GetComponentsInChildren<InventoryItemSlot>())
@@ -116,7 +117,7 @@ public class Box_1 : BoxManager
             {
                 if (slot.ItemInSlot == sliderItemClicable)
                 {
-                    image.sprite = slot.ItemInSlot.GetComponent<SpriteRenderer>().sprite;
+                    image.sprite = slot.ItemInSlot.GetComponent<SliderItemClickable>().GetSpriteToBox();
                     inventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
                     slider.interactable = true;
@@ -124,5 +125,10 @@ public class Box_1 : BoxManager
                 }
             }
         }
+    }
+
+    public void ClickButtonOnUpPanel()
+    {
+        GameController.GetInstance().SwitchWindow(this.toOpenWindow, this.toCloseWindow);
     }
 }

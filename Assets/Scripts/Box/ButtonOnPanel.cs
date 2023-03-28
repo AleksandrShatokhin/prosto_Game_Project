@@ -18,9 +18,9 @@ public class ButtonOnPanel : MonoBehaviour
             return;
         }
 
-        if (this.GetComponent<Image>().sprite != item.GetComponent<SpriteRenderer>().sprite)
+        if (this.GetComponent<Image>().sprite != item.GetComponent<ButtonWithNumber>().GetSpriteToBox())
         {
-            this.GetComponent<Image>().sprite = item.GetComponent<SpriteRenderer>().sprite;
+            this.GetComponent<Image>().sprite = item.GetComponent<ButtonWithNumber>().GetSpriteToBox();
             valueButtonColor = item.GetComponent<ButtonWithNumber>().GetButtonColor();
         }
 
