@@ -12,7 +12,7 @@ public class GameController : MonoBehaviour
     private bool isPauseMode;
     [SerializeField] GameObject pauseWindow;
 
-    // ������ �� �������� ����������
+    // references to the main components
     [SerializeField] private GameObject firstWindow;
     [SerializeField] private MainUIController mainUIController;
 
@@ -56,7 +56,7 @@ public class GameController : MonoBehaviour
         loadingCircleAnimator.SetTrigger("FinishedLoadingTrigger");
     }
 
-    public MainUIController GetMainUIController() => mainUIController;
+    public void DisplayMessageOnScreen(string message) => mainUIController.DispayMessageOnScreen(message);
 
     public void PauseMode()
     {
