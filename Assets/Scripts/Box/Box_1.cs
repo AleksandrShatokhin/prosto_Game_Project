@@ -40,15 +40,12 @@ public class Box_1 : BoxManager
             Debug.Log("Box is open!");
 
             base.ClickOpenBox();
-            buttonLeft.gameObject.SetActive(false);
-            buttonRight.gameObject.SetActive(false);
-            buttonOpenBox.gameObject.SetActive(false);
         }
         else
         {
             buttonColors.Clear();
             indicatorColorList = 0;
-            Debug.Log("Box is not open!");
+            GameController.GetInstance().DisplayMessageOnScreen(messageBoxNotOpen);
         }
     }
 
