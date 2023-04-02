@@ -1836,9 +1836,9 @@ MonoBehaviour:
   phone: {fileID: 1052606867}
   cityMap: {fileID: 530603621}
   houses: {fileID: 660281925}
+  numberHouse: 0
   minimumDelay: 5
   maximumDelay: 10
-  currentStatus: 0
 --- !u!114 &2093106374
 MonoBehaviour:
   m_ObjectHideFlags: 0
