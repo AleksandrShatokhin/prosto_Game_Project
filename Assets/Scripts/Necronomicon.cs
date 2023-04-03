@@ -11,7 +11,7 @@ public class Necronomicon : MonoBehaviour
 
     [SerializeField] private Button buttonNextPage, buttonPreviousPage;
 
-    [SerializeField] private List<NecronomiconSO> pages;
+    [SerializeField] private List<Sprite> pages;
     [SerializeField] private int indexPage = 0;
 
     private void Start()
@@ -28,8 +28,7 @@ public class Necronomicon : MonoBehaviour
 
     private void UpdatePageContent()
     {
-        imagePage.sprite = pages[indexPage].spritePage;
-        textPage.text = pages[indexPage].textPage.ToString();
+        imagePage.sprite = pages[indexPage];
 
         ChackActivityButtonsTransitionPage();
     }
