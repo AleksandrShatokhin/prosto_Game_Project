@@ -1487,7 +1487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 237493401477455040, guid: 6c493e07a1e3eb4418d1d48bacd45ce8, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.8772
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 237493401780454779, guid: 6c493e07a1e3eb4418d1d48bacd45ce8, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1563,7 +1563,7 @@ PrefabInstance:
       objectReference: {fileID: 2547123336372172841}
     - target: {fileID: 237493401904823403, guid: 6c493e07a1e3eb4418d1d48bacd45ce8, type: 3}
       propertyPath: correctWaterValues.Array.data[0]
-      value: 1200
+      value: 700
       objectReference: {fileID: 0}
     - target: {fileID: 237493401904823403, guid: 6c493e07a1e3eb4418d1d48bacd45ce8, type: 3}
       propertyPath: correctWaterValues.Array.data[1]
