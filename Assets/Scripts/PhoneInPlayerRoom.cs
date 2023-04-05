@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PhoneInPlayerRoom : MonoBehaviour, IClickable
 {
+    private const string message = "Пока нет входящего звонка!";
+
     private enum callStatus { Accept, NotAccept }
     private callStatus currentCallStatus;
     private Animator anim_Phone;
@@ -47,6 +49,7 @@ public class PhoneInPlayerRoom : MonoBehaviour, IClickable
     {
         if (GameController.GetInstance().GetComponent<CallCreator>().IsCallCreated() || currentCallStatus == callStatus.Accept)
         {
+            GameController.GetInstance().DisplayMessageOnScreen(message);
             return;
         }
 

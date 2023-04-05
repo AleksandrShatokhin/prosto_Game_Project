@@ -5,7 +5,6 @@ using UnityEngine;
 public class NewspaperInRoom : PickableItem
 {
     [SerializeField] GameObject newspaper;
-    [SerializeField] NewspaperSO newspaperSO;
 
     public override void OnClick()
     {
@@ -15,7 +14,6 @@ public class NewspaperInRoom : PickableItem
     private void OpenNewspaper()
     {
         newspaper.SetActive(true);
-        newspaper.GetComponent<NewspaperManager>().OnStart(newspaperSO);
     }
 
     public override void OnItemCombineAttempt()

@@ -8,10 +8,12 @@ public class CallCreator : MonoBehaviour
     [SerializeField] GameObject phone, cityMap, houses;
 
     [SerializeField] private int minimumDelay, maximumDelay;
-    [SerializeField] private MapStatus currentStatus;
+    private int numberHouse;
+    private MapStatus currentStatus;
 
     private void Start()
     {
+        numberHouse = 0;
         currentStatus = MapStatus.Running;
         StartCoroutine(CreateCall());
     }
@@ -20,7 +22,6 @@ public class CallCreator : MonoBehaviour
     {
         while (true)
         {
-            int numberHouse = Random.Range(0, houses.transform.childCount);
             float delay = Random.Range(minimumDelay, maximumDelay);
 
             yield return new WaitForSeconds(delay);
@@ -28,9 +29,12 @@ public class CallCreator : MonoBehaviour
             if (currentStatus == MapStatus.Running)
             {
                 GenerateCall_Complete(numberHouse);
+                ChangeNumberHouse();
             }
         }
     }
+
+    private void ChangeNumberHouse() => numberHouse = (numberHouse < (houses.transform.childCount - 1)) ? numberHouse += 1 : numberHouse = 0;
 
     private void GenerateCall_Complete(int numberHouse)
     {

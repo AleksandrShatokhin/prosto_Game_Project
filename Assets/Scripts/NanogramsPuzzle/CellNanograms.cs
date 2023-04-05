@@ -5,6 +5,8 @@ using UnityEngine.UI;
 
 public class CellNanograms : MonoBehaviour
 {
+    [SerializeField] Sprite whiteSprite, blackSprite;
+
     [SerializeField] CellStatus status;
     [SerializeField] CellState cellState;
     private Button cellButton;
@@ -36,13 +38,13 @@ public class CellNanograms : MonoBehaviour
 
     private void SetState_Open()
     {
-        this.GetComponent<Image>().color = Color.black;
+        this.GetComponent<Image>().sprite = blackSprite;
         cellState = CellState.Open;
     }
 
     public void SetState_Closed()
     {
-        this.GetComponent<Image>().color = Color.white;
+        this.GetComponent<Image>().sprite = whiteSprite;
         cellState = CellState.Closed;
     }
 
