@@ -103,8 +103,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237493401396839286}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -490.23395, y: -296.6642, z: -1.7506087}
-  m_LocalScale: {x: 1, y: 2.6613, z: 1}
+  m_LocalPosition: {x: -489.23, y: -296.9872, z: -1.7506087}
+  m_LocalScale: {x: 1, y: 2.0153463, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9172025190749250356}
@@ -174,8 +174,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cef84b839afe04096fad22d77a416f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLevel: 300
-  maxCapacity: 800
+  waterLevel: 400
+  maxCapacity: 600
   cupsPuzzle: {fileID: 237493401904823403}
   waterImage: {fileID: 237493401466213282}
 --- !u!61 &237493401396839290
@@ -239,8 +239,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.2, y: -36.19}
-  m_SizeDelta: {x: 16, y: 42.84}
+  m_AnchoredPosition: {x: 3.2, y: -52.769}
+  m_SizeDelta: {x: 16, y: 32.598}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &237493401466213285
 CanvasRenderer:
@@ -715,8 +715,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237493401780454776}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -493.07394, y: -295.9849, z: -1.7506087}
-  m_LocalScale: {x: 1, y: 4, z: 1}
+  m_LocalPosition: {x: -492.07, y: -296.8053, z: -1.7506087}
+  m_LocalScale: {x: 1, y: 2.3594553, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9172025190749250356}
@@ -786,8 +786,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cef84b839afe04096fad22d77a416f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLevel: 400
-  maxCapacity: 1200
+  waterLevel: 600
+  maxCapacity: 700
   cupsPuzzle: {fileID: 237493401904823403}
   waterImage: {fileID: 237493403183256016}
 --- !u!61 &237493401780454780
@@ -1149,10 +1149,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   demonRoom: {fileID: 0}
-  cupsPuzzleMiniCanvas: {fileID: 0}
+  cupsPuzzleMiniCanvas: {fileID: 237493402836069307}
   correctWaterValues:
-  - 800
-  - 800
+  - 500
+  - 500
   - Infinity
   cups:
   - {fileID: 237493401780454778}
@@ -1261,8 +1261,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 237493401926659833}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -487.51395, y: -297.12, z: -1.7506087}
-  m_LocalScale: {x: 1, y: 1.7332057, z: 1}
+  m_LocalPosition: {x: -486.51, y: -297.4789, z: -1.7506087}
+  m_LocalScale: {x: 1, y: 1.0153118, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9172025190749250356}
@@ -1332,8 +1332,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1cef84b839afe04096fad22d77a416f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waterLevel: 500
-  maxCapacity: 500
+  waterLevel: 0
+  maxCapacity: 300
   cupsPuzzle: {fileID: 237493401904823403}
   waterImage: {fileID: 237493403462014763}
 --- !u!61 &237493401926659837
@@ -2687,12 +2687,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 0.675
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -3020,8 +3020,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -152.1, y: -1.66}
-  m_SizeDelta: {x: 16, y: 64.08}
+  m_AnchoredPosition: {x: -152.1, y: -44.255}
+  m_SizeDelta: {x: 16, y: 37.7667}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &237493403183256019
 CanvasRenderer:
@@ -3459,8 +3459,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150.8, y: -62.62}
-  m_SizeDelta: {x: 16, y: 26.15}
+  m_AnchoredPosition: {x: 150.8, y: -78.9615}
+  m_SizeDelta: {x: 16, y: 16.055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &237493403462014762
 CanvasRenderer:
