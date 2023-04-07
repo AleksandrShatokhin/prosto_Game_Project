@@ -11,7 +11,6 @@ public class MouseHandler : MonoBehaviour
     private void Start()
     {
         stateMouseHandler = StateMouseHandler.Allowed;
-
         EventHandler.SwitcherActionMouse += SwitchActionMouseHandler;
     }
 
@@ -37,17 +36,7 @@ public class MouseHandler : MonoBehaviour
         }
     }
 
-    private void SwitchActionMouseHandler()
-    {
-        if (stateMouseHandler == StateMouseHandler.Allowed)
-        {
-            stateMouseHandler = StateMouseHandler.Forbidden;
-        }
-        else
-        {
-            stateMouseHandler = StateMouseHandler.Allowed;
-        }
-    }
+    private void SwitchActionMouseHandler() => stateMouseHandler = (stateMouseHandler == StateMouseHandler.Allowed) ? StateMouseHandler.Forbidden : StateMouseHandler.Allowed;
 
 
     private void OnDisable()
