@@ -166,7 +166,7 @@ Transform:
   m_GameObject: {fileID: 712417607186968569}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.5, z: -0.01}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 712417607144102882}
@@ -196,7 +196,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 6.72, y: 6.72}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!212 &712417607186968565
 SpriteRenderer:
@@ -5697,8 +5697,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 712417607591813901}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 3.7057676, y: 3.3186283, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -0.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 712417607144102882}
@@ -5745,7 +5745,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: df6b91657f654ba45a64b8c732b52eb1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 940f8fa8b611d434bb460334d9ea530c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -16214,7 +16214,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 6.72, y: 6.72}
+    oldSize: {x: 1, y: 1}
     newSize: {x: 6.72, y: 6.72}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -26363,6 +26363,7 @@ GameObject:
   - component: {fileID: 712417609071059289}
   - component: {fileID: 712417609071059294}
   - component: {fileID: 712417609071059295}
+  - component: {fileID: 235885961}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -26405,9 +26406,9 @@ Canvas:
   m_GameObject: {fileID: 712417609071059293}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -26415,7 +26416,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &712417609071059294
 MonoBehaviour:
@@ -26457,6 +26458,18 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &235885961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 712417609071059293}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23d2d866c782549b1e309a6b684970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &712417609092655558
 GameObject:
   m_ObjectHideFlags: 0

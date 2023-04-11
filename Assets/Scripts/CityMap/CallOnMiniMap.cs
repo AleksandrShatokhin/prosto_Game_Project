@@ -19,9 +19,9 @@ public class CallOnMiniMap : MonoBehaviour
 
     public void ClickCall()
     {
+        this.gameObject.SetActive(false);
         DemonRoomCreator demonRoomCreator = new DemonRoomCreator(this.demonSO, this.playerRoom);
         demonRoomCreator.CreateRoom();
-        this.gameObject.SetActive(false);
     }
 
     public void OpenMessageWindow()

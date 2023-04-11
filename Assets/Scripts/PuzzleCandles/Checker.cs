@@ -42,7 +42,7 @@ public class Checker : MonoBehaviour, IClickable
     private void SpriteMerge()
     {
         //Resources.UnloadUnusedAssets();
-        Texture2D newTexture = new Texture2D(672, 672); // Важно учитывать размер изображения
+        Texture2D newTexture = new Texture2D(100, 100); // Важно учитывать размер изображения
 
         for (int x = 0; x < newTexture.width; x++)
         {

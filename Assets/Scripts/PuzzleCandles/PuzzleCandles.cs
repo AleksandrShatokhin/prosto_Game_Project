@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class PuzzleCandles : MonoBehaviour
 {
+    [SerializeField] private GameObject demonRoom;
     [SerializeField] private Image createdSymbol_1, createdSymbol_2;
 
     public void ClickCheckButton()
@@ -18,7 +19,8 @@ public class PuzzleCandles : MonoBehaviour
         if ((createdSymbol_1.sprite.name == "Symbol_P + Symbol_=" || createdSymbol_1.sprite.name == "Symbol_= + Symbol_P") 
             && (createdSymbol_2.sprite.name == "Symbol_S + Symbol_II" || createdSymbol_2.sprite.name == "Symbol_II + Symbol_S"))
         {
-            GameController.GetInstance().DisplayMessageOnScreen("ВВедены правельные символы");
+            demonRoom.GetComponent<DemonRoom>().ClickComeBack();
+            //GameController.GetInstance().DisplayMessageOnScreen("ВВедены правельные символы");
         }
         else
         {
