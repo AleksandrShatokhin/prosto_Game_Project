@@ -2952,7 +2952,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bad86bef1dc533047b4043516623e407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  demonSO: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+  demonSO: {fileID: 11400000, guid: 6673fa324847b6749825a5eb11c43e65, type: 2}
   playerRoom: {fileID: 7081960540626550568}
 --- !u!1 &3244102916294382316
 GameObject:
@@ -3259,6 +3259,7 @@ GameObject:
   - component: {fileID: 8933226083073600524}
   - component: {fileID: 662056037}
   - component: {fileID: 622237066}
+  - component: {fileID: 1342560639044991398}
   m_Layer: 5
   m_Name: Necronomicon
   m_TagString: Untagged
@@ -3300,9 +3301,9 @@ Canvas:
   m_GameObject: {fileID: 4278727430674322436}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -3310,7 +3311,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &2717201889047268019
 MonoBehaviour:
@@ -3384,6 +3385,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1342560639044991398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4278727430674322436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23d2d866c782549b1e309a6b684970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &4991307261204151704

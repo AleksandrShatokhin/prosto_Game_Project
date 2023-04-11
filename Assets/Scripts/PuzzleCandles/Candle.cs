@@ -7,8 +7,7 @@ public class Candle : MonoBehaviour, IClickable
     [SerializeField] private ParticleSystem ps_Flame;
     [SerializeField] private GameObject shadow;
     [SerializeField] private Checker checkerComponent;
-
-    private CandleStatus currentCandleStatus;
+    public CandleStatus CurrentCandleStatus { get; private set; }
 
     private void Start()
     {
@@ -20,23 +19,23 @@ public class Candle : MonoBehaviour, IClickable
         CandleStatusHandler();
     }
 
-    private void CandleStatusHandler() => currentCandleStatus = (currentCandleStatus == CandleStatus.Disabled) ? LigthCandle() : ExtinguishCandle();
+    private void CandleStatusHandler() => CurrentCandleStatus = (CurrentCandleStatus == CandleStatus.Disabled) ? LigthCandle() : ExtinguishCandle();
 
     private CandleStatus LigthCandle()
     {
-        //shadow.SetActive(true);
+        shadow.SetActive(true);
         ps_Flame.Play();
-        checkerComponent.SetSprite(shadow.GetComponent<SpriteRenderer>().sprite);
-        return currentCandleStatus = CandleStatus.Enabled;
+        return CurrentCandleStatus = CandleStatus.Enabled;
     }
 
-    private CandleStatus ExtinguishCandle()
+    public CandleStatus ExtinguishCandle()
     {
-        //shadow.SetActive(false);
+        shadow.SetActive(false);
         ps_Flame.Stop();
-        checkerComponent.RemoveSprite(shadow.GetComponent<SpriteRenderer>().sprite);
-        return currentCandleStatus = CandleStatus.Disabled;
+        return CurrentCandleStatus = CandleStatus.Disabled;
     }
+
+    public Sprite GetShadowSprite() => shadow.GetComponent<SpriteRenderer>().sprite;
 }
 
 public enum CandleStatus

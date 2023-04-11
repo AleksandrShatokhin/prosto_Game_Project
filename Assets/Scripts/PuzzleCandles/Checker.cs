@@ -5,44 +5,67 @@ using UnityEngine.UI;
 
 public class Checker : MonoBehaviour, IClickable
 {
+    [SerializeField] private GameObject candles;
     [SerializeField] private List<Image> createdImages;
 
     [SerializeField] private List<Sprite> sprites;
-    [SerializeField] private SpriteRenderer spriteRenderer;
-
-    private void Start()
-    {
-        
-    }
 
     public void OnClick()
+    {
+        if (CheckActiveCandles() == true)
+        {
+            AddInMergerListNewShadowSprite();
+            AddMergerSpriteInCreatedImageList();
+        }
+    }
+
+    private bool CheckActiveCandles()
+    {
+        bool isCandleEnable = false;
+
+        foreach (Transform candle in candles.transform)
+        {
+            Candle candleComponent = candle.GetComponent<Candle>();
+
+            if (candleComponent.CurrentCandleStatus == CandleStatus.Enabled)
+            {
+                isCandleEnable = true;
+                continue;
+            }
+        }
+
+        return isCandleEnable;
+    }
+
+    private void AddInMergerListNewShadowSprite()
+    {
+        foreach (Transform candle in candles.transform)
+        {
+            Candle candleComponent = candle.GetComponent<Candle>();
+
+            if (candleComponent.CurrentCandleStatus == CandleStatus.Enabled)
+            {
+                sprites.Add(candleComponent.GetShadowSprite());
+                candleComponent.ExtinguishCandle();
+            }
+        }
+    }
+
+    private void AddMergerSpriteInCreatedImageList()
     {
         foreach (Image image in createdImages)
         {
             if (image.sprite == null)
             {
-                image.sprite = spriteRenderer.sprite;
+                image.sprite = GetMergeSprite();
                 return;
             }
         }
     }
 
-    public void SetSprite(Sprite sprite)
+    private Sprite GetMergeSprite()
     {
-        sprites.Add(sprite);
-        SpriteMerge();
-    }
-
-    public void RemoveSprite(Sprite sprite)
-    {
-        sprites.Remove(sprite);
-        SpriteMerge();
-    }
-
-    private void SpriteMerge()
-    {
-        //Resources.UnloadUnusedAssets();
-        Texture2D newTexture = new Texture2D(100, 100); // Важно учитывать размер изображения
+        Texture2D newTexture = new Texture2D(100, 100); // Need to know the correct image size
 
         for (int x = 0; x < newTexture.width; x++)
         {
@@ -70,7 +93,10 @@ public class Checker : MonoBehaviour, IClickable
         newTexture.Apply();
         Sprite finalSprite = Sprite.Create(newTexture, new Rect(0, 0, newTexture.width, newTexture.height), new Vector2(0.5f, 0.5f));
         finalSprite.name = SetNameSprite();
-        spriteRenderer.sprite = finalSprite;
+
+        sprites.Clear();
+
+        return finalSprite;
     }
 
     private string SetNameSprite()

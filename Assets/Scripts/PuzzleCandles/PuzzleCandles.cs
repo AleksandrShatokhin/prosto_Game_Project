@@ -24,7 +24,7 @@ public class PuzzleCandles : MonoBehaviour
         }
         else
         {
-            GameController.GetInstance().DisplayMessageOnScreen("ВВедены неверные символы");
+            GameController.GetInstance().DisplayMessageOnScreen("ВВедены неверные символы или неверен их порядок");
         }
     }
 
