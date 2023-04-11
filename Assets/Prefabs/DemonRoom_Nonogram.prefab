@@ -151,6 +151,7 @@ GameObject:
   - component: {fileID: 8555042}
   - component: {fileID: 8555041}
   - component: {fileID: 8555040}
+  - component: {fileID: 6178813011075998827}
   m_Layer: 5
   m_Name: NanogramsPuzzle_3
   m_TagString: Untagged
@@ -193,9 +194,9 @@ Canvas:
   m_GameObject: {fileID: 8555038}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -262,6 +263,18 @@ MonoBehaviour:
   buttonReset: {fileID: 789416531}
   gameGrid: {fileID: 1688255177}
   countToWin: 49
+--- !u!114 &6178813011075998827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8555038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23d2d866c782549b1e309a6b684970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9514155
 GameObject:
   m_ObjectHideFlags: 0
@@ -51770,6 +51783,7 @@ GameObject:
   - component: {fileID: 921898351}
   - component: {fileID: 921898350}
   - component: {fileID: 921898349}
+  - component: {fileID: 7396145666471515242}
   m_Layer: 5
   m_Name: NanogramsPuzzle_1
   m_TagString: Untagged
@@ -51812,9 +51826,9 @@ Canvas:
   m_GameObject: {fileID: 921898347}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -51881,6 +51895,18 @@ MonoBehaviour:
   buttonReset: {fileID: 150565081}
   gameGrid: {fileID: 1879507099}
   countToWin: 27
+--- !u!114 &7396145666471515242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921898347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23d2d866c782549b1e309a6b684970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &926442349
 GameObject:
   m_ObjectHideFlags: 0
@@ -92780,6 +92806,7 @@ GameObject:
   - component: {fileID: 1572052395}
   - component: {fileID: 1572052394}
   - component: {fileID: 1572052393}
+  - component: {fileID: 6137854530823664357}
   m_Layer: 5
   m_Name: NanogramsPuzzle_2
   m_TagString: Untagged
@@ -92822,9 +92849,9 @@ Canvas:
   m_GameObject: {fileID: 1572052391}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -92891,6 +92918,18 @@ MonoBehaviour:
   buttonReset: {fileID: 1097325866}
   gameGrid: {fileID: 2057856101}
   countToWin: 59
+--- !u!114 &6137854530823664357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572052391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23d2d866c782549b1e309a6b684970, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1573269323
 GameObject:
   m_ObjectHideFlags: 0
@@ -99401,6 +99440,7 @@ GameObject:
   - component: {fileID: 1671166046}
   - component: {fileID: 1671166045}
   - component: {fileID: 2646748363259639607}
+  - component: {fileID: 8512561345116996385}
   m_Layer: 5
   m_Name: Window_HintToButtons
   m_TagString: Untagged
@@ -99439,9 +99479,9 @@ Canvas:
   m_GameObject: {fileID: 1671166044}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -99449,7 +99489,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &1671166047
 MonoBehaviour:
@@ -99513,6 +99553,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8512561345116996385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671166044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23d2d866c782549b1e309a6b684970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1674496274
@@ -104823,6 +104875,7 @@ GameObject:
   - component: {fileID: 1774292134}
   - component: {fileID: 1774292138}
   - component: {fileID: 7803732501763923481}
+  - component: {fileID: 2096017308875156961}
   m_Layer: 5
   m_Name: Window_NewsPaper
   m_TagString: Untagged
@@ -104861,9 +104914,9 @@ Canvas:
   m_GameObject: {fileID: 1774292133}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
+  m_RenderMode: 1
   m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
+  m_PlaneDistance: 10
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -104871,7 +104924,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!114 &1774292135
 MonoBehaviour:
@@ -104936,6 +104989,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2096017308875156961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1774292133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc23d2d866c782549b1e309a6b684970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1777695171
@@ -125735,7 +125800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2910524353405983402
 Transform:
   m_ObjectHideFlags: 0
