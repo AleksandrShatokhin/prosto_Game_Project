@@ -1510,6 +1510,26 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 1190223854, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1220117634, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1724911694, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1873430301, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 489701002129694483, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2131405559661061199, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1565,6 +1585,10 @@ PrefabInstance:
     - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7163554205066666462, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
@@ -1714,6 +1738,7 @@ GameObject:
   - component: {fileID: 2093106370}
   - component: {fileID: 2093106373}
   - component: {fileID: 2093106374}
+  - component: {fileID: 2093106375}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -1781,3 +1806,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a2d620287383874e9db5884654a0f51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2093106375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093106368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d82a8d4e68eba3142aca0a7386b1d5ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaltCursor: {fileID: 21300000, guid: 8a66bd45726471d48b7f36b768c66d02, type: 3}
+  cursorBook: {fileID: 21300000, guid: a078bbd5e3373864bbdfac6f77396fa4, type: 3}
+  cursorEye: {fileID: 21300000, guid: fecc46f39575aaa4c89cbbe8637b6e17, type: 3}
+  cursorHand: {fileID: 21300000, guid: 767300b319d5764468fe557e0936775e, type: 3}
