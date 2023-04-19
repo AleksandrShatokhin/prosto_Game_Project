@@ -21159,7 +21159,7 @@ GameObject:
   - component: {fileID: 395838709}
   - component: {fileID: 395838711}
   - component: {fileID: 395838712}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Closet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -33620,7 +33620,7 @@ GameObject:
   - component: {fileID: 642474359}
   - component: {fileID: 642474358}
   - component: {fileID: 642474360}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GreenButtonItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37061,7 +37061,7 @@ GameObject:
   - component: {fileID: 686765107}
   - component: {fileID: 686765109}
   - component: {fileID: 686765108}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -56739,7 +56739,7 @@ GameObject:
   - component: {fileID: 990914546}
   - component: {fileID: 990914545}
   - component: {fileID: 990914547}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PurpleButtonItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68983,7 +68983,7 @@ GameObject:
   - component: {fileID: 1173694548}
   - component: {fileID: 1173694547}
   - component: {fileID: 1173694546}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Newspaper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -73776,7 +73776,7 @@ GameObject:
   - component: {fileID: 1283972413}
   - component: {fileID: 1283972412}
   - component: {fileID: 1283972414}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RedButtonItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -99579,7 +99579,7 @@ GameObject:
   - component: {fileID: 1674496278}
   - component: {fileID: 558461935}
   - component: {fileID: 570765313339529081}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SliderItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108465,7 +108465,7 @@ GameObject:
   - component: {fileID: 1865752762}
   - component: {fileID: 1865752763}
   - component: {fileID: 1865752764}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Table
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111614,7 +111614,7 @@ GameObject:
   - component: {fileID: 1907941011}
   - component: {fileID: 1907941012}
   - component: {fileID: 1907941013}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Clickable_Drawer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124373,7 +124373,7 @@ GameObject:
   - component: {fileID: 2125126510}
   - component: {fileID: 2125126512}
   - component: {fileID: 2125126511}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Hint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125587,7 +125587,7 @@ GameObject:
   - component: {fileID: 8009230093233257027}
   - component: {fileID: 8378381865947636445}
   - component: {fileID: 3134490371077961733}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Box
   m_TagString: Untagged
   m_Icon: {fileID: 0}
