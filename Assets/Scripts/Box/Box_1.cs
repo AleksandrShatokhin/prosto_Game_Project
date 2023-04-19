@@ -5,6 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
+//nonogram room
 public class Box_1 : BoxManager
 {
     [SerializeField] private GameObject toCloseWindow, toOpenWindow;

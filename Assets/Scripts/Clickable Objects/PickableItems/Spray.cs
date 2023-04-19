@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Clock : PickableItem
+public class Spray : PickableItem
 {
-    private const string nonArrows = "Кажется этим часам не достает стрелок!?", withArrow = "Часы показывают 14:55. Возможно это шифр!?";
+    [SerializeField] private Sprite spriteToInventory;
+    public override Sprite GetSpriteToInventory() => spriteToInventory;
 
     public override void OnClick()
     {
-        GameController.GetInstance().DisplayMessageOnScreen(nonArrows);
+        base.OnClick();
+        this.gameObject.SetActive(false);
     }
 
     public override void OnItemCombineAttempt()

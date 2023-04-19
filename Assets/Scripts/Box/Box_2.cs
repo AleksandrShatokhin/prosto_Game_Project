@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+//cups room
 public class Box_2 : BoxManager
 {
     private void Start()

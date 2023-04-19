@@ -11,6 +11,9 @@ public class InventoryItemSlot : MonoBehaviour, IClickable
     public bool IsItemSelected { get; private set; }
     private Sprite defaultSprite;
 
+    private Sprite itemSprite = null;
+    public void SetItemSprite(Sprite sprite) => itemSprite = sprite;
+
     [SerializeField] private Image itemIcon;
     private PickableItem itemInSlot = null;
     public PickableItem ItemInSlot
@@ -29,7 +32,15 @@ public class InventoryItemSlot : MonoBehaviour, IClickable
             }
             else
             {
-                itemIcon.sprite = value.GetComponent<SpriteRenderer>().sprite;
+                if (itemSprite == null)
+                {
+                    itemIcon.sprite = value.GetComponent<SpriteRenderer>().sprite;
+                }
+                else
+                {
+                    itemIcon.sprite = value.GetComponent<PickableItem>().GetSpriteToInventory();
+                }
+
                 itemIcon.color = new Color(1, 1, 1, 1);
             }
         }
@@ -69,5 +80,6 @@ public class InventoryItemSlot : MonoBehaviour, IClickable
     {
         IsItemSelected = false;
         this.gameObject.GetComponent<Image>().sprite = defaultSprite;
+        itemSprite = null;
     }
 }

@@ -2,18 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewspaperInRoom : PickableItem
+public class LightBulbInRoom : PickableItem
 {
-    [SerializeField] GameObject newspaper;
-
     public override void OnClick()
     {
-        OpenNewspaper();
-    }
-
-    private void OpenNewspaper()
-    {
-        newspaper.SetActive(true);
+        base.OnClick();
+        this.gameObject.SetActive(false);
     }
 
     public override void OnItemCombineAttempt()

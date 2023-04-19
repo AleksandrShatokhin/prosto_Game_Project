@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BoxButtonSpriteSwitcher : MonoBehaviour
 {
+    [SerializeField] private Box_2_CheckComponent checkComponent;
     [SerializeField] private List<Sprite> spriteList;
     [SerializeField] private int indicator;
 
@@ -15,6 +16,8 @@ public class BoxButtonSpriteSwitcher : MonoBehaviour
 
     public void ClickButton()
     {
+        //checkComponent.StopCoroutineCheck();
+
         if (indicator == spriteList.Count - 1)
         {
             SetFirstSprite();
@@ -23,6 +26,8 @@ public class BoxButtonSpriteSwitcher : MonoBehaviour
         {
             SetNewSprite();
         }
+
+        checkComponent.StartCoroutineCheck();
     }
 
     private void SetFirstSprite()

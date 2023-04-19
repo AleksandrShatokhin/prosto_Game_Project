@@ -15,16 +15,17 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] private Sprite circleSprite, itemSpriteDefoult;
     public Sprite GetCircleSprite() => circleSprite;
 
-    private void Awake() {
+    private void Awake()
+    {
         itemSlots = GetComponentsInChildren<InventoryItemSlot>();
     }
 
-    public bool AddItemToInventory(PickableItem itemToAdd)
+    public bool AddItemToInventory(PickableItem itemToAdd, Sprite spriteToSlot = null)
     {
         if (!(takenItems.Count >= maxNumberOfItemsInInventory))
         {
             takenItems.Add(itemToAdd);
-            AddItemToUi(itemToAdd);
+            AddItemToUi(itemToAdd, spriteToSlot);
 
             Debug.Log("Added " + itemToAdd.ToString() + " to inventory");
             return true;
@@ -37,12 +38,13 @@ public class PlayerInventory : MonoBehaviour
         }
     }
 
-    private void AddItemToUi(PickableItem itemToAdd)
+    private void AddItemToUi(PickableItem itemToAdd, Sprite spriteToSlot = null)
     {
         for (int i = 0; i < itemSlots.Length; i++)
         {
             if (itemSlots[i].ItemInSlot == null)
             {
+                itemSlots[i].SetItemSprite(spriteToSlot);
                 itemSlots[i].ItemInSlot = itemToAdd;
                 return;
             }
