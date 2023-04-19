@@ -5,18 +5,26 @@ using UnityEngine.UI;
 
 public class BoxButtonSpriteSwitcher : MonoBehaviour
 {
-    [SerializeField] private Box_2_CheckComponent checkComponent;
+    [SerializeField] private BoxCheckerManager checkComponent;
     [SerializeField] private List<Sprite> spriteList;
     [SerializeField] private int indicator;
 
+    private bool isActiveButtonClick;
+
     private void Start()
     {
+        isActiveButtonClick = true;
         SetFirstSprite();
     }
 
     public void ClickButton()
     {
-        //checkComponent.StopCoroutineCheck();
+        if (isActiveButtonClick == false)
+        {
+            return;
+        }
+
+        checkComponent.StopCoroutineCheck();
 
         if (indicator == spriteList.Count - 1)
         {
@@ -41,4 +49,6 @@ public class BoxButtonSpriteSwitcher : MonoBehaviour
         indicator += 1;
         this.GetComponent<Image>().sprite = spriteList[indicator];
     }
+
+    public void ActiveButtonClick_Off() => isActiveButtonClick = false;
 }

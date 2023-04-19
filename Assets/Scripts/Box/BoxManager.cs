@@ -18,8 +18,7 @@ public class BoxManager : MonoBehaviour
 
     public virtual void ClickOpenBox()
     {
-        GameObject boxWindow = this.transform.parent.gameObject;
-        boxWindow.transform.rotation = Quaternion.Euler(-45.0f, -45.0f, 45.0f);
+        this.gameObject.transform.rotation = Quaternion.Euler(-90, 0, 0);
         buttonLeft.gameObject.SetActive(false);
         buttonRight.gameObject.SetActive(false);
         buttonOpenBox.gameObject.SetActive(false);

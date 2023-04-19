@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Box_2_CheckComponent : MonoBehaviour
+public class Box_2_CheckNumberComponent : BoxCheckerManager
 {
     [SerializeField] private List<Image> buttonsOnPanel;
     [SerializeField] private List<Sprite> correctSymbols;
@@ -11,24 +11,16 @@ public class Box_2_CheckComponent : MonoBehaviour
 
     [SerializeField] private int indicator;
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.F))
-        {
-            CheckSymbols();
-        }
-    }
-
-    public void CheckSymbols()
+    public void CheckNumbers()
     {
         bool isSymbolCorrect = false;
-        int countCorrectSymbols = 0;
+        int countCorrectNumbers = 0;
 
         foreach (Image buttonSprite in buttonsOnPanel)
         {
             if (buttonSprite.sprite == correctSymbols[indicator])
             {
-                countCorrectSymbols += 1;
+                countCorrectNumbers += 1;
             }
 
             indicator += 1;
@@ -36,30 +28,32 @@ public class Box_2_CheckComponent : MonoBehaviour
 
         indicator = 0;
 
-        isSymbolCorrect = (countCorrectSymbols == 4) ? true : false;
+        isSymbolCorrect = (countCorrectNumbers == buttonsOnPanel.Count) ? true : false;
 
         if (isSymbolCorrect == true)
         {
             foreach (Image buttonSprite in buttonsOnPanel)
             {
                 buttonSprite.sprite = winSprites[indicator];
+                buttonSprite.transform.GetComponent<BoxButtonSpriteSwitcher>().ActiveButtonClick_Off();
                 indicator += 1;
             }
 
+            SetValueIsCorrectVariable(true);
             indicator = 0;
         }
         else
         {
-            Debug.Log("Incorrect symbols");
+            Debug.Log("Incorrect numbers");
         }
     }
 
-    public void StartCoroutineCheck() => StartCoroutine(StartDelayToCheckOnCorrected());
-    public void StopCoroutineCheck() => StopCoroutine(StartDelayToCheckOnCorrected());
+    public override void StartCoroutineCheck() => StartCoroutine(StartDelayToCheckOnCorrected());
+    public override void StopCoroutineCheck() => StopAllCoroutines();
 
     private IEnumerator StartDelayToCheckOnCorrected()
     {
         yield return new WaitForSeconds(1.0f);
-        CheckSymbols();
+        CheckNumbers();
     }
 }
