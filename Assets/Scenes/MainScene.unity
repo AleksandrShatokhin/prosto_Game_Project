@@ -1587,6 +1587,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+--- !u!1 &1983649524 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+  m_PrefabInstance: {fileID: 1983649523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2050914695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1770,7 +1775,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingCircleAnimator: {fileID: 63705513}
   pauseWindow: {fileID: 943094960}
-  firstWindow: {fileID: 0}
+  firstWindow: {fileID: 1983649524}
   mainUIController: {fileID: 492568366}
 --- !u!114 &2093106373
 MonoBehaviour:
