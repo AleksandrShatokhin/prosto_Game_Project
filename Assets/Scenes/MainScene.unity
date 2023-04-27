@@ -1223,6 +1223,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654669289}
   m_CullTransparentMesh: 1
+--- !u!1 &1662042328 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+  m_PrefabInstance: {fileID: 1983649523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1769475313
 GameObject:
   m_ObjectHideFlags: 0
@@ -1505,26 +1510,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 1190223854, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1220117634, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1724911694, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 1873430301, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 489701002129694483, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_Layer
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 2131405559661061199, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -1577,21 +1562,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterRoom
       objectReference: {fileID: 0}
-    - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7163554205066666462, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_Layer
-      value: 7
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
---- !u!1 &1983649524 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-  m_PrefabInstance: {fileID: 1983649523}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2050914695
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,7 +1747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   loadingCircleAnimator: {fileID: 63705513}
   pauseWindow: {fileID: 943094960}
-  firstWindow: {fileID: 1983649524}
+  firstWindow: {fileID: 1662042328}
   mainUIController: {fileID: 492568366}
 --- !u!114 &2093106373
 MonoBehaviour:
