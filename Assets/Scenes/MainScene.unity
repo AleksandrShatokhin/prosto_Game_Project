@@ -1790,7 +1790,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d82a8d4e68eba3142aca0a7386b1d5ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  defaltCursor: {fileID: 21300000, guid: 370f93df310676a4b929c633d37bd1bd, type: 3}
-  cursorBook: {fileID: 21300000, guid: a078bbd5e3373864bbdfac6f77396fa4, type: 3}
-  cursorEye: {fileID: 21300000, guid: fecc46f39575aaa4c89cbbe8637b6e17, type: 3}
-  cursorHand: {fileID: 21300000, guid: 45ac2de40eaf2be40a4a68a484478b88, type: 3}
+  defaltCursor: {fileID: 21300000, guid: da999629e34451f47af373dd2a3bec44, type: 3}
+  cursorBook: {fileID: 21300000, guid: faabb08b798541a4fbb932167f7f14f1, type: 3}
+  cursorEye: {fileID: 21300000, guid: 445be200f71ff144ca4510f3ffe9e321, type: 3}
+  cursorHand: {fileID: 21300000, guid: 11069356a84eac3439e6b2a441be2069, type: 3}

@@ -73,4 +73,6 @@ public class GameController : MonoBehaviour
             Time.timeScale = 0.0f;
         }
     }
+
+    public void ClosePanel(GameObject closeObject) => closeObject.SetActive(false);
 }

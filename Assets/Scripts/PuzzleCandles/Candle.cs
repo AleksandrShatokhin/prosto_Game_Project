@@ -16,6 +16,12 @@ public class Candle : MonoBehaviour, IClickable
 
     void IClickable.OnClick()
     {
+        if (this.GetComponent<SpriteRenderer>().enabled == false)
+        {
+            this.GetComponent<SpriteRenderer>().enabled = true;
+            return;
+        }
+
         CandleStatusHandler();
     }
 

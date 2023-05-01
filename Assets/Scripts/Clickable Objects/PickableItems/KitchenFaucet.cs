@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class KitchenFaucet : PickableItem
 {
+    [SerializeField] private ParticleSystem ps_Water;
     [SerializeField] private GameObject decanterWater;
     [SerializeField] private PickableItem decanterEmpty;
     [SerializeField] private bool isWaterActivate;
@@ -13,7 +14,7 @@ public class KitchenFaucet : PickableItem
     {
         if (isWaterActivate == true)
         {
-            FillDecanterWoter();
+            FillDecanterWater();
         }
         else
         {
@@ -21,9 +22,21 @@ public class KitchenFaucet : PickableItem
         }
     }
 
-    private void SwitcherKitchenFaucet() => isWaterActivate = !isWaterActivate;
+    private void SwitcherKitchenFaucet()
+    {
+        isWaterActivate = !isWaterActivate;
 
-    private void FillDecanterWoter()
+        if (isWaterActivate == true)
+        {
+            ps_Water.Play();
+        }
+        else
+        {
+            ps_Water.Stop();
+        }
+    }
+
+    private void FillDecanterWater()
     {
         foreach (InventoryItemSlot slot in playerInventory.GetComponentsInChildren<InventoryItemSlot>())
         {
