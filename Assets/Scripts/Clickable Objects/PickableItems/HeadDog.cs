@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class HeadDog : PickableItem
 {
-    private Vector2 defaultLocalPosition = new Vector2(-4.5f, 2.0f);
-    private Vector3 righttLocalPosition = new Vector3(4.5f, -2.0f, -0.01f);
+    private Vector2 defaultLocalPosition = new Vector3(3.2f, 1.5f, -0.02f);
+    private Vector3 righttLocalPosition = new Vector3(-3.2f, 1.5f, -0.02f);
 
     [SerializeField] private GameObject canvasText;
     [SerializeField] private PickableItem bowlSoup_Type;

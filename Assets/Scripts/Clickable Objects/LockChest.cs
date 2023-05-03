@@ -58,4 +58,6 @@ public class LockChest : MonoBehaviour, IClickable
         openableChest.SetActive(true);
         this.gameObject.SetActive(false);
     }
+
+    public void ClosePanel() => GameController.GetInstance().ClosePanel(lockPanel);
 }

@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Decanter_Empty : PickableItem
+public class PickupCandle : PickableItem
 {
-    [SerializeField] private Sprite spriteDecanter;
-    public override Sprite GetSpriteToInventory() => spriteDecanter;
+    [SerializeField] private Sprite spriteCandle;
+    public override Sprite GetSpriteToInventory() => spriteCandle;
 
     public override void OnClick()
     {

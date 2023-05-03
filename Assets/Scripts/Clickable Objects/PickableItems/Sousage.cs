@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Sousage : PickableItem
 {
+    [SerializeField] private Sprite spriteSousage;
+    public override Sprite GetSpriteToInventory() => spriteSousage;
+
     public override void OnClick()
     {
         base.OnClick();

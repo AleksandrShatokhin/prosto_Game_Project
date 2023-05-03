@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Candle : MonoBehaviour, IClickable
 {
+    [SerializeField] private PlayerInventory playerInventory;
+    [SerializeField] private PickableItem pickupCandle;
+
     [SerializeField] private ParticleSystem ps_Flame;
     [SerializeField] private GameObject shadow;
-    [SerializeField] private Checker checkerComponent;
     public CandleStatus CurrentCandleStatus { get; private set; }
 
     private void Start()
@@ -18,11 +20,31 @@ public class Candle : MonoBehaviour, IClickable
     {
         if (this.GetComponent<SpriteRenderer>().enabled == false)
         {
-            this.GetComponent<SpriteRenderer>().enabled = true;
+            AddCandleOnTable();
             return;
         }
 
         CandleStatusHandler();
+    }
+
+    private void AddCandleOnTable()
+    {
+        foreach (InventoryItemSlot slot in playerInventory.GetComponentsInChildren<InventoryItemSlot>())
+        {
+            if (slot.IsItemSelected == true)
+            {
+                if (slot.ItemInSlot == pickupCandle)
+                {
+                    this.GetComponent<SpriteRenderer>().enabled = true;
+                    playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
+                    slot.DeselectItem();
+                    this.gameObject.layer = (int)Layers.Pickable;
+                    return;
+                }
+            }
+        }
+
+        GameController.GetInstance().DisplayMessageOnScreen("Кажется тут не хватает одной свечки!?");
     }
 
     private void CandleStatusHandler() => CurrentCandleStatus = (CurrentCandleStatus == CandleStatus.Disabled) ? LigthCandle() : ExtinguishCandle();
