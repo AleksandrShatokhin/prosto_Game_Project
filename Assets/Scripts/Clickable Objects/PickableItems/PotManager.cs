@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PotManager : PickableItem
 {
+    [SerializeField] private SoupRecipeWindow soupRecipe_Window;
     [SerializeField] private List<PickableItem> correctIngredients;
     [SerializeField] private List<PickableItem> soupIngredients;
     [SerializeField] private GameObject bowlSoup;
+
+    public List<PickableItem> GetSoupIngredients() => soupIngredients;
 
     public override void OnClick()
     {
@@ -28,14 +31,19 @@ public class PotManager : PickableItem
         {
             if (slot.IsItemSelected == true)
             {
+                int numberLoop = 0;
+
                 foreach (PickableItem correctIngredients in correctIngredients)
                 {
                     if (slot.ItemInSlot == correctIngredients)
                     {
                         soupIngredients.Add(slot.ItemInSlot);
+                        soupRecipe_Window.AddMark(numberLoop);
                         playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
                         slot.DeselectItem();
                     }
+
+                    numberLoop += 1;
                 }
             }
         }
