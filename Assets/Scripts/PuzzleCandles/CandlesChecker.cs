@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CandlesChecker : MonoBehaviour, IClickable
 {
+    [SerializeField] private ButtonsWithSymbolToMinibox buttonsWithSymbol;
+
     [SerializeField] private GameObject candles;
 
     public void OnClick()
@@ -20,7 +22,9 @@ public class CandlesChecker : MonoBehaviour, IClickable
             candleStatus_3 == CandleStatus.Disabled && 
             candleStatus_4 == CandleStatus.Disabled)
         {
-            GameController.GetInstance().DisplayMessageOnScreen("Верная комбинация Number_1 !");
+            buttonsWithSymbol.ActivateButton_1();
+            GameController.GetInstance().DisplayMessageOnScreen("Это дало результат!");
+            return;
         }
 
         if (candleStatus_0 == CandleStatus.Disabled &&
@@ -29,7 +33,22 @@ public class CandlesChecker : MonoBehaviour, IClickable
             candleStatus_3 == CandleStatus.Disabled &&
             candleStatus_4 == CandleStatus.Enabled)
         {
-            GameController.GetInstance().DisplayMessageOnScreen("Верная комбинация Number_2 !");
+            buttonsWithSymbol.ActivateButton_2();
+            GameController.GetInstance().DisplayMessageOnScreen("Это дало результат!");
+            return;
+        }
+
+        if (candleStatus_0 == CandleStatus.Disabled &&
+            candleStatus_1 == CandleStatus.Disabled &&
+            candleStatus_2 == CandleStatus.Disabled &&
+            candleStatus_3 == CandleStatus.Disabled &&
+            candleStatus_4 == CandleStatus.Disabled)
+        {
+            GameController.GetInstance().DisplayMessageOnScreen("Наверное здесь что-то должно отобразиться!");
+        }
+        else
+        {
+            GameController.GetInstance().DisplayMessageOnScreen("Кажется что-то не подходит!");
         }
     }
 }

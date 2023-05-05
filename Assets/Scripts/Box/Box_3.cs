@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class Box_3 : BoxManager
 {
+    [SerializeField] private PlayerInventory playerInventory;
+    [SerializeField] private Hammer hammer;
+
     private void Start()
     {
         buttonOpenBox.onClick.AddListener(ClickOpenBox);
@@ -14,6 +17,22 @@ public class Box_3 : BoxManager
 
     public override void ClickOpenBox()
     {
-        base.ClickOpenBox();
+        foreach (InventoryItemSlot slot in playerInventory.GetComponentsInChildren<InventoryItemSlot>())
+        {
+            if (slot.IsItemSelected == true)
+            {
+                if (slot.ItemInSlot == hammer)
+                {
+                    playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
+                    slot.DeselectItem();
+
+                    base.ClickOpenBox();
+
+                    return;
+                }
+            }
+        }
+
+        GameController.GetInstance().DisplayMessageOnScreen("У этой шкатулки нет замков. Нужно придумать как еще ее можно вскрыть...");
     }
 }
