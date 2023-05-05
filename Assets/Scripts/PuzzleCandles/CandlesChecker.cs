@@ -10,6 +10,11 @@ public class CandlesChecker : MonoBehaviour, IClickable
 
     public void OnClick()
     {
+        if (buttonsWithSymbol.gameObject.activeInHierarchy == false)
+        {
+            return;
+        }
+
         CandleStatus candleStatus_0 = candles.transform.GetChild(0).GetComponent<Candle>().CurrentCandleStatus;
         CandleStatus candleStatus_1 = candles.transform.GetChild(1).GetComponent<Candle>().CurrentCandleStatus;
         CandleStatus candleStatus_2 = candles.transform.GetChild(2).GetComponent<Candle>().CurrentCandleStatus;

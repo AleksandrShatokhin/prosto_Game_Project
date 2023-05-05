@@ -7,22 +7,43 @@ public class PotManager : PickableItem
     [SerializeField] private SoupRecipeWindow soupRecipe_Window;
     [SerializeField] private List<PickableItem> correctIngredients;
     [SerializeField] private List<PickableItem> soupIngredients;
+    [SerializeField] private PickableItem ladle;
     [SerializeField] private GameObject bowlSoup;
 
     public List<PickableItem> GetSoupIngredients() => soupIngredients;
 
     public override void OnClick()
     {
-        if (CheckerSoup() == true)
+        if (CheckerSoup() == true && CheckLadleInInventory() == true)
         {
             GameController.GetInstance().DisplayMessageOnScreen("Суп готов!");
+            this.transform.GetChild(0).gameObject.SetActive(false);
             soupIngredients.Clear();
             bowlSoup.SetActive(true);
+            return;
         }
         else
         {
             AddIngredientInPot();
         }
+    }
+
+    private bool CheckLadleInInventory()
+    {
+        foreach (InventoryItemSlot slot in playerInventory.GetComponentsInChildren<InventoryItemSlot>())
+        {
+            if (slot.IsItemSelected == true)
+            {
+                if (slot.ItemInSlot == ladle)
+                {
+                    playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
+                    slot.DeselectItem();
+                    return true;
+                }
+            }
+        }
+
+        return false;
     }
 
     private void AddIngredientInPot()
@@ -46,6 +67,11 @@ public class PotManager : PickableItem
                     numberLoop += 1;
                 }
             }
+        }
+
+        if (CheckerSoup() == true)
+        {
+            this.transform.GetChild(0).gameObject.SetActive(true);
         }
     }
 

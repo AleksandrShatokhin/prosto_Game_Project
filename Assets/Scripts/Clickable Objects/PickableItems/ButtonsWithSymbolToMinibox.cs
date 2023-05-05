@@ -46,12 +46,22 @@ public class ButtonsWithSymbolToMinibox : PickableItem
     {
         isButton_1_Activate = true;
         sr_Button_1.sprite = button_1_SpriteSymbol;
+        SwitchLayer();
     }
 
     public void ActivateButton_2()
     {
         isButton_2_Activate = true;
         sr_Button_2.sprite = button_2_SpriteSymbol;
+        SwitchLayer();
+    }
+
+    private void SwitchLayer()
+    {
+        if (isButton_1_Activate == true && isButton_2_Activate == true)
+        {
+            this.gameObject.layer = (int)Layers.Pickable;
+        }
     }
 
     public override void OnItemCombineAttempt()

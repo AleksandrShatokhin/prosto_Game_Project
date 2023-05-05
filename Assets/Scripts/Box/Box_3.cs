@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Box_3 : BoxManager
 {
+    [SerializeField] private BoxInDemonRoom boxInRoom;
     [SerializeField] private PlayerInventory playerInventory;
     [SerializeField] private Hammer hammer;
 
@@ -25,6 +26,8 @@ public class Box_3 : BoxManager
                 {
                     playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
+
+                    boxInRoom.ChangeSprite();
 
                     base.ClickOpenBox();
 
