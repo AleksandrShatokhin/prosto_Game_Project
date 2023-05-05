@@ -22,7 +22,6 @@ public class ButtonsWithSymbolToMinibox : PickableItem
         if (CheckActivationButtons() == true)
         {
             base.OnClick();
-            this.gameObject.SetActive(false);
         }
     }
 

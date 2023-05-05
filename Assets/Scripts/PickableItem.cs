@@ -12,7 +12,10 @@ public abstract class PickableItem : MonoBehaviour, IClickable
     [SerializeField] protected PlayerInventory playerInventory;
     public virtual void OnClick()
     {
-        playerInventory.AddItemToInventory(this, GetSpriteToInventory());
+        if (playerInventory.AddItemToInventory(this, GetSpriteToInventory()) == true)
+        {
+            this.gameObject.SetActive(false);
+        }
     }
 
     public void OnItemRemove()
