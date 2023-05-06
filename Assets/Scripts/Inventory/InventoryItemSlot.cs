@@ -8,6 +8,7 @@ using UnityEngine.UI;
 
 public class InventoryItemSlot : MonoBehaviour, IClickable
 {
+    [SerializeField] private GameObject selectedImage;
     public bool IsItemSelected { get; private set; }
     private Sprite defaultSprite;
 
@@ -73,13 +74,15 @@ public class InventoryItemSlot : MonoBehaviour, IClickable
     {
         this.GetComponentInParent<PlayerInventory>().CheckIsSelectedItemInInventory();
         IsItemSelected = true;
-        this.gameObject.GetComponent<Image>().sprite = GetComponentInParent<PlayerInventory>().GetCircleSprite();
+        //this.gameObject.GetComponent<Image>().sprite = GetComponentInParent<PlayerInventory>().GetCircleSprite();
+        selectedImage.SetActive(true);
     }
 
     public void DeselectItem()
     {
         IsItemSelected = false;
-        this.gameObject.GetComponent<Image>().sprite = defaultSprite;
+        //this.gameObject.GetComponent<Image>().sprite = defaultSprite;
         itemSprite = null;
+        selectedImage.SetActive(false);
     }
 }

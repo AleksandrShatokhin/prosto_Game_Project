@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &43441222
 RectTransform:
   m_ObjectHideFlags: 0
@@ -31,12 +31,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1946047776398151311}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 40, y: 30}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &43441224
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a49805bedb05b21488955055ea9ccda3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97eb9d3ea679a0c47bd112ff58d9b64a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -93,7 +93,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &387689106
 RectTransform:
   m_ObjectHideFlags: 0
@@ -107,12 +107,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6287740019770047921}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 40, y: 30}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &387689108
 CanvasRenderer:
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a49805bedb05b21488955055ea9ccda3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97eb9d3ea679a0c47bd112ff58d9b64a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -169,7 +169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1414485269
 RectTransform:
   m_ObjectHideFlags: 0
@@ -183,12 +183,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7873514934157721900}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 40, y: 30}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1414485271
 CanvasRenderer:
@@ -218,7 +218,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a49805bedb05b21488955055ea9ccda3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97eb9d3ea679a0c47bd112ff58d9b64a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -245,7 +245,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1447757381
 RectTransform:
   m_ObjectHideFlags: 0
@@ -259,12 +259,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3565969060010614880}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 40, y: 30}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1447757383
 CanvasRenderer:
@@ -294,7 +294,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a49805bedb05b21488955055ea9ccda3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97eb9d3ea679a0c47bd112ff58d9b64a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -321,7 +321,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1620040117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -335,12 +335,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7230821730629762672}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -20}
-  m_SizeDelta: {x: 40, y: 30}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1620040119
 CanvasRenderer:
@@ -370,7 +370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: a49805bedb05b21488955055ea9ccda3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 97eb9d3ea679a0c47bd112ff58d9b64a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -411,7 +411,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3565969060010614880}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -487,7 +487,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1946047776398151311}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -565,15 +565,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5378631880741587402}
   - {fileID: 43441222}
+  - {fileID: 5378631880741587402}
   m_Father: {fileID: 4775734255033762133}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 225, y: -27.5}
-  m_SizeDelta: {x: 35, y: 35}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7066460254283796275
 CanvasRenderer:
@@ -596,14 +596,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 1, b: 0.9882353, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb7c66d15cfd09f40b5aacbcc847d777, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71c75773a3859124eafee3d3584bd190, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -625,6 +625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4d7b918cc12d74dabdde4c1bc43fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedImage: {fileID: 43441221}
   itemIcon: {fileID: 2441289820192676420}
 --- !u!114 &569966880348037318
 MonoBehaviour:
@@ -704,18 +705,6 @@ MonoBehaviour:
           m_MethodName: ColorStripToSelected
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 43441223}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: AddedCircleToSelected
-          m_Mode: 2
-          m_Arguments:
             m_ObjectArgument: {fileID: 8796121477786353305}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
             m_IntArgument: 0
@@ -730,18 +719,6 @@ MonoBehaviour:
         - m_Target: {fileID: 1913303166749757049}
           m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
           m_MethodName: ColorStripToDeselected
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 43441223}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: RemoveCircleToDeselected
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 8796121477786353305}
@@ -784,15 +761,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 9038074817364842243}
   - {fileID: 1414485269}
+  - {fileID: 9038074817364842243}
   m_Father: {fileID: 4775734255033762133}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 25, y: -27.5}
-  m_SizeDelta: {x: 35, y: 35}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4250591293613020242
 CanvasRenderer:
@@ -815,14 +792,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 1, b: 0.9882353, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb7c66d15cfd09f40b5aacbcc847d777, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71c75773a3859124eafee3d3584bd190, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -844,6 +821,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4d7b918cc12d74dabdde4c1bc43fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedImage: {fileID: 1414485268}
   itemIcon: {fileID: 3732415978122032888}
 --- !u!114 &7208801735049519072
 MonoBehaviour:
@@ -923,18 +901,6 @@ MonoBehaviour:
           m_MethodName: ColorStripToSelected
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 1414485270}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: AddedCircleToSelected
-          m_Mode: 2
-          m_Arguments:
             m_ObjectArgument: {fileID: 3557919349216137902}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
             m_IntArgument: 0
@@ -949,18 +915,6 @@ MonoBehaviour:
         - m_Target: {fileID: 1913303166749757049}
           m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
           m_MethodName: ColorStripToDeselected
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1414485270}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: RemoveCircleToDeselected
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 3557919349216137902}
@@ -1003,15 +957,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 618782180891266311}
   - {fileID: 1447757381}
+  - {fileID: 618782180891266311}
   m_Father: {fileID: 4775734255033762133}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 125, y: -27.5}
-  m_SizeDelta: {x: 35, y: 35}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5351431528377673524
 CanvasRenderer:
@@ -1034,14 +988,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 1, b: 0.9882353, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb7c66d15cfd09f40b5aacbcc847d777, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71c75773a3859124eafee3d3584bd190, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1063,6 +1017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4d7b918cc12d74dabdde4c1bc43fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedImage: {fileID: 1447757380}
   itemIcon: {fileID: 2119297876840336748}
 --- !u!114 &7742004073471719165
 MonoBehaviour:
@@ -1142,18 +1097,6 @@ MonoBehaviour:
           m_MethodName: ColorStripToSelected
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 1447757382}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: AddedCircleToSelected
-          m_Mode: 2
-          m_Arguments:
             m_ObjectArgument: {fileID: 6630823849619159275}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
             m_IntArgument: 0
@@ -1168,18 +1111,6 @@ MonoBehaviour:
         - m_Target: {fileID: 1913303166749757049}
           m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
           m_MethodName: ColorStripToDeselected
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1447757382}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: RemoveCircleToDeselected
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 6630823849619159275}
@@ -1220,7 +1151,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7873514934157721900}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1325,7 +1256,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5850513110535460955}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -1389,7 +1320,7 @@ MonoBehaviour:
   maxNumberOfItemsInInventory: 5
   infoWindow: {fileID: 633329307799652759, guid: 668d5a53347a5c14c93303a3853f9864, type: 3}
   colorToSelect: {r: 0.68235296, g: 1, b: 0.9882353, a: 1}
-  colorToDefoult: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
+  colorToDefoult: {r: 1, g: 1, b: 1, a: 1}
   circleSprite: {fileID: 21300000, guid: 716e6343a163d8746b550f0f7ae08be0, type: 3}
   itemSpriteDefoult: {fileID: 21300000, guid: bb7c66d15cfd09f40b5aacbcc847d777, type: 3}
 --- !u!1 &7075799610090350852
@@ -1425,15 +1356,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 751942840489336956}
   - {fileID: 1620040117}
+  - {fileID: 751942840489336956}
   m_Father: {fileID: 4775734255033762133}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 75, y: -27.5}
-  m_SizeDelta: {x: 35, y: 35}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8308006540851719305
 CanvasRenderer:
@@ -1456,14 +1387,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 1, b: 0.9882353, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb7c66d15cfd09f40b5aacbcc847d777, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71c75773a3859124eafee3d3584bd190, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1485,6 +1416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4d7b918cc12d74dabdde4c1bc43fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedImage: {fileID: 1620040116}
   itemIcon: {fileID: 5887516997321392013}
 --- !u!114 &8200265304223847571
 MonoBehaviour:
@@ -1564,18 +1496,6 @@ MonoBehaviour:
           m_MethodName: ColorStripToSelected
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 1620040118}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: AddedCircleToSelected
-          m_Mode: 2
-          m_Arguments:
             m_ObjectArgument: {fileID: 8949978549784487065}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
             m_IntArgument: 0
@@ -1590,18 +1510,6 @@ MonoBehaviour:
         - m_Target: {fileID: 1913303166749757049}
           m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
           m_MethodName: ColorStripToDeselected
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 1620040118}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: RemoveCircleToDeselected
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 8949978549784487065}
@@ -1642,7 +1550,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7230821730629762672}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1718,7 +1626,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6287740019770047921}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1796,15 +1704,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 5601355647269182028}
   - {fileID: 387689106}
+  - {fileID: 5601355647269182028}
   m_Father: {fileID: 4775734255033762133}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 175, y: -27.5}
-  m_SizeDelta: {x: 35, y: 35}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6294086756329341785
 CanvasRenderer:
@@ -1827,14 +1735,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.68235296, g: 1, b: 0.9882353, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bb7c66d15cfd09f40b5aacbcc847d777, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 71c75773a3859124eafee3d3584bd190, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1856,6 +1764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a4d7b918cc12d74dabdde4c1bc43fd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  selectedImage: {fileID: 387689105}
   itemIcon: {fileID: 4019808563121030043}
 --- !u!114 &3689690952437363045
 MonoBehaviour:
@@ -1935,18 +1844,6 @@ MonoBehaviour:
           m_MethodName: ColorStripToSelected
           m_Mode: 2
           m_Arguments:
-            m_ObjectArgument: {fileID: 387689107}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: AddedCircleToSelected
-          m_Mode: 2
-          m_Arguments:
             m_ObjectArgument: {fileID: 4672319370386260843}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
             m_IntArgument: 0
@@ -1961,18 +1858,6 @@ MonoBehaviour:
         - m_Target: {fileID: 1913303166749757049}
           m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
           m_MethodName: ColorStripToDeselected
-          m_Mode: 2
-          m_Arguments:
-            m_ObjectArgument: {fileID: 387689107}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Image, UnityEngine.UI
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-        - m_Target: {fileID: 1913303166749757049}
-          m_TargetAssemblyTypeName: PlayerInventory, Assembly-CSharp
-          m_MethodName: RemoveCircleToDeselected
           m_Mode: 2
           m_Arguments:
             m_ObjectArgument: {fileID: 4672319370386260843}
