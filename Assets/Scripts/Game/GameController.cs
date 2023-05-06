@@ -10,7 +10,9 @@ public class GameController : MonoBehaviour
     [SerializeField] private Animator loadingCircleAnimator;
 
     private bool isPauseMode;
-    [SerializeField] GameObject pauseWindow;
+    [SerializeField] private GameObject pauseWindow;
+    [SerializeField] private GameObject tutorialBook;
+    public TutorialBook GetTutorialBookComponent() => tutorialBook.GetComponent<TutorialBook>();
 
     // references to the main components
     [SerializeField] private GameObject firstWindow;
@@ -31,6 +33,23 @@ public class GameController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Escape))
         {
             PauseMode();
+        }
+
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            OpenTutorialBook();
+        }
+    }
+
+    private void OpenTutorialBook()
+    {
+        if (tutorialBook.activeInHierarchy == true)
+        {
+            tutorialBook.SetActive(false);
+        }
+        else
+        {
+            tutorialBook.SetActive(true);
         }
     }
 

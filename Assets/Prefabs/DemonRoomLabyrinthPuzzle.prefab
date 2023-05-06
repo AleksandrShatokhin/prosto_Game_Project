@@ -5028,6 +5028,7 @@ GameObject:
   - component: {fileID: 1019942395}
   - component: {fileID: 1019942394}
   - component: {fileID: 1019942399}
+  - component: {fileID: 1881551847}
   m_Layer: 0
   m_Name: SoupRecipe_Window
   m_TagString: Untagged
@@ -5155,6 +5156,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ingredientsRecipe: {fileID: 1958750075}
+--- !u!114 &1881551847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019942392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f084446716137394fa0d6d9ea775e28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 7732219569155880955}
 --- !u!1 &1031286418
 GameObject:
   m_ObjectHideFlags: 0
@@ -44711,12 +44725,17 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1913303166749757049, guid: b33165d6606e8be48ac2b2bb9788474c, type: 3}
   m_PrefabInstance: {fileID: 4215208817344343968}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 7732219569155880955}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 759588b9367b5c940892c424f15019db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7732219569155880955 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5850513110535460955, guid: b33165d6606e8be48ac2b2bb9788474c, type: 3}
+  m_PrefabInstance: {fileID: 4215208817344343968}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &8663165461968760565 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4775734255033762133, guid: b33165d6606e8be48ac2b2bb9788474c, type: 3}

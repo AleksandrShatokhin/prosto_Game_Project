@@ -65,4 +65,6 @@ public class Necronomicon : MonoBehaviour
         indexPage -= 1;
         UpdatePageContent();
     }
+
+    public void ClosePanel() => GameController.GetInstance().ClosePanel(this.gameObject);
 }
