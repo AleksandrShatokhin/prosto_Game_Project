@@ -35,6 +35,15 @@ public class CupsPuzzle : MonoBehaviour, IPuzzle
 
     public void OnPuzzleEnd()
     {
+        //demonRoom.GetComponent<DemonRoom>().ClickComeBack();
+        StartCoroutine(DelayToEnd());
+    }
+
+    private IEnumerator DelayToEnd(float delay = 1.0f)
+    {
+        this.GetComponent<TriggerMouseComponent>().enabled = true;
+        yield return new WaitForSeconds(delay);
+        this.GetComponent<TriggerMouseComponent>().enabled = false;
         demonRoom.GetComponent<DemonRoom>().ClickComeBack();
     }
 }
