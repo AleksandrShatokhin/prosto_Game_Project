@@ -18,10 +18,10 @@ public class CellNanograms : MonoBehaviour
 
         SetState_Closed();
 
-        if (status == CellStatus.Correct)
-        {
-            SetState_Open();
-        }
+        //if (status == CellStatus.Correct)
+        //{
+        //    SetState_Open();
+        //}
     }
 
     private void ClickCell()
