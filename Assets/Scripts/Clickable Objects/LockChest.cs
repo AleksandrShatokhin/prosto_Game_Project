@@ -12,7 +12,6 @@ public class LockChest : MonoBehaviour, IClickable
     [SerializeField] private GameObject openableChest;
 
     private GameObject lockPanel;
-    private int sum = 0;
 
     private void Start()
     {
