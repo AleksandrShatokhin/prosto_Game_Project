@@ -7,7 +7,8 @@ public class LabyrinthCheckpoint : MonoBehaviour
 {
     public void ActivateCheckpoint()
     {
-        GetComponent<TMP_Text>().color = Color.blue;
+        //GetComponent<TMP_Text>().color = Color.blue;
+        GetComponent<SpriteRenderer>().enabled = false;
     }
 
     public void DeactivateCheckpoint()
