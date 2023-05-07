@@ -1495,7 +1495,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 2
   m_TargetDisplay: 0
 --- !u!224 &1255704741
 RectTransform:
@@ -2186,33 +2186,9 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 662056037, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: pages.Array.size
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 662056037, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: pages.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: a896d7fce661938439019a3ddfb38058, type: 3}
-    - target: {fileID: 662056037, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: pages.Array.data[5]
-      value: 
-      objectReference: {fileID: 21300000, guid: e386d822581e8d64ca649603fb69f1c9, type: 3}
-    - target: {fileID: 662056037, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: pages.Array.data[6]
-      value: 
-      objectReference: {fileID: 21300000, guid: d7efc242192865e4689a55f5f8c436bf, type: 3}
-    - target: {fileID: 662056037, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: pages.Array.data[7]
-      value: 
-      objectReference: {fileID: 21300000, guid: 3f51f4cd936c0bf4fa551b258e1f0f09, type: 3}
     - target: {fileID: 2131405559661061199, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_RootOrder
       value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 2131405559661061199, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2131405559661061199, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2258,17 +2234,9 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 6079790241723936992, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: a8de36e11b288654a857f8e2c856f83d, type: 3}
     - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_Name
       value: CharacterRoom
-      objectReference: {fileID: 0}
-    - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
