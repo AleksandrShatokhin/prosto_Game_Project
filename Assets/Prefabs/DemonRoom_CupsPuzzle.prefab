@@ -100,6 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 0}
+  nameItem: 
   roomWindow: {fileID: 1124534243257909053}
 --- !u!61 &21146528
 BoxCollider2D:
@@ -1788,7 +1789,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 892923417}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.36, y: 1.73, z: 0}
+  m_LocalPosition: {x: 4.36, y: 1.73, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2372,6 +2373,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 417148251307048395}
+  nameItem: "\u041B\u0430\u043C\u043F\u043E\u0447\u043A\u0430"
 --- !u!1 &1175542803
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,6 +2684,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 0}
+  nameItem: 
   roomWindow: {fileID: 1124534243257909053}
 --- !u!61 &1308033876
 BoxCollider2D:
@@ -2955,6 +2958,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 417148251307048395}
+  nameItem: 
   drops: {fileID: 1692213188}
   closedLayer: {fileID: 1876215139}
   sprayType: {fileID: 2035370445}
@@ -3180,6 +3184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 0}
+  nameItem: 
   roomWindow: {fileID: 1124534243257909053}
 --- !u!61 &1535774156
 BoxCollider2D:
@@ -4479,6 +4484,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 0}
+  nameItem: 
   roomWindow: {fileID: 1124534243257909053}
 --- !u!61 &1769886486
 BoxCollider2D:
@@ -4662,6 +4668,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 417148251307048395}
+  nameItem: "\u0422\u0440\u044F\u043F\u043A\u0430"
   spriteToInventory: {fileID: 21300000, guid: 7a1c68fc1e2459f4a820da26e721cb10, type: 3}
 --- !u!1 &1807753188
 GameObject:
@@ -5324,6 +5331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 417148251307048395}
+  nameItem: "\u0421\u043F\u0440\u0435\u0439"
   spriteToInventory: {fileID: 21300000, guid: 9d196ea277d088044b80fb0fb4007f2e, type: 3}
 --- !u!1 &2059843531
 GameObject:
@@ -5350,7 +5358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2059843531}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.1, y: 0.1, z: 0}
+  m_LocalPosition: {x: 0.1, y: 0.1, z: -0.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6392,6 +6400,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7415286669266959563}
     m_Modifications:
+    - target: {fileID: 955262459, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: nameItem
+      value: "\u0421\u0442\u0440\u0435\u043B\u043A\u0438 \u0447\u0430\u0441\u043E\u0432"
+      objectReference: {fileID: 0}
     - target: {fileID: 955262459, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
       propertyPath: playerInventory
       value: 

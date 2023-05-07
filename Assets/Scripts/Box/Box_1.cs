@@ -23,6 +23,7 @@ public class Box_1 : BoxManager
     [SerializeField] private List<ButtonColor> correctColors;
     [SerializeField] private List<ButtonColor> buttonColors;
     private int indicatorColorList = 0;
+    [SerializeField] private Sprite buttonWinSprite;
 
     void Start()
     {
@@ -66,6 +67,23 @@ public class Box_1 : BoxManager
         {
             buttonColors.Clear();
             indicatorColorList = 0;
+        }
+
+        CheckCorrectEnterButtons();
+    }
+
+    private void CheckCorrectEnterButtons()
+    {
+        if (indicatorColorList == correctColors.Count)
+        {
+            button_N1.GetComponent<Button>().interactable = false;
+            button_N1.GetComponent<Image>().sprite = buttonWinSprite;
+
+            button_N2.GetComponent<Button>().interactable = false;
+            button_N2.GetComponent<Image>().sprite = buttonWinSprite;
+
+            button_N3.GetComponent<Button>().interactable = false;
+            button_N3.GetComponent<Image>().sprite = buttonWinSprite;
         }
     }
 

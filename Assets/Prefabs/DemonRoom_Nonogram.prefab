@@ -34343,6 +34343,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
+  nameItem: "\u0417\u0435\u043B\u0435\u043D\u0430\u044F \u043A\u043D\u043E\u043F\u043A\u0430"
   buttonColor: 0
   spriteToBox: {fileID: 21300000, guid: 29dc409f22cef054fbf8b0ebfad0cb38, type: 3}
 --- !u!1 &642708411
@@ -57594,6 +57595,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
+  nameItem: "\u0424\u0438\u043E\u043B\u0435\u0442\u043E\u0432\u0430\u044F \u043A\u043D\u043E\u043F\u043A\u0430"
   buttonColor: 2
   spriteToBox: {fileID: 21300000, guid: 84367da0dd1566d40ab23e1a9fa59006, type: 3}
 --- !u!1 &994126283
@@ -74631,6 +74633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
+  nameItem: "\u041A\u0440\u0430\u0441\u043D\u0430\u044F \u043A\u043D\u043E\u043F\u043A\u0430"
   buttonColor: 1
   spriteToBox: {fileID: 21300000, guid: 3a2b2f6e027abcf47b927a082fed2e11, type: 3}
 --- !u!1 &1284354368
@@ -100984,6 +100987,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
+  nameItem: "\u041F\u0435\u0440\u0435\u043A\u043B\u044E\u0447\u0430\u0442\u0435\u043B\u044C"
   spriteToBox: {fileID: 21300000, guid: 818c67c81d0a6534fa6fdcc34ed5d928, type: 3}
 --- !u!1 &1679303502
 GameObject:
@@ -113212,6 +113216,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
+  nameItem: 
   opanableObject: {fileID: 1144572960}
 --- !u!1 &1910449832
 GameObject:
@@ -124435,6 +124440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
+  nameItem: 
   roomWindow: {fileID: 1124534243257909053}
 --- !u!61 &2102879827
 BoxCollider2D:
@@ -127368,6 +127374,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
+  nameItem: 
   roomWindow: {fileID: 1124534243257909053}
 --- !u!61 &5397373327130148736
 BoxCollider2D:
@@ -128365,6 +128372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 1958306754148599647}
+  nameItem: 
   roomWindow: {fileID: 1124534243257909053}
 --- !u!61 &774517932565556131
 BoxCollider2D:
