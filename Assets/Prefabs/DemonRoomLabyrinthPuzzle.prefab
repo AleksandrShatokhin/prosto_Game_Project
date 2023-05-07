@@ -1074,7 +1074,7 @@ GameObject:
   - component: {fileID: 205407240}
   - component: {fileID: 205407242}
   - component: {fileID: 205407241}
-  - component: {fileID: 205407243}
+  - component: {fileID: 1465016574}
   m_Layer: 7
   m_Name: Notes
   m_TagString: Untagged
@@ -1175,7 +1175,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.7690048, y: 3.4561658}
   m_EdgeRadius: 0
---- !u!114 &205407243
+--- !u!114 &1465016574
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1184,10 +1184,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 205407239}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2d63896a73b2543981e1c5d8e1f194, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e26db1c523b3b1499b2f2bb1672fcb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soupRecipeWindow: {fileID: 1974159027}
+  opanableWindow: {fileID: 1974159027}
 --- !u!1 &258072787
 GameObject:
   m_ObjectHideFlags: 0
@@ -3739,7 +3739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 706254059}
   - component: {fileID: 706254061}
-  - component: {fileID: 706254060}
+  - component: {fileID: 626565954}
   m_Layer: 7
   m_Name: Recipe
   m_TagString: Untagged
@@ -3788,7 +3788,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.5, y: 1.5}
   m_EdgeRadius: 0
---- !u!114 &706254060
+--- !u!114 &626565954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3797,10 +3797,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 706254058}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb2d63896a73b2543981e1c5d8e1f194, type: 3}
+  m_Script: {fileID: 11500000, guid: 4e26db1c523b3b1499b2f2bb1672fcb9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soupRecipeWindow: {fileID: 1019942392}
+  opanableWindow: {fileID: 1019942392}
 --- !u!1 &760910511
 GameObject:
   m_ObjectHideFlags: 0
@@ -46058,14 +46058,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3341668307924773066, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 3505593118307540508, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 7476795911251784842, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
       propertyPath: m_Name
       value: BoxWindow_LabyrinthRoom
@@ -46082,18 +46074,10 @@ PrefabInstance:
       propertyPath: playerInventory
       value: 
       objectReference: {fileID: 2373965458691367385}
-    - target: {fileID: 8533838510988050508, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2.5
-      objectReference: {fileID: 0}
     - target: {fileID: 8858280071282119206, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 4215208817220533855}
-    - target: {fileID: 8879053332289929118, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 2.5
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a24f7889e84f40245b4ebe6ce9e93284, type: 3}
 --- !u!4 &423795419450180762 stripped

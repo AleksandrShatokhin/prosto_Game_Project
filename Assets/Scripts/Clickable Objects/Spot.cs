@@ -56,7 +56,7 @@ public class Spot : MonoBehaviour, IClickable
             }
         }
 
-        GameController.GetInstance().DisplayMessageOnScreen("Какое-то странное пятно. Возможно его нужно убрать!");
+        GameController.GetInstance().DisplayMessageOnScreen("Пятно можно попробовать вывесли содой и уксусом. Стоит их поискать!");
     }
 
     private IEnumerator DisableSpot(float delay = 0.05f)
