@@ -63,6 +63,6 @@ public class Cup : MonoBehaviour, IClickable
 
     public void UpdateWaterLevelImage()
     {
-        waterImage.fillAmount = waterLevel / 1000 /*/ maxCapacity*/;
+        waterImage.fillAmount = waterLevel / maxCapacity;
     }
 }
