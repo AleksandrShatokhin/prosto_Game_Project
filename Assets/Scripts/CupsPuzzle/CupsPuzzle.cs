@@ -36,6 +36,7 @@ public class CupsPuzzle : MonoBehaviour, IPuzzle
     public void OnPuzzleEnd()
     {
         //demonRoom.GetComponent<DemonRoom>().ClickComeBack();
+        GameController.GetInstance().AddDemonToCollection(demonRoom.GetComponent<DemonRoom>().GetCurrentDemonSO);
         StartCoroutine(DelayToEnd());
     }
 

@@ -15,3 +15,6 @@ MonoBehaviour:
   demonSprite: {fileID: 21300000, guid: 3a617e6a448115d42b74d3d533a4315f, type: 3}
   messageWindowPrefab: {fileID: 5429891945532054198, guid: 857340d1fe7f7ed45b58c247dea63f18, type: 3}
   demonRoomPrefab: {fileID: 4760064138631998790, guid: d981c7949a382a0468ce48be9b7c416b, type: 3}
+  inventorySprite: {fileID: 21300000, guid: 3a617e6a448115d42b74d3d533a4315f, type: 3}
+  dialogText: Striga text
+  demonDescription: Striga desc

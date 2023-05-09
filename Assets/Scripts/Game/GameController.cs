@@ -17,6 +17,8 @@ public class GameController : MonoBehaviour
     // references to the main components
     [SerializeField] private GameObject firstWindow;
     [SerializeField] private MainUIController mainUIController;
+    [SerializeField] private DemonInventory demonInventory;
+    public void AddDemonToCollection(DemonSO demon) => demonInventory.AddCaughtDemon(demon);
 
     private void Awake()
     {
@@ -38,6 +40,22 @@ public class GameController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.H))
         {
             OpenTutorialBook();
+        }
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            OpenDemonInventory();
+        }
+    }
+
+    private void OpenDemonInventory()
+    {
+        if (demonInventory.gameObject.activeSelf)
+        {
+            demonInventory.gameObject.SetActive(false);
+        }
+        else
+        {
+            demonInventory.gameObject.SetActive(true);
         }
     }
 

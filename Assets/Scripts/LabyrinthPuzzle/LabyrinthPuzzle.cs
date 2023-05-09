@@ -20,6 +20,7 @@ public class LabyrinthPuzzle : MonoBehaviour, IPuzzle
 
     public void OnPuzzleEnd()
     {
+        GameController.GetInstance().AddDemonToCollection(demonRoom.GetComponent<DemonRoom>().GetCurrentDemonSO);
         demonRoom.GetComponent<DemonRoom>().ClickComeBack();
     }
 

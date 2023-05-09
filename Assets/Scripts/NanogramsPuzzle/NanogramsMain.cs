@@ -39,6 +39,7 @@ public class NanogramsMain : MonoBehaviour
         if (isWin == true)
         {
             Debug.Log("Success!");
+            GameController.GetInstance().AddDemonToCollection(demonRoom.GetComponent<DemonRoom>().GetCurrentDemonSO);
             demonRoom.GetComponent<DemonRoom>().ClickComeBack();
         }
         else

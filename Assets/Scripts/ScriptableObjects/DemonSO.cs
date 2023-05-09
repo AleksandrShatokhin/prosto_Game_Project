@@ -12,4 +12,8 @@ public class DemonSO : ScriptableObject
 
     //Префаб комнаты для данного демона
     public GameObject demonRoomPrefab;
+
+    public Sprite inventorySprite;
+    public string dialogText;
+    public string demonDescription;
 }

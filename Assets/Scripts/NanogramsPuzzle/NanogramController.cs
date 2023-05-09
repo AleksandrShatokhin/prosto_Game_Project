@@ -15,7 +15,7 @@ public class NanogramController : MonoBehaviour, IPuzzle
 
     public void OnPuzzleEnd()
     {
-
+        
     }
 
 }
