@@ -9,7 +9,10 @@ public class ClosableInventoryComponent : MonoBehaviour
 
     private void OnEnable()
     {
-        inventory.SetActive(false);
+        if (inventory != null)
+        {
+            inventory.SetActive(false);
+        }
 
         if (arrowToBack != null)
         {
@@ -19,7 +22,10 @@ public class ClosableInventoryComponent : MonoBehaviour
 
     private void OnDisable()
     {
-        inventory.SetActive(true);
+        if (inventory != null)
+        {
+            inventory.SetActive(true);
+        }
 
         if (arrowToBack != null)
         {

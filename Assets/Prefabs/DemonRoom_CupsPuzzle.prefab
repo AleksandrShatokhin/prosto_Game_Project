@@ -702,7 +702,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 5653807147298876393}
-  arrowToBack: {fileID: 0}
+  arrowToBack: {fileID: 1308033874}
 --- !u!1 &362775778
 GameObject:
   m_ObjectHideFlags: 0
@@ -3631,7 +3631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 5653807147298876393}
-  arrowToBack: {fileID: 0}
+  arrowToBack: {fileID: 1308033874}
 --- !u!114 &1542108065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5740,6 +5740,7 @@ MonoBehaviour:
   currentDemonSO: {fileID: 0}
   demonSpriteRenderer: {fileID: 3057806224817422524}
   demonRoomUi: {fileID: 7691723613994595250}
+  roomBlock: {fileID: 1124534243257909053}
 --- !u!95 &1680450816
 Animator:
   serializedVersion: 5
@@ -5929,7 +5930,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2910524353405983402}
-  - component: {fileID: 118495042}
   m_Layer: 0
   m_Name: Puzzle_Block
   m_TagString: Untagged
@@ -5953,20 +5953,6 @@ Transform:
   m_Father: {fileID: 7415286669266959563}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &118495042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5541284039103204550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f084446716137394fa0d6d9ea775e28a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inventory: {fileID: 1124534243257909053}
-  arrowToBack: {fileID: 0}
 --- !u!1 &6162988506088502940
 GameObject:
   m_ObjectHideFlags: 0
@@ -6658,6 +6644,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6624177851028197468, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
   m_PrefabInstance: {fileID: 1725909614475590393}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2121993185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5484934709613193893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f084446716137394fa0d6d9ea775e28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  arrowToBack: {fileID: 1308033874}
 --- !u!1001 &2253885621744120754
 PrefabInstance:
   m_ObjectHideFlags: 0

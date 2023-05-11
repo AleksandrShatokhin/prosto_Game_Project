@@ -6032,7 +6032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 5805443543279473021}
-  arrowToBack: {fileID: 0}
+  arrowToBack: {fileID: 3657801458772348428}
 --- !u!114 &2002323214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31480,7 +31480,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 5805443543279473021}
-  arrowToBack: {fileID: 0}
+  arrowToBack: {fileID: 2102879823}
 --- !u!1 &573680770
 GameObject:
   m_ObjectHideFlags: 0
@@ -101657,7 +101657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 5805443543279473021}
-  arrowToBack: {fileID: 0}
+  arrowToBack: {fileID: 7961690022373798812}
 --- !u!1 &1674496274
 GameObject:
   m_ObjectHideFlags: 0
@@ -107160,7 +107160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 5805443543279473021}
-  arrowToBack: {fileID: 0}
+  arrowToBack: {fileID: 7961690022373798812}
 --- !u!1 &1777695171
 GameObject:
   m_ObjectHideFlags: 0
@@ -108792,7 +108792,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inventory: {fileID: 5805443543279473021}
-  arrowToBack: {fileID: 0}
+  arrowToBack: {fileID: 2102879823}
 --- !u!1 &1809342953
 GameObject:
   m_ObjectHideFlags: 0
@@ -128505,6 +128505,7 @@ MonoBehaviour:
   currentDemonSO: {fileID: 0}
   demonSpriteRenderer: {fileID: 3057806224817422524}
   demonRoomUi: {fileID: 7691723613994595250}
+  roomBlock: {fileID: 1124534243257909053}
 --- !u!95 &2048197586
 Animator:
   serializedVersion: 5
@@ -129933,3 +129934,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7403819797990045778, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
   m_PrefabInstance: {fileID: 1454691938555682448}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &335800977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8255023888376735426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f084446716137394fa0d6d9ea775e28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  arrowToBack: {fileID: 2102879823}

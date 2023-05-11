@@ -14,6 +14,7 @@ public class DemonRoom : MonoBehaviour, IStartable
     [SerializeField] private DemonSO currentDemonSO;
     [SerializeField] private SpriteRenderer demonSpriteRenderer;
     [SerializeField] private GameObject demonRoomUi;
+    [SerializeField] private GameObject roomBlock;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class DemonRoom : MonoBehaviour, IStartable
     {
         puzzleWindow.gameObject.SetActive(true);
         demonRoomUi.gameObject.SetActive(false);
+        roomBlock.SetActive(false);
     }
 
     public void ClickComeBack()

@@ -24,6 +24,7 @@ public class Box_1 : BoxManager
     [SerializeField] private List<ButtonColor> buttonColors;
     private int indicatorColorList = 0;
     [SerializeField] private Sprite buttonWinSprite;
+    [SerializeField] private List<Image> imageMarkers;
 
     void Start()
     {
@@ -61,11 +62,13 @@ public class Box_1 : BoxManager
         if (correctColors[indicatorColorList] == color)
         {
             buttonColors.Add(color);
+            imageMarkers[indicatorColorList].gameObject.SetActive(true);
             indicatorColorList += 1;
         }
         else
         {
             buttonColors.Clear();
+            ImageMarkersClear();
             indicatorColorList = 0;
         }
 
@@ -84,6 +87,16 @@ public class Box_1 : BoxManager
 
             button_N3.GetComponent<Button>().interactable = false;
             button_N3.GetComponent<Image>().sprite = buttonWinSprite;
+
+            ImageMarkersClear();
+        }
+    }
+
+    private void ImageMarkersClear()
+    {
+        foreach (Image image in imageMarkers)
+        {
+            image.gameObject.SetActive(false);
         }
     }
 
