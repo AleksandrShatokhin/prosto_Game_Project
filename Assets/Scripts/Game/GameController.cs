@@ -23,6 +23,7 @@ public class GameController : MonoBehaviour
     private void Awake()
     {
         instance = this;
+        Time.timeScale = 1.0f;
     }
 
     private void Start()

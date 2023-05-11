@@ -1564,7 +1564,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 10
   m_TargetDisplay: 0
 --- !u!224 &1255704741
 RectTransform:
@@ -2266,10 +2266,6 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
-    - target: {fileID: 2025855713, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-      propertyPath: demonSO
-      value: 
-      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 2131405559661061199, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_RootOrder
       value: 8
@@ -2321,6 +2317,10 @@ PrefabInstance:
     - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_Name
       value: CharacterRoom
+      objectReference: {fileID: 0}
+    - target: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
@@ -2528,6 +2528,7 @@ MonoBehaviour:
   houses: {fileID: 660281925}
   minimumDelay: 5
   maximumDelay: 10
+  currentStatus: 0
 --- !u!114 &2093106374
 MonoBehaviour:
   m_ObjectHideFlags: 0

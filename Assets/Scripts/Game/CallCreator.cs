@@ -9,7 +9,7 @@ public class CallCreator : MonoBehaviour
 
     [SerializeField] private int minimumDelay, maximumDelay;
     private int numberHouse;
-    private MapStatus currentStatus;
+    [SerializeField] private MapStatus currentStatus;
 
     private void Start()
     {
