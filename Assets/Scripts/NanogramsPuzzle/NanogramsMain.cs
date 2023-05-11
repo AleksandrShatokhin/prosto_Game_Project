@@ -45,9 +45,8 @@ public class NanogramsMain : MonoBehaviour
         else
         {
             Debug.Log("Failure!");
+            GameController.GetInstance().DisplayMessageOnScreen("Правильных: " + correctCells + " / Неправельных: " + incorrectCells);
         }
-
-        Debug.Log("Corrent cells: " + correctCells + " / Incorrect cells: " + incorrectCells);
     }
 
     private void ClickReset()

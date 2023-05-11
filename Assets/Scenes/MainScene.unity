@@ -2269,7 +2269,7 @@ PrefabInstance:
     - target: {fileID: 2025855713, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: demonSO
       value: 
-      objectReference: {fileID: 11400000, guid: 4de5153d448bf5e41871cb3124549dde, type: 2}
+      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 2131405559661061199, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
       propertyPath: m_RootOrder
       value: 7

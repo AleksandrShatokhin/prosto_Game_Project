@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class CellNanograms : MonoBehaviour
 {
-    [SerializeField] Sprite whiteSprite, blackSprite;
+    [SerializeField] Sprite whiteSprite, blackSprite, markedSprite;
 
     [SerializeField] CellStatus status;
     [SerializeField] CellState cellState;
     private Button cellButton;
+
+    [SerializeField] private int couter;
 
     private void Start()
     {
@@ -17,6 +19,8 @@ public class CellNanograms : MonoBehaviour
         cellButton.onClick.AddListener(ClickCell);
 
         SetState_Closed();
+
+        couter = 0;
 
         //if (status == CellStatus.Correct)
         //{
@@ -26,13 +30,24 @@ public class CellNanograms : MonoBehaviour
 
     private void ClickCell()
     {
-        if (this.cellState == CellState.Open)
+        couter += 1;
+
+        if (couter > 2)
         {
-            SetState_Closed();
+            couter = 0;
         }
-        else
+
+        switch (couter)
         {
-            SetState_Open();
+            case 0:
+                SetState_Closed();
+                break;
+            case 1:
+                SetState_Open();
+                break;
+            case 2:
+                SetState_Marked();
+                break;
         }
     }
 
@@ -48,6 +63,12 @@ public class CellNanograms : MonoBehaviour
         cellState = CellState.Closed;
     }
 
+    public void SetState_Marked()
+    {
+        this.GetComponent<Image>().sprite = markedSprite;
+        cellState = CellState.Marked;
+    }
+
     public CellState GetState() => cellState;
     public CellStatus GetStatus() => status;
 }
@@ -55,7 +76,8 @@ public class CellNanograms : MonoBehaviour
 public enum CellState
 {
     Open,
-    Closed
+    Closed,
+    Marked
 }
 
 public enum CellStatus
