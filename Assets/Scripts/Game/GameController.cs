@@ -15,9 +15,11 @@ public class GameController : MonoBehaviour
     public TutorialBook GetTutorialBookComponent() => tutorialBook.GetComponent<TutorialBook>();
 
     // references to the main components
-    [SerializeField] private GameObject firstWindow;
+    [SerializeField] private AudioSource audioSource;
     [SerializeField] private MainUIController mainUIController;
     [SerializeField] private DemonInventory demonInventory;
+    [SerializeField] private GameObject firstWindow;
+
     public void AddDemonToCollection(DemonSO demon) => demonInventory.AddCaughtDemon(demon);
 
     private void Awake()
@@ -42,6 +44,7 @@ public class GameController : MonoBehaviour
         {
             OpenTutorialBook();
         }
+
         if (Input.GetKeyDown(KeyCode.I))
         {
             OpenDemonInventory();
@@ -95,6 +98,8 @@ public class GameController : MonoBehaviour
     }
 
     public void DisplayMessageOnScreen(string message) => mainUIController.DispayMessageOnScreen(message);
+    public void PlaySimpleAudio(AudioClip audio, float volume = 1.0f) => audioSource.PlayOneShot(audio, volume);
+    public void StopSimpleAudio() => audioSource.Stop();
 
     public void PauseMode()
     {

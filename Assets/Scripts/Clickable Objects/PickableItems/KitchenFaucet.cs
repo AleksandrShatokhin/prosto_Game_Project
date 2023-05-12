@@ -9,6 +9,7 @@ public class KitchenFaucet : PickableItem
     [SerializeField] private GameObject decanterWater;
     [SerializeField] private PickableItem decanterEmpty;
     [SerializeField] private bool isWaterActivate;
+    [SerializeField] private AudioClip audioWater;
 
     public override void OnClick()
     {
@@ -29,10 +30,12 @@ public class KitchenFaucet : PickableItem
         if (isWaterActivate == true)
         {
             ps_Water.Play();
+            GameController.GetInstance().PlaySimpleAudio(audioWater, 0.3f);
         }
         else
         {
             ps_Water.Stop();
+            GameController.GetInstance().StopSimpleAudio();
         }
     }
 
@@ -45,12 +48,20 @@ public class KitchenFaucet : PickableItem
                 playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
                 slot.DeselectItem();
                 decanterWater.GetComponent<IClickable>()?.OnClick();
+                return;
             }
             else
             {
                 SwitcherKitchenFaucet();
             }
         }
+    }
+
+    private void OnDisable()
+    {
+        isWaterActivate = false;
+        ps_Water.Stop();
+        GameController.GetInstance().StopSimpleAudio();
     }
 
     public override void OnItemCombineAttempt()

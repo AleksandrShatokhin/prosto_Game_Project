@@ -265,6 +265,7 @@ MonoBehaviour:
   buttonReset: {fileID: 789416531}
   gameGrid: {fileID: 1688255177}
   countToWin: 49
+  currentStepToHint: 0
 --- !u!114 &6178813011075998827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52913,6 +52914,7 @@ MonoBehaviour:
   buttonReset: {fileID: 150565081}
   gameGrid: {fileID: 1879507099}
   countToWin: 27
+  currentStepToHint: 0
 --- !u!114 &7396145666471515242
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94695,6 +94697,7 @@ MonoBehaviour:
   buttonReset: {fileID: 1097325866}
   gameGrid: {fileID: 2057856101}
   countToWin: 59
+  currentStepToHint: 0
 --- !u!114 &6137854530823664357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129842,6 +129845,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7415286669266959563}
     m_Modifications:
+    - target: {fileID: 411736993238776696, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 4.5
+      objectReference: {fileID: 0}
     - target: {fileID: 1238493764863197136, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -129890,6 +129897,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 642474360}
+    - target: {fileID: 2439708196500740213, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3387465186983065449, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgument
       value: 
@@ -129922,6 +129933,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 5987624391426838757}
+    - target: {fileID: 9046032756001792840, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fc9137cbad72be344b2382f2f10ac688, type: 3}
 --- !u!4 &360315561865421120 stripped

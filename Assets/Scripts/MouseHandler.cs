@@ -1,8 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
-using UnityEngine.Events;
+using UnityEngine.EventSystems;
 
 public class MouseHandler : MonoBehaviour
 {
@@ -18,7 +15,7 @@ public class MouseHandler : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            if (stateMouseHandler == StateMouseHandler.Forbidden)
+            if (stateMouseHandler == StateMouseHandler.Forbidden || EventSystem.current.IsPointerOverGameObject())
             {
                 return;
             }

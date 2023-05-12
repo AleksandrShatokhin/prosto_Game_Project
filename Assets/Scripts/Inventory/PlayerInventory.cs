@@ -13,6 +13,8 @@ public class PlayerInventory : MonoBehaviour
 
     [SerializeField] private Color colorToSelect, colorToDefoult;
     [SerializeField] private Sprite circleSprite, itemSpriteDefoult;
+    [SerializeField] private AudioClip audioPickable;
+
     public Sprite GetCircleSprite() => circleSprite;
 
     private void Awake()
@@ -26,6 +28,8 @@ public class PlayerInventory : MonoBehaviour
         {
             takenItems.Add(itemToAdd);
             AddItemToUi(itemToAdd, spriteToSlot);
+
+            GameController.GetInstance().PlaySimpleAudio(audioPickable);
 
             Debug.Log("Added " + itemToAdd.ToString() + " to inventory");
             return true;

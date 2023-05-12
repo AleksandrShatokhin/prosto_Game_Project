@@ -9,11 +9,16 @@ public class NanogramsMain : MonoBehaviour
     [SerializeField] private Button buttonCheck, buttonReset;
     [SerializeField] private GameObject gameGrid;
     [SerializeField] private int countToWin;
+    
+    private int currentStepToHint;
+    private Color colorHint = new Color(190, 255, 190, 255);
 
     private void Start()
     {
         buttonCheck.onClick.AddListener(ClickCheck);
         buttonReset.onClick.AddListener(ClickReset);
+
+        currentStepToHint = 0;
     }
 
     private void ClickCheck()
@@ -38,15 +43,48 @@ public class NanogramsMain : MonoBehaviour
 
         if (isWin == true)
         {
-            Debug.Log("Success!");
             GameController.GetInstance().AddDemonToCollection(demonRoom.GetComponent<DemonRoom>().GetCurrentDemonSO);
             demonRoom.GetComponent<DemonRoom>().ClickComeBack();
         }
         else
         {
-            Debug.Log("Failure!");
+            ActivateHintOnCorrectCells(correctCells, incorrectCells);
+        }
+    }
+
+    private void ActivateHintOnCorrectCells(int correctCells, int incorrectCells)
+    {
+        currentStepToHint += 1;
+
+        if (currentStepToHint == 3)
+        {
+            foreach (Transform cell in gameGrid.transform)
+            {
+                if (cell.GetComponent<CellNanograms>().GetStatus() == CellStatus.Correct)
+                {
+                    StartCoroutine(SwitchColor(cell.gameObject));
+                }
+            }
+
+            currentStepToHint = 0;
+        }
+        else
+        {
             GameController.GetInstance().DisplayMessageOnScreen("Правильных: " + correctCells + " / Неправельных: " + incorrectCells);
         }
+    }
+
+    private IEnumerator SwitchColor(GameObject cell)
+    {
+        Color defaultColor = cell.GetComponent<Image>().color;
+
+        cell.GetComponent<Button>().interactable = false;
+        cell.GetComponent<Image>().color = colorHint;
+
+        yield return new WaitForSeconds(1.5f);
+
+        cell.GetComponent<Button>().interactable = true;
+        cell.GetComponent<Image>().color = defaultColor;
     }
 
     private void ClickReset()

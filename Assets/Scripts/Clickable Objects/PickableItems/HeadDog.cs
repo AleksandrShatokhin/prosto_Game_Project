@@ -9,12 +9,14 @@ public class HeadDog : PickableItem
 
     [SerializeField] private GameObject canvasText;
     [SerializeField] private PickableItem bowlSoup_Type;
+    [SerializeField] private AudioClip audioDogBarking;
 
     public override void OnClick()
     {
         if (TakingSoup() == false)
         {
             canvasText.SetActive(true);
+            GameController.GetInstance().PlaySimpleAudio(audioDogBarking);
         }
         else
         {

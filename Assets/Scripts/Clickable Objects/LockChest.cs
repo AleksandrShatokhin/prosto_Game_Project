@@ -10,6 +10,7 @@ public class LockChest : MonoBehaviour, IClickable
     private int indicatorPassword = 0;
 
     [SerializeField] private GameObject openableChest;
+    [SerializeField] private AudioClip audioOpenDoor;
 
     private GameObject lockPanel;
 
@@ -29,6 +30,7 @@ public class LockChest : MonoBehaviour, IClickable
         {
             SwitchActiveObject();
             GameController.GetInstance().DisplayMessageOnScreen("Верный пароль");
+            GameController.GetInstance().PlaySimpleAudio(audioOpenDoor);
         }
     }
 
