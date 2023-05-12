@@ -24,7 +24,9 @@ public class Box_1 : BoxManager
     [SerializeField] private List<ButtonColor> buttonColors;
     private int indicatorColorList = 0;
     [SerializeField] private Sprite buttonWinSprite;
-    [SerializeField] private List<Image> imageMarkers;
+
+    private bool isCanClickButton;
+    private bool isWin;
 
     void Start()
     {
@@ -32,13 +34,16 @@ public class Box_1 : BoxManager
         buttonRight.onClick.AddListener(ClickButtonRight);
         buttonOpenBox.onClick.AddListener(ClickOpenBox);
 
+        isCanClickButton = false;
+        isWin = false;
+
         slider.interactable = false;
         localVariableItemForButtonOnBackPanel = null;
     }
 
     public override void ClickOpenBox()
     {
-        if (slider.value == 2 && CheckListButtonColors())
+        if (slider.value == 2 && isWin == true)
         {
             Debug.Log("Box is open!");
 
@@ -48,27 +53,44 @@ public class Box_1 : BoxManager
         {
             buttonColors.Clear();
             indicatorColorList = 0;
+            this.GetComponent<Box1ColorMarkers>().MarkersClear();
             GameController.GetInstance().DisplayMessageOnScreen(messageBoxNotOpen);
         }
     }
 
     public override void SetClickOnButton(ButtonColor color)
     {
-        if (indicatorColorList == correctColors.Count)
+        if (button_N1.GetComponent<ButtonOnPanel>().GetStateButton() == StateButton.Yes
+            && button_N2.GetComponent<ButtonOnPanel>().GetStateButton() == StateButton.Yes
+            && button_N3.GetComponent<ButtonOnPanel>().GetStateButton() == StateButton.Yes)
+        {
+            StartCoroutine(ActivateClickToColorButtons());
+        }
+
+        if (isCanClickButton == false)
         {
             return;
         }
 
-        if (correctColors[indicatorColorList] == color)
+        buttonColors.Add(color);
+        indicatorColorList += 1;
+
+        if (indicatorColorList == correctColors.Count)
         {
-            buttonColors.Add(color);
-            imageMarkers[indicatorColorList].gameObject.SetActive(true);
-            indicatorColorList += 1;
-        }
-        else
-        {
+            int localIndicator = 0;
+
+            foreach (ButtonColor currentColor in buttonColors)
+            {
+                if (currentColor == correctColors[localIndicator])
+                {
+                    localIndicator += 1;
+                }
+            }
+
+            isWin = (localIndicator == correctColors.Count) ? true : false;
+
+            localIndicator = 0;
             buttonColors.Clear();
-            ImageMarkersClear();
             indicatorColorList = 0;
         }
 
@@ -77,7 +99,7 @@ public class Box_1 : BoxManager
 
     private void CheckCorrectEnterButtons()
     {
-        if (indicatorColorList == correctColors.Count)
+        if (isWin == true)
         {
             button_N1.GetComponent<Button>().interactable = false;
             button_N1.GetComponent<Image>().sprite = buttonWinSprite;
@@ -87,24 +109,17 @@ public class Box_1 : BoxManager
 
             button_N3.GetComponent<Button>().interactable = false;
             button_N3.GetComponent<Image>().sprite = buttonWinSprite;
-
-            ImageMarkersClear();
         }
     }
 
-    private void ImageMarkersClear()
+    private IEnumerator ActivateClickToColorButtons()
     {
-        foreach (Image image in imageMarkers)
-        {
-            image.gameObject.SetActive(false);
-        }
+        yield return new WaitForSeconds(0.5f);
+        isCanClickButton = true;
+        this.GetComponent<Box1ColorMarkers>().IsCanChangeColor_On();
     }
 
-    private bool CheckListButtonColors()
-    {
-        bool isCorrectCombination = (buttonColors.Count == correctColors.Count) ? true : false;
-        return isCorrectCombination;
-    }
+    private bool CheckListButtonColors() => (buttonColors.Count == correctColors.Count) ? true : false;
 
     // Вызываю на кнопках через Event
     public void ClickButtonOnBackPanel(PickableItem buttonWithNumber)

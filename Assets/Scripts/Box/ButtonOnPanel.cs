@@ -7,6 +7,10 @@ public class ButtonOnPanel : MonoBehaviour
 {
     [SerializeField] private ButtonColor valueButtonColor;
     [SerializeField] private PickableItem item;
+    [SerializeField] private Color colorToMarker;
+    [SerializeField] private Sprite markerSprite;
+    [SerializeField] private StateButton currentStateButton;
+    public StateButton GetStateButton() => currentStateButton;
 
     public void SetItem(PickableItem item) => this.item = item;
 
@@ -18,6 +22,8 @@ public class ButtonOnPanel : MonoBehaviour
             return;
         }
 
+        currentStateButton = StateButton.Yes;
+
         if (this.GetComponent<Image>().sprite != item.GetComponent<ButtonWithNumber>().GetSpriteToBox())
         {
             this.GetComponent<Image>().sprite = item.GetComponent<ButtonWithNumber>().GetSpriteToBox();
@@ -25,5 +31,12 @@ public class ButtonOnPanel : MonoBehaviour
         }
 
         GetComponentInParent<BoxManager>().SetClickOnButton(valueButtonColor);
+        GetComponentInParent<Box1ColorMarkers>().SetNewColorToMarker(markerSprite);
     }
+}
+
+public enum StateButton
+{
+    Yes,
+    No
 }
