@@ -40,11 +40,6 @@ public class GameController : MonoBehaviour
             PauseMode();
         }
 
-        if (Input.GetKeyDown(KeyCode.H))
-        {
-            OpenTutorialBook();
-        }
-
         if (Input.GetKeyDown(KeyCode.I))
         {
             OpenDemonInventory();
@@ -63,15 +58,17 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private void OpenTutorialBook()
+    public void OpenTutorialBook()
     {
         if (tutorialBook.activeInHierarchy == true)
         {
             tutorialBook.SetActive(false);
+            pauseWindow.SetActive(true);
         }
         else
         {
             tutorialBook.SetActive(true);
+            pauseWindow.SetActive(false);
         }
     }
 
