@@ -43,7 +43,7 @@ public class Box_1 : BoxManager
 
     public override void ClickOpenBox()
     {
-        if (slider.value == 2 && isWin == true)
+        if (slider.value == 2 && CheckListButtonColors())
         {
             Debug.Log("Box is open!");
 
@@ -119,7 +119,7 @@ public class Box_1 : BoxManager
         this.GetComponent<Box1ColorMarkers>().IsCanChangeColor_On();
     }
 
-    private bool CheckListButtonColors() => (buttonColors.Count == correctColors.Count) ? true : false;
+    private bool CheckListButtonColors() => (isWin == true) ? true : false;
 
     // Вызываю на кнопках через Event
     public void ClickButtonOnBackPanel(PickableItem buttonWithNumber)
@@ -169,6 +169,24 @@ public class Box_1 : BoxManager
                 }
             }
         }
+    }
+
+    public void OnValueChangedSlider()
+    {
+        if (slider.value == 2)
+        {
+            slider.interactable = false;
+            StartCoroutine(RotatBox());
+        }
+    }
+
+    private IEnumerator RotatBox()
+    {
+        yield return new WaitForSeconds(0.5f);
+        this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
+        button_N1.GetComponent<ButtonOnPanel>().StartOpanButton();
+        button_N2.GetComponent<ButtonOnPanel>().StartOpanButton();
+        button_N3.GetComponent<ButtonOnPanel>().StartOpanButton();
     }
 
     public void ClickButtonOnUpPanel()

@@ -33,6 +33,23 @@ public class ButtonOnPanel : MonoBehaviour
         GetComponentInParent<BoxManager>().SetClickOnButton(valueButtonColor);
         GetComponentInParent<Box1ColorMarkers>().SetNewColorToMarker(markerSprite);
     }
+
+    public void StartOpanButton() => StartCoroutine(OpanableButton());
+
+    private IEnumerator OpanableButton(float delay = 0.05f)
+    {
+        Color buttonColor = this.GetComponent<Image>().color;
+
+        while (buttonColor.a < 255)
+        {
+            yield return new WaitForSeconds(delay);
+
+            buttonColor = new Color(1, 1, 1, buttonColor.a + delay);
+
+            this.GetComponent<Image>().color = buttonColor;
+            this.GetComponent<Button>().interactable = true;
+        }
+    }
 }
 
 public enum StateButton
