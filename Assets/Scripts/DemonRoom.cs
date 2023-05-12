@@ -44,7 +44,7 @@ public class DemonRoom : MonoBehaviour, IStartable
     {
         GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject, true);
         GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_On();
-        Destroy(this.gameObject,1.1f);
+        Destroy(this.gameObject, 1.1f);
     }
 
     public void StartAnimationDemonAppearance(GameObject box)
@@ -53,6 +53,10 @@ public class DemonRoom : MonoBehaviour, IStartable
         demonRoomUi.SetActive(false);
         anim_DemonRoom.SetTrigger("isDemonAppearance");
     }
+
+    // Вызываю на эвентах на анимации главной комнаты
+    public void PlayAnimationDemonApperance() => anim_DemonRoom.enabled = true;
+    public void StopAnimationDemonApperance() => anim_DemonRoom.enabled = false;
 
     public DemonSO GetCurrentDemonSO => currentDemonSO;
 
@@ -68,6 +72,11 @@ public class DemonRoom : MonoBehaviour, IStartable
         if (Input.GetKeyDown(KeyCode.Space))
         {
             OnStartPuzzleButtonClicked();
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightShift))
+        {
+            anim_DemonRoom.SetTrigger("isDemonAppearance");
         }
     }
 }
