@@ -70,7 +70,7 @@ public class NanogramsMain : MonoBehaviour
         }
         else
         {
-            GameController.GetInstance().DisplayMessageOnScreen("Правильных: " + correctCells + " / Неправельных: " + incorrectCells);
+            GameController.GetInstance().DisplayMessageOnScreen("Правильных: " + correctCells + " / Неправильных: " + incorrectCells);
         }
     }
 
