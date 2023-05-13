@@ -27,8 +27,11 @@ public class DemonRoom : MonoBehaviour, IStartable
         this.playerRoom = playerRoom;
 
         demonRoomUi.SetActive(true);
-        demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
-        demonSpriteRenderer.gameObject.SetActive(false);
+        //demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
+        //demonSpriteRenderer.gameObject.SetActive(false);
+        GameObject currentDemon = Instantiate(currentDemonSO.demonGO, currentDemonSO.demonGO.transform.position, Quaternion.identity);
+        currentDemon.transform.SetParent(demonSpriteRenderer.transform);
+
 
         puzzleWindow.GetComponentInChildren<IPuzzle>().OnPuzzleStart();
     }

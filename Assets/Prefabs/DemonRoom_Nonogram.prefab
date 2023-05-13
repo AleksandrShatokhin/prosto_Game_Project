@@ -130692,6 +130692,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5826616741951712245}
     m_Modifications:
+    - target: {fileID: 1913303166749757049, guid: b33165d6606e8be48ac2b2bb9788474c, type: 3}
+      propertyPath: audioPickable
+      value: 
+      objectReference: {fileID: 8300000, guid: 65187b57922d942409b36637ee67b96a, type: 3}
     - target: {fileID: 1946047776398151311, guid: b33165d6606e8be48ac2b2bb9788474c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1

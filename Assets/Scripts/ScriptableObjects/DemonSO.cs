@@ -7,6 +7,9 @@ public class DemonSO : ScriptableObject
     // Внешний вид демона
     public Sprite demonSprite;
 
+    //Объект демона с анимацией
+    public GameObject demonGO;
+
     // Список возможных сообщений к конкретному демону от горожан
     public GameObject messageWindowPrefab;
 
