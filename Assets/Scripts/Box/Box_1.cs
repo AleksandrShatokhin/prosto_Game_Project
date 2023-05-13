@@ -102,13 +102,8 @@ public class Box_1 : BoxManager
         if (isWin == true)
         {
             button_N1.GetComponent<Button>().interactable = false;
-            button_N1.GetComponent<Image>().sprite = buttonWinSprite;
-
             button_N2.GetComponent<Button>().interactable = false;
-            button_N2.GetComponent<Image>().sprite = buttonWinSprite;
-
             button_N3.GetComponent<Button>().interactable = false;
-            button_N3.GetComponent<Image>().sprite = buttonWinSprite;
         }
     }
 

@@ -7,8 +7,7 @@ public class Box1ColorMarkers : MonoBehaviour
 {
     [SerializeField] private int indicator;
     [SerializeField] private List<Image> imageMerkers;
-    [SerializeField] private Color defaulColor;
-    [SerializeField] private Sprite defaultSprite;
+    [SerializeField] private Sprite defaultSprite, winnerSprite;
     private bool isCanChangeColor;
     public void IsCanChangeColor_On() => isCanChangeColor = true;
 
@@ -29,7 +28,7 @@ public class Box1ColorMarkers : MonoBehaviour
 
         if (indicator == imageMerkers.Count)
         {
-            MarkersClear();
+            SetWinnerSprite();
         }
     }
 
@@ -40,6 +39,16 @@ public class Box1ColorMarkers : MonoBehaviour
         foreach (Image image in imageMerkers)
         {
             image.sprite = defaultSprite;
+        }
+    }
+
+    public void SetWinnerSprite()
+    {
+        indicator = 0;
+
+        foreach (Image image in imageMerkers)
+        {
+            image.sprite = winnerSprite;
         }
     }
 }

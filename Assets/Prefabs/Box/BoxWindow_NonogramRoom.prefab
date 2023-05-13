@@ -2833,8 +2833,8 @@ MonoBehaviour:
   - {fileID: 2124738105}
   - {fileID: 95538513}
   - {fileID: 606826309}
-  defaulColor: {r: 1, g: 1, b: 1, a: 1}
   defaultSprite: {fileID: 21300000, guid: e05417b139701aa4ba622bb6eb3be0ac, type: 3}
+  winnerSprite: {fileID: 21300000, guid: e83fe1815e57ad54e92e698649e03e48, type: 3}
 --- !u!1 &5420426138324715914
 GameObject:
   m_ObjectHideFlags: 0

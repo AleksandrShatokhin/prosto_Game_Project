@@ -40,7 +40,7 @@ public class ButtonOnPanel : MonoBehaviour
     {
         Color buttonColor = this.GetComponent<Image>().color;
 
-        while (buttonColor.a < 255)
+        while (buttonColor.a < 1)
         {
             yield return new WaitForSeconds(delay);
 
