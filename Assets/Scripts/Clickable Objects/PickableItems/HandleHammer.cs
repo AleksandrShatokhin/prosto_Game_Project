@@ -7,6 +7,9 @@ public class HandleHammer : PickableItem
     [SerializeField] private PickableItem hammer;
     [SerializeField] private PickableItem metalHammer;
 
+    [SerializeField] private Sprite spriteToInventory;
+    public override Sprite GetSpriteToInventory() => spriteToInventory;
+
     public override void OnClick()
     {
         if (SearchHammerElementInInventory() == true)

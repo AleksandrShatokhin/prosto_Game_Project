@@ -5,6 +5,8 @@ using UnityEngine;
 public class Ladle : PickableItem
 {
     [SerializeField] private PotManager potManager;
+    [SerializeField] private Sprite spriteToInventory;
+    public override Sprite GetSpriteToInventory() => spriteToInventory;
 
     public override void OnClick()
     {

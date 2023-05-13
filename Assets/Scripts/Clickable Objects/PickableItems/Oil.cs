@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class Oil : PickableItem
 {
+    [SerializeField] private Sprite spriteToInventory;
+    public override Sprite GetSpriteToInventory() => spriteToInventory;
+
     public override void OnClick()
     {
         base.OnClick();

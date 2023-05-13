@@ -1005,7 +1005,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 0}
-  spriteToInventory: {fileID: 21300000, guid: 43e1004ee7f00a1488d80a948e17b141, type: 3}
+  nameItem: "\u0421\u0442\u0440\u0435\u043B\u043A\u0438 \u0447\u0430\u0441\u043E\u0432"
+  spriteToInventory: {fileID: 21300000, guid: ff1a9b5b411c6ed46a27c04b45dab34c, type: 3}
 --- !u!1 &1345813944
 GameObject:
   m_ObjectHideFlags: 0
@@ -5095,6 +5096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3198237216896473054}
   - component: {fileID: 3805756881654311528}
+  - component: {fileID: 2121993185}
   m_Layer: 0
   m_Name: BoxWindow_CupRoom
   m_TagString: Untagged
@@ -5131,6 +5133,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2121993185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6624177851028197468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f084446716137394fa0d6d9ea775e28a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inventory: {fileID: 0}
+  arrowToBack: {fileID: 0}
 --- !u!1 &7095651903646912482
 GameObject:
   m_ObjectHideFlags: 0
