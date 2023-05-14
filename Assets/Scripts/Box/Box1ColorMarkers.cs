@@ -28,7 +28,19 @@ public class Box1ColorMarkers : MonoBehaviour
 
         if (indicator == imageMerkers.Count)
         {
+            SwitchSprite(this.GetComponent<Box_1>().GetIsWin());
+        }
+    }
+
+    public void SwitchSprite(bool isWin)
+    {
+        if (isWin == true)
+        {
             SetWinnerSprite();
+        }
+        else
+        {
+            MarkersClear();
         }
     }
 

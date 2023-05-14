@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,24 +7,20 @@ using UnityEngine.UI;
 public class Box_1 : BoxManager
 {
     [SerializeField] private GameObject toCloseWindow, toOpenWindow;
-
-    // элементы инвентаря
     [SerializeField] private PlayerInventory inventory;
-    [SerializeField] private SliderItemClickable sliderItemClicable;
+    public PlayerInventory GetPlayerInventory() => inventory;
 
-    // основные компоненты элементов на шкатулке
-    [SerializeField] Slider slider;
     [SerializeField] Button button_N1, button_N2, button_N3;
 
-    // Параметры для разгадывания кнопочного шифра
     private PickableItem localVariableItemForButtonOnBackPanel;
     [SerializeField] private List<ButtonColor> correctColors;
     [SerializeField] private List<ButtonColor> buttonColors;
-    private int indicatorColorList = 0;
-    [SerializeField] private Sprite buttonWinSprite;
+    private int indicatorColorList;
+    [SerializeField] private int counterToHint;
 
     private bool isCanClickButton;
     private bool isWin;
+    public bool GetIsWin() => isWin;
 
     void Start()
     {
@@ -37,16 +31,16 @@ public class Box_1 : BoxManager
         isCanClickButton = false;
         isWin = false;
 
-        slider.interactable = false;
+        indicatorColorList = 0;
+        counterToHint = 0;
+
         localVariableItemForButtonOnBackPanel = null;
     }
 
     public override void ClickOpenBox()
     {
-        if (slider.value == 2 && CheckListButtonColors())
+        if (CheckListButtonColors())
         {
-            Debug.Log("Box is open!");
-
             base.ClickOpenBox();
         }
         else
@@ -77,6 +71,8 @@ public class Box_1 : BoxManager
 
         if (indicatorColorList == correctColors.Count)
         {
+            counterToHint += 1;
+
             int localIndicator = 0;
 
             foreach (ButtonColor currentColor in buttonColors)
@@ -88,6 +84,12 @@ public class Box_1 : BoxManager
             }
 
             isWin = (localIndicator == correctColors.Count) ? true : false;
+
+            if (isWin == false && counterToHint == 3)
+            {
+                GameController.GetInstance().DisplayMessageOnScreen("Возможно стоит поискать в комнате подсказку!");
+                counterToHint = 0;
+            }
 
             localIndicator = 0;
             buttonColors.Clear();
@@ -148,37 +150,8 @@ public class Box_1 : BoxManager
         base.CloseBox();
     }
 
-    public void ClickOnSliderHandler(Image image)
+    public void ButtonOnPanelApperance()
     {
-        foreach (InventoryItemSlot slot in inventory.GetComponentsInChildren<InventoryItemSlot>())
-        {
-            if (slot.IsItemSelected == true)
-            {
-                if (slot.ItemInSlot == sliderItemClicable)
-                {
-                    image.sprite = slot.ItemInSlot.GetComponent<SliderItemClickable>().GetSpriteToBox();
-                    inventory.RemoveItemFromInventory(slot.ItemInSlot);
-                    slot.DeselectItem();
-                    slider.interactable = true;
-                    return;
-                }
-            }
-        }
-    }
-
-    public void OnValueChangedSlider()
-    {
-        if (slider.value == 2)
-        {
-            slider.interactable = false;
-            StartCoroutine(RotatBox());
-        }
-    }
-
-    private IEnumerator RotatBox()
-    {
-        yield return new WaitForSeconds(0.5f);
-        this.gameObject.transform.rotation = Quaternion.Euler(0, 0, 0);
         button_N1.GetComponent<ButtonOnPanel>().StartOpanButton();
         button_N2.GetComponent<ButtonOnPanel>().StartOpanButton();
         button_N3.GetComponent<ButtonOnPanel>().StartOpanButton();

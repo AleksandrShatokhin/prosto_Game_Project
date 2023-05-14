@@ -25,7 +25,6 @@ public class BoxManager : MonoBehaviour
     }
 
     public virtual void SetClickOnButton(ButtonColor value) { }
-    public virtual void SetColorToMarker(Color color) { }
 
     public virtual void CloseBox()
     {
