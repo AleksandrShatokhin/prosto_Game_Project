@@ -10,6 +10,8 @@ public class Picture : PickableItem
 
     [SerializeField] private GameObject drops, closedLayer;
     [SerializeField] private PickableItem sprayType, ragType;
+    [SerializeField] private SpriteRenderer backgroundSprite;
+    [SerializeField] private Sprite opanableSprite;
 
     private void Start()
     {
@@ -72,6 +74,7 @@ public class Picture : PickableItem
                 {
                     drops.SetActive(false);
                     closedLayer.SetActive(false);
+                    backgroundSprite.sprite = opanableSprite;
                     playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
                 }
