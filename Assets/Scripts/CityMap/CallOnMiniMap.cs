@@ -9,6 +9,7 @@ public class CallOnMiniMap : MonoBehaviour
 
     [SerializeField] private DemonSO demonSO;
     [SerializeField] private GameObject playerRoom;
+    [SerializeField] private float differenceSize;
     
 
     private void Start()
@@ -31,4 +32,15 @@ public class CallOnMiniMap : MonoBehaviour
     }
 
     public PlayerRoomUi GetPlayerRoomUI() => playerRoom.GetComponent<PlayerRoomUi>();
+
+    //Special for EventTrigger on house
+    public void ChangeSize_Plus(GameObject house)
+    {
+        house.transform.localScale = new Vector3(house.transform.localScale.x + differenceSize, house.transform.localScale.y + differenceSize, house.transform.localScale.z);
+    }
+
+    public void ChangeSize_Minus(GameObject house)
+    {
+        house.transform.localScale = new Vector3(house.transform.localScale.x - differenceSize, house.transform.localScale.y - differenceSize, house.transform.localScale.z);
+    }
 }
