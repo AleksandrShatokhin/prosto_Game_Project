@@ -24,6 +24,7 @@ public class SliderBox1 : MonoBehaviour
             {
                 if (slot.ItemInSlot == sliderItemClicable)
                 {
+                    image.enabled = true;
                     image.sprite = slot.ItemInSlot.GetComponent<SliderItemClickable>().GetSpriteToBox();
                     inventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
@@ -31,6 +32,11 @@ public class SliderBox1 : MonoBehaviour
                     return;
                 }
             }
+        }
+
+        if (image.enabled == false)
+        {
+            GameController.GetInstance().DisplayMessageOnScreen("Нужно найти переключатель!");
         }
     }
 
