@@ -6,6 +6,7 @@ public class UIAudioManager : MonoBehaviour
 {
     public AudioClip[] HoverAudioClips;
     public AudioClip[] ClickAudioClips;
+    public AudioClip[] PaperAudioClips;
     [SerializeField] private AudioSource _uiAudioSource;
     public void PlayHoverAudio()
     {
@@ -15,5 +16,9 @@ public class UIAudioManager : MonoBehaviour
     public void PlayClickAudio()
     {
         _uiAudioSource.PlayOneShot(ClickAudioClips[Random.Range(0, ClickAudioClips.Length - 1)]);
+    }
+    public void PlayPaperAudio(float volume)
+    {
+        _uiAudioSource.PlayOneShot(PaperAudioClips[Random.Range(0, PaperAudioClips.Length - 1)], volume);
     }
 }
