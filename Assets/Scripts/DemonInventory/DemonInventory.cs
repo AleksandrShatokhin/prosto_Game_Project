@@ -28,7 +28,7 @@ public class DemonInventory : MonoBehaviour
         SetDemonInventorySprite(chosenDemonSO);
         dialogText.text = chosenDemonSO.dialogText;
         dialogText.gameObject.SetActive(false);
-        demonDescription.text = chosenDemonSO.demonDescription;
+        demonDescription.text = chosenDemonSO.demonName;
     }
 
     private void SetDemonInventorySprite(DemonSO chosenDemonSO)
