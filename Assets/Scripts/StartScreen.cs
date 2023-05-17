@@ -13,11 +13,6 @@ public class StartScreen : MonoBehaviour
     {
         buttonStart.onClick.AddListener(StartGame);
         buttonExit.onClick.AddListener(ExitGame);
-
-        AudioSource audioSource = gameObject.AddComponent<AudioSource>();
-        AudioClip clip = (AudioClip)AssetDatabase.LoadAssetAtPath("Assets/Sound/Music/Menu.mp3", typeof(AudioClip));
-        audioSource.clip = clip;
-        audioSource.Play();
     }
 
     private void StartGame()
