@@ -9,6 +9,8 @@ public class SwitchingAroundRoom : MonoBehaviour, IClickable
     public void OnClick()
     {
         OpenNewWindow();
+        UIAudioManager.instance._uiAudioSource.volume = 0.4f;
+        UIAudioManager.instance.PlayClickSoftAudio(0.4f);
     }
 
     private void OpenNewWindow() => GameController.GetInstance().SwitchWindow(opanableWindow, roomWindow);

@@ -9,5 +9,6 @@ public class InformativeItem : MonoBehaviour, IClickable
     public void OnClick()
     {
         GameController.GetInstance().DisplayMessageOnScreen(informativeText);
+        UIAudioManager.instance.PlayClickSoftAudio(0.4f);
     }
 }

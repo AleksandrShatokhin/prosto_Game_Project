@@ -19,6 +19,7 @@ public class GameController : MonoBehaviour
     [SerializeField] private MainUIController mainUIController;
     [SerializeField] private DemonInventory demonInventory;
     [SerializeField] private GameObject firstWindow;
+    [SerializeField] private AudioSource _transitionAudioSource;
 
     public void AddDemonToCollection(DemonSO demon) => demonInventory.AddCaughtDemon(demon);
 
@@ -76,6 +77,7 @@ public class GameController : MonoBehaviour
     {
         if (playAnimation)
         {
+            _transitionAudioSource.Play();
             StartCoroutine(SwitchWindowCour(toOpen, toClose, loadingCircleSprite));
         }
         else
