@@ -6,9 +6,12 @@ using UnityEngine.UI;
 public class DemonInventorySlot : MonoBehaviour
 {
     [SerializeField] private DemonInventory demonInventory;
-
     public DemonSO demonSO;
     [SerializeField] private Image slotImage;
+
+    private void Awake() {
+        slotImage = GetComponent<Image>();
+    }
 
     public void ConfigureSlot()
     {
