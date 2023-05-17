@@ -10,7 +10,7 @@ public class UIAudioManager : MonoBehaviour
     [SerializeField] private AudioSource _uiAudioSource;
     public void PlayHoverAudio()
     {
-        _uiAudioSource.volume = 0.4f;
+        _uiAudioSource.volume = 0.2f;
         _uiAudioSource.PlayOneShot(HoverAudioClips[Random.Range(0, HoverAudioClips.Length - 1)]);
     }
     public void PlayClickAudio()

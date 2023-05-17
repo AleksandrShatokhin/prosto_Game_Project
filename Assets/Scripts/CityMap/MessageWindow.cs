@@ -10,6 +10,8 @@ public class MessageWindow : MonoBehaviour, IStartable
     private DemonSO demonSO;
     private GameObject callOnMiniMap;
     [SerializeField] private Button buttonAccept, buttonCancel;
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioSource audioSourceNoise;
 
     private void Start()
     {
@@ -28,6 +30,10 @@ public class MessageWindow : MonoBehaviour, IStartable
     private void ClickAccept()
     {
         anim_window.SetBool("isCallAccept", true);
+        audioSource.volume = 0.15f;
+        audioSource.Play();
+        audioSourceNoise.volume = 0.05f;
+        audioSourceNoise.Play();
     }
     private void ClickCancel()
     {
