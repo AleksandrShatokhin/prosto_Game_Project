@@ -9,5 +9,6 @@ public class OpanableReadWindow : MonoBehaviour, IClickable
     public void OnClick()
     {
         opanableWindow.SetActive(true);
+        UIAudioManager.instance.PlayPaperAudio(0.4f);
     }
 }

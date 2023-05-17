@@ -16,6 +16,7 @@ public class ButtonWithNumber : PickableItem
     public override void OnClick()
     {
         base.OnClick();
+        UIAudioManager.instance.PlayButtonPickupAudio(0.5f);
     }
 
     public override void OnItemCombineAttempt()
