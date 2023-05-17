@@ -13,6 +13,8 @@ public class PhoneInPlayerRoom : MonoBehaviour, IClickable
 
     [SerializeField] GameObject playerRoom, houses;
 
+    [SerializeField] private UIPhoneAudio uiPhoneAudio;
+
     private void Start()
     {
         currentCallStatus = callStatus.NotAccept;
@@ -42,6 +44,7 @@ public class PhoneInPlayerRoom : MonoBehaviour, IClickable
 
     public void OnClick()
     {
+        uiPhoneAudio.PlayPhonePickUpAudio();
         OpenMessageWimdow();
     }
 
