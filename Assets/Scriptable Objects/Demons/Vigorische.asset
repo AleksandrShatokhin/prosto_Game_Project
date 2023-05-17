@@ -17,6 +17,7 @@ MonoBehaviour:
   messageWindowPrefab: {fileID: 7784462232860241664, guid: fb1adad49370a4e42ba1e9cbfa40007f, type: 3}
   demonRoomPrefab: {fileID: 4215208817220533852, guid: 7355e867b4d8cd34da0c984641986f1b, type: 3}
   loadingCircleToRoom: {fileID: 21300000, guid: c3ed6433fb049c24aba1dcaa8c647d55, type: 3}
-  inventorySprite: {fileID: 21300000, guid: 54f4e3c2f6afcc849aa6ec2f0b34262f, type: 3}
+  inventorySprite: {fileID: 21300000, guid: 4b019aeed1553d7448e2694d38d06ab1, type: 3}
   dialogText: Vig text
-  demonDescription: Vig descr
+  demonName: "\u0412\u044B\u0433\u043E\u0440\u0438\u0449\u0435"
+  demonDialogGameObject: {fileID: 4514225193513261379, guid: 275f5df97a7628d49a3c42e9ffd7a57a, type: 3}

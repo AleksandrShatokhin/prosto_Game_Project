@@ -37,7 +37,7 @@ public class Cup : MonoBehaviour, IClickable
 
     public void DehighlightCup()
     {
-        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.2470588f);
+        GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 1);
     }
 
     private void PourWater(Cup cupToPourFrom)

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 using TMPro;
 
 public class DemonInventory : MonoBehaviour
@@ -12,6 +13,8 @@ public class DemonInventory : MonoBehaviour
     [SerializeField] private Image demonImage;
     [SerializeField] private TMP_Text dialogText;
     [SerializeField] private TMP_Text demonDescription;
+    [SerializeField] private DemonInventoryDialog dialogContainer;
+    [SerializeField] private List<PackCollection> allPossibleDialogs;
 
     private void OnEnable()
     {
@@ -29,6 +32,21 @@ public class DemonInventory : MonoBehaviour
         dialogText.text = chosenDemonSO.dialogText;
         dialogText.gameObject.SetActive(false);
         demonDescription.text = chosenDemonSO.demonName;
+
+        foreach(var pack in dialogContainer.DialogPacks.Packs){
+            foreach (GameObject item in pack.DialogPairs)
+            {
+                item.SetActive(false);
+            }
+            pack.gameObject.SetActive(false);
+        }
+        dialogContainer.DialogPacks.Packs[0].gameObject.SetActive(true);
+        dialogContainer.DialogPacks.gameObject.SetActive(false);
+        dialogContainer.ResetVariables();
+
+
+        dialogContainer.DialogPacks = allPossibleDialogs.Where(x => x.demon == chosenDemonSO).First();
+        dialogContainer.DialogPacks.gameObject.SetActive(true);
     }
 
     private void SetDemonInventorySprite(DemonSO chosenDemonSO)

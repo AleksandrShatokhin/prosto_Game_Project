@@ -22,4 +22,6 @@ public class DemonSO : ScriptableObject
     public Sprite inventorySprite;
     public string dialogText;
     public string demonName;
+
+    public GameObject demonDialogGameObject;
 }
