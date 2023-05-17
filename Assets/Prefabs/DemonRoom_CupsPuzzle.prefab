@@ -3414,6 +3414,8 @@ MonoBehaviour:
   closedLayer: {fileID: 1876215139}
   sprayType: {fileID: 2035370445}
   ragType: {fileID: 1773871992}
+  backgroundSprite: {fileID: 362775780}
+  opanableSprite: {fileID: 21300000, guid: b3285b8ca06517d4aba1a19e5e68b3e9, type: 3}
 --- !u!1 &1416794025
 GameObject:
   m_ObjectHideFlags: 0
@@ -5715,7 +5717,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 2fef12ffbba4e7c459e4c45ba2b68340, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 91bb4a807dcba364cb7e2c355a82fbce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
