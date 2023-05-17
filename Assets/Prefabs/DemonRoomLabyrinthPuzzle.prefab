@@ -471,7 +471,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 2373965458691367385}
   nameItem: "\u0421\u0432\u0435\u0447\u0430"
-  spriteCandle: {fileID: 21300000, guid: 3a79019afa494fe438afb0fd4dfe7f6e, type: 3}
+  spriteCandle: {fileID: 21300000, guid: df053d84f1474dc489a855d830e09c1d, type: 3}
 --- !u!1 &127267829
 GameObject:
   m_ObjectHideFlags: 0
