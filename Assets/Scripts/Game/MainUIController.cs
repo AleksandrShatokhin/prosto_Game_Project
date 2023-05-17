@@ -8,7 +8,8 @@ public class MainUIController : MonoBehaviour
 {
     private Animator anim_MainUI;
 
-    [SerializeField] TextMeshProUGUI textMessage;
+    [SerializeField] private TextMeshProUGUI textMessage;
+    [SerializeField] private Image sr_Circle;
 
     private void Start()
     {
@@ -20,4 +21,6 @@ public class MainUIController : MonoBehaviour
         anim_MainUI.SetTrigger("isDisplayMessage");
         textMessage.text = message;
     }
+
+    public void SetSpriteToLoadingCircle(Sprite sprite) => sr_Circle.sprite = sprite;
 }

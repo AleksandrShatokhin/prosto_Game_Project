@@ -12,6 +12,8 @@ public class LockChest : MonoBehaviour, IClickable
     [SerializeField] private GameObject openableChest;
     [SerializeField] private AudioClip audioOpenDoor;
 
+    [SerializeField] private SpriteRenderer kitchenBackground;
+    [SerializeField] private Sprite backgroundWithoutLockSprite;
     private GameObject lockPanel;
 
     private void Start()
@@ -56,6 +58,7 @@ public class LockChest : MonoBehaviour, IClickable
 
     private void SwitchActiveObject()
     {
+        kitchenBackground.sprite = backgroundWithoutLockSprite;
         openableChest.SetActive(true);
         this.gameObject.SetActive(false);
     }

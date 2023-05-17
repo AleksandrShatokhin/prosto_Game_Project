@@ -72,11 +72,11 @@ public class GameController : MonoBehaviour
         }
     }
 
-    public void SwitchWindow(GameObject toOpen, GameObject toClose, bool playAnimation = false)
+    public void SwitchWindow(GameObject toOpen, GameObject toClose, bool playAnimation = false, Sprite loadingCircleSprite = null)
     {
         if (playAnimation)
         {
-            StartCoroutine(SwitchWindowCour(toOpen, toClose));
+            StartCoroutine(SwitchWindowCour(toOpen, toClose, loadingCircleSprite));
         }
         else
         {
@@ -85,8 +85,13 @@ public class GameController : MonoBehaviour
         }
     }
 
-    private IEnumerator SwitchWindowCour(GameObject toOpen, GameObject toClose)
+    private IEnumerator SwitchWindowCour(GameObject toOpen, GameObject toClose, Sprite loadingCircleSprite)
     {
+        if (loadingCircleSprite != null)
+        {
+            mainUIController.SetSpriteToLoadingCircle(loadingCircleSprite);
+        }
+        
         loadingCircleAnimator.SetTrigger("StartLoadingAnimTrigger");
         yield return new WaitForSeconds(1f);
         toOpen.SetActive(true);

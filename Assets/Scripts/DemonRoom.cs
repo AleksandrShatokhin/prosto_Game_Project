@@ -27,8 +27,6 @@ public class DemonRoom : MonoBehaviour, IStartable
         this.playerRoom = playerRoom;
 
         demonRoomUi.SetActive(true);
-        //demonSpriteRenderer.sprite = currentDemonSO.demonSprite;
-        //demonSpriteRenderer.gameObject.SetActive(false);
         GameObject currentDemon = Instantiate(currentDemonSO.demonGO, currentDemonSO.demonGO.transform.position, Quaternion.identity);
         currentDemon.transform.SetParent(demonSpriteRenderer.transform);
 
@@ -45,7 +43,9 @@ public class DemonRoom : MonoBehaviour, IStartable
 
     public void ClickComeBack()
     {
-        GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject, true);
+        Sprite circleSprite = playerRoom.GetComponent<PlayerRoomUi>().GetPlayerRoomLoadingCircle();
+
+        GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject, true, circleSprite);
         GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_On();
         Destroy(this.gameObject, 1.1f);
     }
