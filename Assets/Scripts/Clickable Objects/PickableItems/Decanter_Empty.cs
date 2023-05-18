@@ -10,6 +10,7 @@ public class Decanter_Empty : PickableItem
     public override void OnClick()
     {
         base.OnClick();
+        GameController.GetInstance().DisplayMessageOnScreen("Графин можно наполнить водой!");
     }
 
     public override void OnItemCombineAttempt()

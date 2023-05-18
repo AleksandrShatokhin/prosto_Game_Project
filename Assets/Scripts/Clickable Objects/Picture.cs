@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class Picture : PickableItem
 {
-    private const string text_1 = "На этой картине какой то странный слой...";
-    private const string text_2 = "Теперь картина мокрая. Протереть бы ее";
-    private const string text_3 = "Что за странные символы. Возможно это шифр";
+    private const string text_1 = "На картине странный слой. Нужно найти, чем протереть его!";
+    private const string text_2 = "Теперь картина мокрая. Протереть бы ее...";
+    private const string text_3 = "Что за странные символы? Возможно это шифр!";
 
     [SerializeField] private GameObject drops, closedLayer;
     [SerializeField] private PickableItem sprayType, ragType;

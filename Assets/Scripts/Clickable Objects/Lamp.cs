@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Lamp : MonoBehaviour, IClickable
 {
-    private const string textForLight_On = "Уже включено. Странный код на полу!";
+    private const string textForLight_On = "Уже включено. Отметины на лампочке отразили код!";
+    private const string textForLight_Off = "Нужно найти лампочку!";
 
     [SerializeField] private GameObject lightBulb;
 
@@ -18,11 +19,18 @@ public class Lamp : MonoBehaviour, IClickable
             GameController.GetInstance().DisplayMessageOnScreen(textForLight_On);
             return;
         }
+        else
+        {
+            if (SwitcherLight() == true)
+            {
+                return;
+            }
 
-        SwitcherLight();
+            GameController.GetInstance().DisplayMessageOnScreen(textForLight_Off);
+        }
     }
 
-    private void SwitcherLight()
+    private bool SwitcherLight()
     {
         foreach (InventoryItemSlot slot in inventory.GetComponentsInChildren<InventoryItemSlot>())
         {
@@ -34,8 +42,11 @@ public class Lamp : MonoBehaviour, IClickable
                     inventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
                     UIAudioManager.instance.PlayLampTurnAudio(0.7f);
+                    return true;
                 }
             }
         }
+
+        return false;
     }
 }
