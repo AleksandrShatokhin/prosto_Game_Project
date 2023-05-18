@@ -58,8 +58,13 @@ public class CellNanograms : MonoBehaviour
         cellState = CellState.Open;
     }
 
-    public void SetState_Closed()
+    public void SetState_Closed(bool isResetCounter = false)
     {
+        if (isResetCounter == true)
+        {
+            couter = 0;
+        }
+
         this.GetComponent<Image>().sprite = whiteSprite;
         cellState = CellState.Closed;
     }

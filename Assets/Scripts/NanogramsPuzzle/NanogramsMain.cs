@@ -44,8 +44,6 @@ public class NanogramsMain : MonoBehaviour
 
         if (isWin == true)
         {
-            //GameController.GetInstance().AddDemonToCollection(demonRoom.GetComponent<DemonRoom>().GetCurrentDemonSO);
-            //demonRoom.GetComponent<DemonRoom>().ClickComeBack();
             demonRoom.GetComponent<IFinaly>().CuptureAnimationOpen();
         }
         else
@@ -92,9 +90,10 @@ public class NanogramsMain : MonoBehaviour
     private void ClickReset()
     {
         UIAudioManager.instance.PlayClickSoftAudio(0.6f);
+
         foreach (Transform cell in gameGrid.transform)
         {
-            cell.GetComponent<CellNanograms>().SetState_Closed();
+            cell.GetComponent<CellNanograms>().SetState_Closed(true);
         }
     }
 }
