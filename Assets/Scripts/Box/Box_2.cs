@@ -44,5 +44,6 @@ public class Box_2 : BoxManager
     public void ClickButtonOnUpPanel()
     {
         GameController.GetInstance().SwitchWindow(this.toOpenWindow, this.toCloseWindow);
+        UIAudioManager.instance.PlayPaperAudio(0.7f);
     }
 }

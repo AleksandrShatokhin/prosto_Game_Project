@@ -33,6 +33,7 @@ public class Lamp : MonoBehaviour, IClickable
                     lightBulb.SetActive(true);
                     inventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
+                    UIAudioManager.instance.PlayLampTurnAudio(0.7f);
                 }
             }
         }

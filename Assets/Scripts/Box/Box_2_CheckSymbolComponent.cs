@@ -44,6 +44,8 @@ public class Box_2_CheckSymbolComponent : BoxCheckerManager
             closedPanel.SetActive(false);
             openedPanel.SetActive(true);
             indicator = 0;
+
+            UIAudioManager.instance.PlayChestOpenAudio(0.7f);
         }
         else
         {
