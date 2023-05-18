@@ -42,7 +42,7 @@ public class Box_1 : BoxManager
         if (CheckListButtonColors())
         {
             base.ClickOpenBox();
-            UIAudioManager.instance.PlayChestOpenAudio(0.75f);
+            UIAudioManager.instance.PlayChestOpenAudio(0.7f);
         }
         else
         {
@@ -69,6 +69,7 @@ public class Box_1 : BoxManager
 
         buttonColors.Add(color);
         indicatorColorList += 1;
+        UIAudioManager.instance.PlaySliderClickAudio(0.6f);
 
         if (indicatorColorList == correctColors.Count)
         {
@@ -107,6 +108,8 @@ public class Box_1 : BoxManager
             button_N1.GetComponent<Button>().interactable = false;
             button_N2.GetComponent<Button>().interactable = false;
             button_N3.GetComponent<Button>().interactable = false;
+
+            UIAudioManager.instance.PlayButtonsUnlockedAudio(0.6f);
         }
     }
 
@@ -143,6 +146,7 @@ public class Box_1 : BoxManager
         {
             button.GetComponent<ButtonOnPanel>().SetItem(localVariableItemForButtonOnBackPanel);
             localVariableItemForButtonOnBackPanel = null;
+            UIAudioManager.instance.PlaySliderClickAudio(0.6f);
         }
     }
 

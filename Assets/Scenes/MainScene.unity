@@ -3452,6 +3452,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 1ae232bf1ca59a049bb416d7e844f94e, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestSliderUnlockedClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d0cacffa28aa5f045bf51590deb71006, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestButtonsUnlockedClip
+      value: 
+      objectReference: {fileID: 8300000, guid: a424d98f09206a94c8319bef9c33732a, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: PaperAudioClips.Array.size
       value: 9
       objectReference: {fileID: 0}
@@ -3500,6 +3508,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: SliderClickAudioClips.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ClickSoftAudioClips.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: eced8ddc4529b9c44bed7a7f84364f6b, type: 3}
@@ -3516,6 +3528,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 88a3b67437480d44d8ed8e57de5656f7, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PencilNonogramAudioClip.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ShelfSlideAudioClips.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 41855c1e51487f54cae5ad2d18c25334, type: 3}
@@ -3528,9 +3544,45 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 08de90ed380d41b4fb53faf34ce94c54, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: SliderClickAudioClips.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 38b9e93c6c43de64c910f6f9412e343d, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: SliderClickAudioClips.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b5d823fbde87fd644a5494d883ffd559, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: SliderClickAudioClips.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: deb297c707207314da44d0c7d5debe13, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: UIButtonPickUpAudioClips.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PencilNonogramAudioClip.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: fdaec480fc4b14a41b0b748dcdacc61a, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PencilNonogramAudioClip.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6c07938eb2c981f47bf49d47ff9f9222, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PencilNonogramAudioClip.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: fc876d0b37a6ae6428700a747e339ad9, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PencilNonogramAudioClip.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0288d1e5d54e0dc4081a6a147c35e68e, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PencilNonogramAudioClip.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: e1c8ce2e5f6f13a45bf3c2358604951d, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PencilNonogramAudioClip.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 37defabd33201b74bad0ddf6d5c7d41e, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: UIButtonPickUpAudioClips.Array.data[0]
       value: 

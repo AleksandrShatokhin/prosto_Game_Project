@@ -29,6 +29,7 @@ public class SliderBox1 : MonoBehaviour
                     inventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
                     slider.interactable = true;
+                    UIAudioManager.instance.PlaySliderClickAudio(0.6f);
                     return;
                 }
             }
@@ -45,7 +46,12 @@ public class SliderBox1 : MonoBehaviour
         if (slider.value == 2)
         {
             slider.interactable = false;
+            UIAudioManager.instance.PlaySliderUnlockedAudio(0.8f);
             StartCoroutine(RotatBox());
+        }
+        else
+        {
+            UIAudioManager.instance.PlaySliderClickAudio(0.5f);
         }
     }
 

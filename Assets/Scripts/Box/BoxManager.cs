@@ -16,12 +16,12 @@ public class BoxManager : MonoBehaviour
     protected void ClickButtonLeft()
     {
         this.gameObject.transform.Rotate(0.0f, 90.0f, 0.0f);
-        UIAudioManager.instance.PlayClickSoftAudio(0.5f);
+        UIAudioManager.instance.PlayClickSoftAudio(0.4f);
     }
     protected void ClickButtonRight()
     {
         this.gameObject.transform.Rotate(0.0f, -90.0f, 0.0f);
-        UIAudioManager.instance.PlayClickSoftAudio(0.5f);
+        UIAudioManager.instance.PlayClickSoftAudio(0.4f);
     }
 
     public virtual void ClickOpenBox()

@@ -23,6 +23,7 @@ public class NanogramsMain : MonoBehaviour
 
     private void ClickCheck()
     {
+        UIAudioManager.instance.PlayClickSoftAudio(0.6f);
         int correctCells = 0;
         int incorrectCells = 0;
 
@@ -89,6 +90,7 @@ public class NanogramsMain : MonoBehaviour
 
     private void ClickReset()
     {
+        UIAudioManager.instance.PlayClickSoftAudio(0.6f);
         foreach (Transform cell in gameGrid.transform)
         {
             cell.GetComponent<CellNanograms>().SetState_Closed();

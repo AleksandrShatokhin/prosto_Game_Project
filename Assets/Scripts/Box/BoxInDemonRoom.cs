@@ -10,6 +10,7 @@ public class BoxInDemonRoom : MonoBehaviour, IClickable
     void IClickable.OnClick()
     {
         boxWindow.SetActive(true);
+        UIAudioManager.instance.PlayChestCloseAudio(0.7f);
     }
 
     public void ChangeSprite() => this.GetComponent<SpriteRenderer>().sprite = spriteNEW;

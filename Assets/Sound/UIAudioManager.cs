@@ -15,6 +15,10 @@ public class UIAudioManager : MonoBehaviour
     public AudioClip ChestOpenAudioClip;
     public AudioClip ChestCloseAudioClip;
     public AudioClip ChestBirdAudioClip;
+    public AudioClip[] SliderClickAudioClips;
+    public AudioClip ChestSliderUnlockedClip;
+    public AudioClip ChestButtonsUnlockedClip;
+    public AudioClip[] PencilNonogramAudioClip;
     [SerializeField] public AudioSource _uiAudioSource;
     private void Start()
     {
@@ -52,17 +56,32 @@ public class UIAudioManager : MonoBehaviour
     }
     public void PlayChestOpenAudio(float volume)
     {
-        _uiAudioSource.volume = 1.0f;
         _uiAudioSource.PlayOneShot(ChestOpenAudioClip, volume);
     }
     public void PlayChestCloseAudio(float volume)
     {
-        _uiAudioSource.volume = 1.0f;
         _uiAudioSource.PlayOneShot(ChestCloseAudioClip, volume);
     }
     public void PlayChestBirdAudio(float volume)
     {
         _uiAudioSource.volume = 1.0f;
         _uiAudioSource.PlayOneShot(ChestBirdAudioClip, volume);
+    }
+    public void PlaySliderClickAudio(float volume)
+    {
+        _uiAudioSource.PlayOneShot(SliderClickAudioClips[Random.Range(0, SliderClickAudioClips.Length - 1)], volume);
+    }
+    public void PlaySliderUnlockedAudio(float volume)
+    {
+        _uiAudioSource.PlayOneShot(ChestSliderUnlockedClip, volume);
+    }
+    public void PlayButtonsUnlockedAudio(float volume)
+    {
+        _uiAudioSource.PlayOneShot(ChestButtonsUnlockedClip, volume);
+    }
+    public void PlayPencilNonogramPuzzle(float volume)
+    {
+        _uiAudioSource.pitch = Random.Range(0.98f, 1.02f);
+        _uiAudioSource.PlayOneShot(PencilNonogramAudioClip[Random.Range(0, PencilNonogramAudioClip.Length - 1)], volume);
     }
 }

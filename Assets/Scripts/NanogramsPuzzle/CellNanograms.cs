@@ -30,6 +30,7 @@ public class CellNanograms : MonoBehaviour
 
     private void ClickCell()
     {
+        UIAudioManager.instance.PlayPencilNonogramPuzzle(0.3f);
         couter += 1;
 
         if (couter > 2)
