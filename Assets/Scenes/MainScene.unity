@@ -220,11 +220,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 63705511}
   m_CullTransparentMesh: 1
---- !u!1 &200629996 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
-  m_PrefabInstance: {fileID: 1983649523}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &207454276
 GameObject:
   m_ObjectHideFlags: 0
@@ -1136,6 +1131,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 734166957}
   m_CullTransparentMesh: 1
+--- !u!1 &742555846 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+  m_PrefabInstance: {fileID: 1983649523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &769816637
 GameObject:
   m_ObjectHideFlags: 0
@@ -3204,7 +3204,7 @@ MonoBehaviour:
   audioSource: {fileID: 2093106376}
   mainUIController: {fileID: 492568366}
   demonInventory: {fileID: 1701104010}
-  firstWindow: {fileID: 200629996}
+  firstWindow: {fileID: 742555846}
   _transitionAudioSource: {fileID: 2093106377}
 --- !u!114 &2093106373
 MonoBehaviour:
