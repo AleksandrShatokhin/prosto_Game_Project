@@ -24,6 +24,7 @@ public class UIAudioManager : MonoBehaviour
     public AudioClip SprayAudioClip;
     public AudioClip WipingAudioClip;
     public AudioClip ClockAudioClip;
+    public AudioClip[] PourWaterAudioClip;
     [SerializeField] public AudioSource _uiAudioSource;
     private void Start()
     {
@@ -109,5 +110,9 @@ public class UIAudioManager : MonoBehaviour
     public void PlayClockAudio(float volume)
     {
         _uiAudioSource.PlayOneShot(ClockAudioClip, volume);
+    }
+    public void PlayPourWaterAudio(float volume)
+    {
+        _uiAudioSource.PlayOneShot(PourWaterAudioClip[Random.Range(0, PourWaterAudioClip.Length - 1)], volume);
     }
 }

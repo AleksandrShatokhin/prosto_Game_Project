@@ -17,6 +17,7 @@ public class Cup : MonoBehaviour, IClickable
     }
     public void OnClick()
     {
+        UIAudioManager.instance.PlayClickSoftAudio(0.7f);
         if (cupsPuzzle.ChosenCup == null)
         {
             cupsPuzzle.ChosenCup = this;
@@ -57,6 +58,9 @@ public class Cup : MonoBehaviour, IClickable
             }
             cupsPuzzle.CheckForAnswer();
             UpdateWaterLevelImage();
+
+            UIAudioManager.instance.PlayPourWaterAudio(0.7f);
+
             cupToPourFrom.UpdateWaterLevelImage();
         }
     }
