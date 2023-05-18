@@ -20,8 +20,9 @@ public class LabyrinthPuzzle : MonoBehaviour, IPuzzle
 
     public void OnPuzzleEnd()
     {
-        GameController.GetInstance().AddDemonToCollection(demonRoom.GetComponent<DemonRoom>().GetCurrentDemonSO);
-        demonRoom.GetComponent<DemonRoom>().ClickComeBack();
+        //GameController.GetInstance().AddDemonToCollection(demonRoom.GetComponent<DemonRoom>().GetCurrentDemonSO);
+        //demonRoom.GetComponent<DemonRoom>().ClickComeBack();
+        demonRoom.GetComponent<IFinaly>().CuptureAnimationOpen();
     }
 
     public void OnPuzzleStart()

@@ -6417,6 +6417,7 @@ Transform:
   - {fileID: 262539571}
   - {fileID: 940169544}
   - {fileID: 1542108073}
+  - {fileID: 1945868042360430748}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6450,6 +6451,7 @@ MonoBehaviour:
   demonSpriteRenderer: {fileID: 3057806224817422524}
   demonRoomUi: {fileID: 7691723613994595250}
   roomBlock: {fileID: 1124534243257909053}
+  captureAnimation_GO: {fileID: 1945868042360430750}
 --- !u!95 &1680450816
 Animator:
   serializedVersion: 5
@@ -7437,6 +7439,77 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!1001 &1893646484
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 7415286669266959563}
+    m_Modifications:
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177674, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_Name
+      value: CaptureDemonAnimaton_GO
+      objectReference: {fileID: 0}
+    - target: {fileID: 1945868042088177674, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+--- !u!4 &1945868042360430748 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1945868042088177672, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+  m_PrefabInstance: {fileID: 1893646484}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1945868042360430750 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1945868042088177674, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
+  m_PrefabInstance: {fileID: 1893646484}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1725909614475590393
 PrefabInstance:
   m_ObjectHideFlags: 0

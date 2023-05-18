@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class DemonRoom : MonoBehaviour, IStartable
+public class DemonRoom : MonoBehaviour, IStartable, IFinaly
 {
     private Animator anim_DemonRoom;
 
@@ -15,6 +15,7 @@ public class DemonRoom : MonoBehaviour, IStartable
     [SerializeField] private SpriteRenderer demonSpriteRenderer;
     [SerializeField] private GameObject demonRoomUi;
     [SerializeField] private GameObject roomBlock;
+    [SerializeField] private GameObject captureAnimation_GO;
 
     private void Start()
     {
@@ -57,6 +58,14 @@ public class DemonRoom : MonoBehaviour, IStartable
         anim_DemonRoom.SetTrigger("isDemonAppearance");
     }
 
+    void IFinaly.CuptureAnimationOpen()
+    {
+        GameController.GetInstance().AddDemonToCollection(GetCurrentDemonSO);
+        puzzleWindow.SetActive(false);
+        roomBlock.SetActive(true);
+        captureAnimation_GO.SetActive(true);
+    }
+
     // Вызываю на эвентах на анимации главной комнаты
     public void PlayAnimationDemonApperance() => anim_DemonRoom.enabled = true;
     public void StopAnimationDemonApperance() => anim_DemonRoom.enabled = false;
@@ -82,4 +91,10 @@ public class DemonRoom : MonoBehaviour, IStartable
             anim_DemonRoom.SetTrigger("isDemonAppearance");
         }
     }
+}
+
+
+public interface IFinaly
+{
+    public void CuptureAnimationOpen();
 }

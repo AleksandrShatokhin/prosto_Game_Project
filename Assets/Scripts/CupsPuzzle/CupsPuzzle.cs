@@ -36,7 +36,7 @@ public class CupsPuzzle : MonoBehaviour, IPuzzle
     public void OnPuzzleEnd()
     {
         //demonRoom.GetComponent<DemonRoom>().ClickComeBack();
-        GameController.GetInstance().AddDemonToCollection(demonRoom.GetComponent<DemonRoom>().GetCurrentDemonSO);
+        //GameController.GetInstance().AddDemonToCollection(demonRoom.GetComponent<DemonRoom>().GetCurrentDemonSO);
         StartCoroutine(DelayToEnd());
     }
 
@@ -45,6 +45,7 @@ public class CupsPuzzle : MonoBehaviour, IPuzzle
         this.GetComponent<TriggerMouseComponent>().enabled = true;
         yield return new WaitForSeconds(delay);
         this.GetComponent<TriggerMouseComponent>().enabled = false;
-        demonRoom.GetComponent<DemonRoom>().ClickComeBack();
+        //demonRoom.GetComponent<DemonRoom>().ClickComeBack();
+        demonRoom.GetComponent<IFinaly>().CuptureAnimationOpen();
     }
 }
