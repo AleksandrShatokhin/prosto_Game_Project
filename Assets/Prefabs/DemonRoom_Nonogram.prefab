@@ -131487,10 +131487,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: CaptureDemonAnimaton_GO
       objectReference: {fileID: 0}
-    - target: {fileID: 1945868042088177674, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0b7b11b8e695b394daa44213c7adfcfb, type: 3}
 --- !u!4 &1945868042939257000 stripped

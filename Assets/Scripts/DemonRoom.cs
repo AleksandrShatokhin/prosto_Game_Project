@@ -31,7 +31,6 @@ public class DemonRoom : MonoBehaviour, IStartable, IFinaly
         GameObject currentDemon = Instantiate(currentDemonSO.demonGO, currentDemonSO.demonGO.transform.position, Quaternion.identity);
         currentDemon.transform.SetParent(demonSpriteRenderer.transform);
 
-
         puzzleWindow.GetComponentInChildren<IPuzzle>().OnPuzzleStart();
     }
 
@@ -39,6 +38,7 @@ public class DemonRoom : MonoBehaviour, IStartable, IFinaly
     {
         puzzleWindow.gameObject.SetActive(true);
         demonRoomUi.gameObject.SetActive(false);
+        Destroy(demonSpriteRenderer.transform.GetChild(0).gameObject);
         roomBlock.SetActive(false);
     }
 
