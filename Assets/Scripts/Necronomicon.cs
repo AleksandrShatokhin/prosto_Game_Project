@@ -58,13 +58,19 @@ public class Necronomicon : MonoBehaviour
     {
         indexPage += 1;
         UpdatePageContent();
+        UIAudioManager.instance.PlayPaperAudio(0.4f);
     }
 
     private void ClickPreviousPage()
     {
         indexPage -= 1;
         UpdatePageContent();
+        UIAudioManager.instance.PlayPaperAudio(0.4f);
     }
 
-    public void ClosePanel() => GameController.GetInstance().ClosePanel(this.gameObject);
+    public void ClosePanel()
+    {
+        GameController.GetInstance().ClosePanel(this.gameObject);
+        UIAudioManager.instance.PlayPaperAudio(0.4f);
+    }
 }

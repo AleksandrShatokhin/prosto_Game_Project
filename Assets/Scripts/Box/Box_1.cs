@@ -42,6 +42,7 @@ public class Box_1 : BoxManager
         if (CheckListButtonColors())
         {
             base.ClickOpenBox();
+            UIAudioManager.instance.PlayChestOpenAudio(0.75f);
         }
         else
         {
@@ -148,6 +149,7 @@ public class Box_1 : BoxManager
     public override void CloseBox()
     {
         base.CloseBox();
+        UIAudioManager.instance.PlayChestCloseAudio(0.75f);
     }
 
     public void ButtonOnPanelApperance()
@@ -160,5 +162,6 @@ public class Box_1 : BoxManager
     public void ClickButtonOnUpPanel()
     {
         GameController.GetInstance().SwitchWindow(this.toOpenWindow, this.toCloseWindow);
+        UIAudioManager.instance.PlayChestBirdAudio(0.5f);
     }
 }

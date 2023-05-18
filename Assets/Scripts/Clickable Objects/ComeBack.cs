@@ -10,8 +10,7 @@ public class ComeBack : PickableItem
     public override void OnClick()
     {
         ComeBackButton();
-        UIAudioManager.instance._uiAudioSource.volume = 0.4f;
-        UIAudioManager.instance.PlayClickAudio();
+        UIAudioManager.instance.PlayClickSoftAudio(0.4f);
     }
 
     private void ComeBackButton()

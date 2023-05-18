@@ -11,6 +11,10 @@ public class UIAudioManager : MonoBehaviour
     public AudioClip[] PaperAudioClips;
     public AudioClip[] UIButtonPickUpAudioClips;
     public AudioClip[] ShelfSlideAudioClips;
+    public AudioClip UIItemClickAudioClip;
+    public AudioClip ChestOpenAudioClip;
+    public AudioClip ChestCloseAudioClip;
+    public AudioClip ChestBirdAudioClip;
     [SerializeField] public AudioSource _uiAudioSource;
     private void Start()
     {
@@ -40,5 +44,25 @@ public class UIAudioManager : MonoBehaviour
     public void PlayShelfSlideAudio(float volume)
     {
         _uiAudioSource.PlayOneShot(ShelfSlideAudioClips[Random.Range(0, ShelfSlideAudioClips.Length - 1)], volume);
+    }
+    public void PlayUIItemClickAudio(float volume)
+    {
+        _uiAudioSource.volume = 1.0f;
+        _uiAudioSource.PlayOneShot(UIItemClickAudioClip, volume);
+    }
+    public void PlayChestOpenAudio(float volume)
+    {
+        _uiAudioSource.volume = 1.0f;
+        _uiAudioSource.PlayOneShot(ChestOpenAudioClip, volume);
+    }
+    public void PlayChestCloseAudio(float volume)
+    {
+        _uiAudioSource.volume = 1.0f;
+        _uiAudioSource.PlayOneShot(ChestCloseAudioClip, volume);
+    }
+    public void PlayChestBirdAudio(float volume)
+    {
+        _uiAudioSource.volume = 1.0f;
+        _uiAudioSource.PlayOneShot(ChestBirdAudioClip, volume);
     }
 }

@@ -28,14 +28,14 @@ public class DrawerInTable : PickableItem
     {
         isOpenDrawer = true;
         opanableObject.SetActive(true);
-        UIAudioManager.instance.PlayShelfSlideAudio(0.5f);
+        UIAudioManager.instance.PlayShelfSlideAudio(0.8f);
     }
 
     private void CloseDraawer()
     {
         isOpenDrawer = false;
         opanableObject.SetActive(false);
-        UIAudioManager.instance.PlayShelfSlideAudio(0.5f);
+        UIAudioManager.instance.PlayShelfSlideAudio(0.8f);
     }
 
     public override void OnItemCombineAttempt()

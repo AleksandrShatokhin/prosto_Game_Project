@@ -13,8 +13,16 @@ public class BoxManager : MonoBehaviour
     // Parameters for interaction with the box
     [SerializeField] protected Button buttonLeft, buttonRight, buttonOpenBox;
 
-    protected void ClickButtonLeft() => this.gameObject.transform.Rotate(0.0f, 90.0f, 0.0f);
-    protected void ClickButtonRight() => this.gameObject.transform.Rotate(0.0f, -90.0f, 0.0f);
+    protected void ClickButtonLeft()
+    {
+        this.gameObject.transform.Rotate(0.0f, 90.0f, 0.0f);
+        UIAudioManager.instance.PlayClickSoftAudio(0.5f);
+    }
+    protected void ClickButtonRight()
+    {
+        this.gameObject.transform.Rotate(0.0f, -90.0f, 0.0f);
+        UIAudioManager.instance.PlayClickSoftAudio(0.5f);
+    }
 
     public virtual void ClickOpenBox()
     {

@@ -63,10 +63,12 @@ public class InventoryItemSlot : MonoBehaviour, IClickable
         if (IsItemSelected == false)
         {
             SelectItem();
+            UIAudioManager.instance.PlayUIItemClickAudio(1.0f);
         }
         else
         {
             DeselectItem();
+            UIAudioManager.instance.PlayUIItemClickAudio(1.0f);
         }
     }
 

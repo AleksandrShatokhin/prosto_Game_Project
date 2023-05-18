@@ -348,6 +348,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7837602361185990445, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837602361185990445, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837602361185990445, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1766884150}
+    - target: {fileID: 7837602361185990445, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837602361185990445, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: PlayClickSoftAudio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837602361185990445, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: UIAudioManager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837602361185990445, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837602361185990445, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
 --- !u!1 &462110309
@@ -3403,6 +3435,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestBirdAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 27d58b4655f914a4e8dd76cfebb17183, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestOpenAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653d00784c47fb04784f79b6f3e26816, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestCloseAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d4c806c0a1477bd469d4ade6d15024b3, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: UIItemClickAudioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ae232bf1ca59a049bb416d7e844f94e, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: PaperAudioClips.Array.size
       value: 9
