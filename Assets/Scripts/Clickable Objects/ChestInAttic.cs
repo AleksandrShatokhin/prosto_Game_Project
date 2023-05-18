@@ -9,6 +9,7 @@ public class ChestInAttic : MonoBehaviour, IClickable
     public void OnClick()
     {
         OpenClose();
+        UIAudioManager.instance.PlayShelfSlideAudio(0.7f);
     }
 
     private void OpenClose()

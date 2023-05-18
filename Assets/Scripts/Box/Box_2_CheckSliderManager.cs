@@ -35,6 +35,8 @@ public class Box_2_CheckSliderManager : BoxCheckerManager
             {
                 slider.gameObject.GetComponent<SliderBox2>().SetWinSpriteToHandler(winSprite);
                 slider.interactable = false;
+
+                UIAudioManager.instance.PlayChestOpenAudio(0.7f);
             }
 
             SetValueIsCorrectVariable(true);

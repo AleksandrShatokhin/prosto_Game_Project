@@ -37,6 +37,8 @@ public class Box_2_CheckNumberComponent : BoxCheckerManager
                 buttonSprite.sprite = winSprites[indicator];
                 buttonSprite.transform.GetComponent<BoxButtonSpriteSwitcher>().ActiveButtonClick_Off();
                 indicator += 1;
+
+                UIAudioManager.instance.PlayChestOpenAudio(0.7f);
             }
 
             SetValueIsCorrectVariable(true);

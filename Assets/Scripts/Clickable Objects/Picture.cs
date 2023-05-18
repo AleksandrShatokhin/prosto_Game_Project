@@ -56,6 +56,9 @@ public class Picture : PickableItem
                     drops.SetActive(true);
                     playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
+
+                    UIAudioManager.instance.PlaySpraySound(0.7f);
+
                     return isSprayFound = true;
                 }
             }
@@ -76,6 +79,9 @@ public class Picture : PickableItem
                     closedLayer.SetActive(false);
                     backgroundSprite.sprite = opanableSprite;
                     playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
+
+                    UIAudioManager.instance.PlayWipingSound(0.7f);
+
                     slot.DeselectItem();
                 }
             }

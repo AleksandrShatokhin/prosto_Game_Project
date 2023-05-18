@@ -19,6 +19,11 @@ public class UIAudioManager : MonoBehaviour
     public AudioClip ChestSliderUnlockedClip;
     public AudioClip ChestButtonsUnlockedClip;
     public AudioClip[] PencilNonogramAudioClip;
+    public AudioClip LampTurnAudioClip;
+    public AudioClip[] MouseAudioClip;
+    public AudioClip SprayAudioClip;
+    public AudioClip WipingAudioClip;
+    public AudioClip ClockAudioClip;
     [SerializeField] public AudioSource _uiAudioSource;
     private void Start()
     {
@@ -41,7 +46,7 @@ public class UIAudioManager : MonoBehaviour
     {
         _uiAudioSource.PlayOneShot(ClickSoftAudioClips[Random.Range(0, ClickSoftAudioClips.Length - 1)], volume);
     }
-    public void PlayButtonPickupAudio(float volume)
+    public void PlayPickupAudio(float volume)
     {
         _uiAudioSource.PlayOneShot(UIButtonPickUpAudioClips[Random.Range(0, UIButtonPickUpAudioClips.Length - 1)], volume);
     }
@@ -83,5 +88,26 @@ public class UIAudioManager : MonoBehaviour
     {
         _uiAudioSource.pitch = Random.Range(0.98f, 1.02f);
         _uiAudioSource.PlayOneShot(PencilNonogramAudioClip[Random.Range(0, PencilNonogramAudioClip.Length - 1)], volume);
+    }
+
+    public void PlayLampTurnAudio(float volume)
+    {
+        _uiAudioSource.PlayOneShot(ChestButtonsUnlockedClip, volume);
+    }
+    public void PlayMouseAudio(float volume)
+    {
+        _uiAudioSource.PlayOneShot(MouseAudioClip[Random.Range(0, MouseAudioClip.Length - 1)], volume);
+    }
+    public void PlaySpraySound(float volume)
+    {
+        _uiAudioSource.PlayOneShot(SprayAudioClip, volume);
+    }
+    public void PlayWipingSound(float volume)
+    {
+        _uiAudioSource.PlayOneShot(WipingAudioClip, volume);
+    }
+    public void PlayClockAudio(float volume)
+    {
+        _uiAudioSource.PlayOneShot(ClockAudioClip, volume);
     }
 }

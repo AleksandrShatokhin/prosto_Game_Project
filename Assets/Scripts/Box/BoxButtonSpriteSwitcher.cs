@@ -24,6 +24,9 @@ public class BoxButtonSpriteSwitcher : MonoBehaviour
             return;
         }
 
+        UIAudioManager.instance._uiAudioSource.volume = 0.4f;
+        UIAudioManager.instance.PlayClickAudio();
+
         checkComponent.StopCoroutineCheck();
 
         if (indicator == spriteList.Count - 1)

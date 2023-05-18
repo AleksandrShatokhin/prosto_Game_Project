@@ -40,6 +40,9 @@ public class Clock : MonoBehaviour, IClickable
                 {
                     inventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
+
+                    UIAudioManager.instance.PlayClockAudio(0.7f);
+
                     return isArrowsInInventory = true;
                 }
             }

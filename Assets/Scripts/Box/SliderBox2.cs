@@ -12,6 +12,7 @@ public class SliderBox2 : MonoBehaviour
     {
         checkComponent.StopCoroutineCheck();
         checkComponent.StartCoroutineCheck();
+        UIAudioManager.instance.PlaySliderClickAudio(0.6f);
     }
 
     public void SetWinSpriteToHandler(Sprite sprite)
