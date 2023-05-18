@@ -38,8 +38,12 @@ public class DemonRoom : MonoBehaviour, IStartable, IFinaly
     {
         puzzleWindow.gameObject.SetActive(true);
         demonRoomUi.gameObject.SetActive(false);
-        Destroy(demonSpriteRenderer.transform.GetChild(0).gameObject);
         roomBlock.SetActive(false);
+
+        if (demonSpriteRenderer.transform.childCount > 0)
+        {
+            Destroy(demonSpriteRenderer.transform.GetChild(0).gameObject);
+        }
     }
 
     public void ClickComeBack()
