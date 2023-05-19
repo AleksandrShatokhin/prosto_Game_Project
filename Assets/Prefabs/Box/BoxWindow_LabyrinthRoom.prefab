@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 811062273037947087}
   - component: {fileID: 9164395035909478620}
   - component: {fileID: 3509445817790249514}
+  - component: {fileID: 2009300280}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -117,6 +118,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc23d2d866c782549b1e309a6b684970, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2009300280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 493670461464969309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e161d93d7671ec4db666fce39c3db78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  openBoxButton: {fileID: 4351149499320454779}
+  inventory: {fileID: 0}
+  hammer: {fileID: 0}
 --- !u!1 &710019567599772243
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +1002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4744691190202314116
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1451,6 +1467,7 @@ GameObject:
   - component: {fileID: 629082693727416758}
   - component: {fileID: 1174037576628836630}
   - component: {fileID: 8858280071282119206}
+  - component: {fileID: 5813345613789838287}
   m_Layer: 5
   m_Name: ButtonToPuzzle
   m_TagString: Untagged
@@ -1573,6 +1590,30 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5813345613789838287}
+        m_TargetAssemblyTypeName: Level3PickUpBagAudio, Assembly-CSharp
+        m_MethodName: PlayPickUpAudio
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &5813345613789838287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5351530349361120594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 469789ac65ebb55438dd69e0db0fd1b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6434972063308697843
 GameObject:
   m_ObjectHideFlags: 0
