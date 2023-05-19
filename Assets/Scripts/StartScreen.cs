@@ -1,9 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
-using UnityEditor;
 
 public class StartScreen : MonoBehaviour
 {
@@ -11,6 +8,8 @@ public class StartScreen : MonoBehaviour
 
     private void Start()
     {
+        Time.timeScale = 1.0f;
+
         buttonStart.onClick.AddListener(StartGame);
         buttonExit.onClick.AddListener(ExitGame);
     }
