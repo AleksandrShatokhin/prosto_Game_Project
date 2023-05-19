@@ -20,6 +20,7 @@ public class HeadDog : PickableItem
         }
         else
         {
+            UIAudioManager.instance.PlayDogEating(0.5f);
             transform.localPosition = righttLocalPosition;
         }
     }

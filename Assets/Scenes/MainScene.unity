@@ -3484,6 +3484,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 653d00784c47fb04784f79b6f3e26816, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: DogEating
+      value: 
+      objectReference: {fileID: 8300000, guid: 1e27c6d66c603a647868f5919ce0e2fd, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestBreak
+      value: 
+      objectReference: {fileID: 8300000, guid: f578f9c8ff30abd439b88cdeb671325d, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ChestClose
       value: 
       objectReference: {fileID: 8300000, guid: d4c806c0a1477bd469d4ade6d15024b3, type: 3}
@@ -3491,6 +3499,10 @@ PrefabInstance:
       propertyPath: PotCooking
       value: 
       objectReference: {fileID: 8300000, guid: d3ef7d2434ab0a14ea30ff9871587ecf, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: SymbolMagic
+      value: 
+      objectReference: {fileID: 8300000, guid: f5273240063aadf4392ded4a6e507ed9, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: WaterToBottle
       value: 
@@ -3543,6 +3555,10 @@ PrefabInstance:
       propertyPath: ChestOpenAudioClip
       value: 
       objectReference: {fileID: 8300000, guid: 653d00784c47fb04784f79b6f3e26816, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: CandleOn.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ChestCloseAudioClip
       value: 
@@ -3628,6 +3644,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 87e4806892af33b4aa4e861148e4d2a7, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: CandleOff.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ChestUnlockedButtons
       value: 
       objectReference: {fileID: 8300000, guid: a424d98f09206a94c8319bef9c33732a, type: 3}
@@ -3652,6 +3672,18 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: CandleOn.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0233e694eac70954d8264fd28860c2ed, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: CandleOn.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b6cc749c2dfbac740be81edad8e7dba3, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: CandleOn.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: cf1fb599cae23bb458db001880a37125, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: PotDropItem.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -3659,6 +3691,14 @@ PrefabInstance:
       propertyPath: SliderClick.Array.size
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: CandleOff.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 21cedb8786c54e241aad14aa03c6e7f4, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: CandleOff.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 35b509e9c686ba14b8ea399c1e79b1bb, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ChestSliderUnlockedClip
       value: 

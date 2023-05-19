@@ -41,6 +41,11 @@ public class UIAudioManager : MonoBehaviour
     public AudioClip WaterToBottle;
     public AudioClip Soda;
     public AudioClip Vinegar;
+    public AudioClip DogEating;
+    public AudioClip[] CandleOn;
+    public AudioClip[] CandleOff;
+    public AudioClip SymbolMagic;
+    public AudioClip ChestBreak;
 
     [SerializeField] public AudioSource _uiAudioSource;
 
@@ -153,5 +158,25 @@ public class UIAudioManager : MonoBehaviour
     public void PlayVinegar(float volume)
     {
         _uiAudioSource.PlayOneShot(Vinegar, volume);
+    }
+    public void PlayDogEating(float volume)
+    {
+        _uiAudioSource.PlayOneShot(DogEating, volume);
+    }
+    public void PlayCandleOn(float volume)
+    {
+        _uiAudioSource.PlayOneShot(CandleOn[Random.Range(0, CandleOn.Length - 1)], volume);
+    }
+    public void PlayCandleOff(float volume)
+    {
+        _uiAudioSource.PlayOneShot(CandleOff[Random.Range(0, CandleOff.Length - 1)], volume);
+    }
+    public void PlaySymbolMagic(float volume)
+    {
+        _uiAudioSource.PlayOneShot(SymbolMagic, volume);
+    }
+    public void PlayChestBreak(float volume)
+    {
+        _uiAudioSource.PlayOneShot(ChestBreak, volume);
     }
 }

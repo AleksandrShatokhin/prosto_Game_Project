@@ -16,7 +16,6 @@ public class KitchenFaucet : PickableItem
         if (isWaterActivate == true)
         {
             FillDecanterWater();
-            UIAudioManager.instance.PlayWaterToBottle(0.6f);
         }
         else
         {
@@ -49,6 +48,8 @@ public class KitchenFaucet : PickableItem
                 playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
                 slot.DeselectItem();
                 decanterWater.GetComponent<IClickable>()?.OnClick();
+
+                UIAudioManager.instance.PlayWaterToBottle(0.6f);
                 return;
             }
             else
