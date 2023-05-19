@@ -7,6 +7,7 @@ public class SliderBox1 : MonoBehaviour
 {
     [SerializeField] private Box_1 box_1;
     [SerializeField] private Slider slider;
+    [SerializeField] private Image handleSlider;
     [SerializeField] private SliderItemClickable sliderItemClicable;
 
     private void Start()
@@ -14,7 +15,7 @@ public class SliderBox1 : MonoBehaviour
         slider.interactable = false;
     }
 
-    public void ClickOnSliderHandler(Image image)
+    public void ClickOnSliderHandler(GameObject button)
     {
         PlayerInventory inventory = box_1.GetPlayerInventory();
 
@@ -24,18 +25,19 @@ public class SliderBox1 : MonoBehaviour
             {
                 if (slot.ItemInSlot == sliderItemClicable)
                 {
-                    image.enabled = true;
-                    image.sprite = slot.ItemInSlot.GetComponent<SliderItemClickable>().GetSpriteToBox();
+                    handleSlider.enabled = true;
+                    handleSlider.sprite = slot.ItemInSlot.GetComponent<SliderItemClickable>().GetSpriteToBox();
                     inventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
                     slider.interactable = true;
+                    button.SetActive(false);
                     UIAudioManager.instance.PlaySliderClickAudio(0.6f);
                     return;
                 }
             }
         }
 
-        if (image.enabled == false)
+        if (handleSlider.enabled == false)
         {
             GameController.GetInstance().DisplayMessageOnScreen("Нужно найти переключатель!");
         }

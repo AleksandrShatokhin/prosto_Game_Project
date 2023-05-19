@@ -18,6 +18,8 @@ public class Box_1 : BoxManager
     private int indicatorColorList;
     [SerializeField] private int counterToHint;
 
+    [SerializeField] private Button clickablePanel;
+
     private bool isCanClickButton;
     private bool isWin;
     public bool GetIsWin() => isWin;
@@ -122,6 +124,8 @@ public class Box_1 : BoxManager
 
     private bool CheckListButtonColors() => (isWin == true) ? true : false;
 
+    public void SetClickStateToPanel(bool state) => clickablePanel.enabled = state;
+
     // Вызываю на кнопках через Event
     public void ClickButtonOnBackPanel(PickableItem buttonWithNumber)
     {
@@ -158,9 +162,9 @@ public class Box_1 : BoxManager
 
     public void ButtonOnPanelApperance()
     {
-        button_N1.GetComponent<ButtonOnPanel>().StartOpanButton();
-        button_N2.GetComponent<ButtonOnPanel>().StartOpanButton();
-        button_N3.GetComponent<ButtonOnPanel>().StartOpanButton();
+        button_N1.GetComponent<ButtonOnPanel>().StartOpenButton();
+        button_N2.GetComponent<ButtonOnPanel>().StartOpenButton();
+        button_N3.GetComponent<ButtonOnPanel>().StartOpenButton();
     }
 
     public void ClickButtonOnUpPanel()

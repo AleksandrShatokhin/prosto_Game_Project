@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ButtonOnPanel : MonoBehaviour
 {
+    [SerializeField] private Box_1 box_1;
     [SerializeField] private ButtonColor valueButtonColor;
     [SerializeField] private PickableItem item;
     [SerializeField] private Color colorToMarker;
@@ -34,11 +35,13 @@ public class ButtonOnPanel : MonoBehaviour
         GetComponentInParent<Box1ColorMarkers>().SetNewColorToMarker(markerSprite);
     }
 
-    public void StartOpanButton() => StartCoroutine(OpanableButton());
+    public void StartOpenButton() => StartCoroutine(OpenableButton());
 
-    private IEnumerator OpanableButton(float delay = 0.05f)
+    private IEnumerator OpenableButton(float delay = 0.05f)
     {
         Color buttonColor = this.GetComponent<Image>().color;
+
+        box_1.SetClickStateToPanel(false);
 
         while (buttonColor.a < 1)
         {
@@ -49,6 +52,8 @@ public class ButtonOnPanel : MonoBehaviour
             this.GetComponent<Image>().color = buttonColor;
             this.GetComponent<Button>().interactable = true;
         }
+
+        box_1.SetClickStateToPanel(true);
     }
 }
 
