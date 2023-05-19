@@ -3480,6 +3480,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: d555c0c0b5b9a8b44a12af9ac3674c24, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: VaseOpen
+      value: 
+      objectReference: {fileID: 8300000, guid: fd0bf5698ac4040418ea634104510088, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ChestOpen
       value: 
       objectReference: {fileID: 8300000, guid: 653d00784c47fb04784f79b6f3e26816, type: 3}

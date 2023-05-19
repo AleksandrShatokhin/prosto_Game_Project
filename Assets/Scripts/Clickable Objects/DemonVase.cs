@@ -10,6 +10,7 @@ public class DemonVase : MonoBehaviour, IClickable
     public void OnClick()
     {
         GameController.GetInstance().SwitchWindow(demonInventory, playerRoomCanvas);
+        UIAudioManager.instance.PlayVaseOpen(0.6f);
     }
 }
 

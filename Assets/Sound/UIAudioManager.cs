@@ -47,6 +47,9 @@ public class UIAudioManager : MonoBehaviour
     public AudioClip SymbolMagic;
     public AudioClip ChestBreak;
 
+    [Header("Excorcist Room")]
+    public AudioClip VaseOpen;
+
     [SerializeField] public AudioSource _uiAudioSource;
 
     private void Start()
@@ -178,5 +181,10 @@ public class UIAudioManager : MonoBehaviour
     public void PlayChestBreak(float volume)
     {
         _uiAudioSource.PlayOneShot(ChestBreak, volume);
+    }
+    public void PlayVaseOpen(float volume)
+    {
+        _uiAudioSource.pitch = Random.Range(0.97f, 1.03f);
+        _uiAudioSource.PlayOneShot(VaseOpen, volume);
     }
 }
