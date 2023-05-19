@@ -39,6 +39,9 @@ public class Candle : MonoBehaviour, IClickable
                     playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
                     this.gameObject.layer = (int)Layers.Pickable;
+
+                    UIAudioManager.instance.PlayClickAudio();
+
                     return;
                 }
             }
@@ -53,6 +56,9 @@ public class Candle : MonoBehaviour, IClickable
     {
         shadow.SetActive(true);
         ps_Flame.Play();
+
+        UIAudioManager.instance.PlayCandleOn(0.5f);
+
         return CurrentCandleStatus = CandleStatus.Enabled;
     }
 
@@ -60,6 +66,9 @@ public class Candle : MonoBehaviour, IClickable
     {
         shadow.SetActive(false);
         ps_Flame.Stop();
+
+        UIAudioManager.instance.PlayCandleOff(0.5f);
+
         return CurrentCandleStatus = CandleStatus.Disabled;
     }
 

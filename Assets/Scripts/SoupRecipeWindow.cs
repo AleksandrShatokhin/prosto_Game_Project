@@ -8,5 +8,9 @@ public class SoupRecipeWindow : MonoBehaviour
 
     public void AddMark(int numberIngredients) => ingredientsRecipe.transform.GetChild(numberIngredients).gameObject.SetActive(true);
 
-    public void CloseWindow() => GameController.GetInstance().ClosePanel(this.gameObject);
+    public void CloseWindow()
+    {
+        GameController.GetInstance().ClosePanel(this.gameObject);
+        UIAudioManager.instance.PlayPaperAudio(0.7f);
+    }
 }

@@ -19,6 +19,7 @@ public class LockButton : MonoBehaviour
 
     private void SwitchNumber()
     {
+        UIAudioManager.instance.PlayClickAudio();
         int value = int.Parse(textButton.text);
 
         value += 1;

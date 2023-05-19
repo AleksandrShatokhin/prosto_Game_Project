@@ -39,6 +39,7 @@ public class ButtonOnMinibox : MonoBehaviour
 
         playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
         slot.DeselectItem();
+        UIAudioManager.instance.PlayClickAudio();
 
         StartCoroutine(CloseThisWindow());
     }

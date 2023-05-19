@@ -10,6 +10,7 @@ public class Decanter_Empty : PickableItem
     public override void OnClick()
     {
         base.OnClick();
+        UIAudioManager.instance.PlayPickupAudio(0.7f);
         GameController.GetInstance().DisplayMessageOnScreen("Графин можно наполнить водой!");
     }
 

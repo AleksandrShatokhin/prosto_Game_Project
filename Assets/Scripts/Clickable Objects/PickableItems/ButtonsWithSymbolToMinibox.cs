@@ -22,6 +22,7 @@ public class ButtonsWithSymbolToMinibox : PickableItem
         if (CheckActivationButtons() == true)
         {
             base.OnClick();
+            UIAudioManager.instance.PlayPickupAudio(0.7f);
         }
     }
 
@@ -46,6 +47,9 @@ public class ButtonsWithSymbolToMinibox : PickableItem
     {
         isButton_1_Activate = true;
         sr_Button_1.sprite = button_1_SpriteSymbol;
+
+        UIAudioManager.instance.PlaySymbolMagic(0.8f);
+
         SwitchLayer();
     }
 
@@ -53,6 +57,9 @@ public class ButtonsWithSymbolToMinibox : PickableItem
     {
         isButton_2_Activate = true;
         sr_Button_2.sprite = button_2_SpriteSymbol;
+
+        UIAudioManager.instance.PlaySymbolMagic(0.8f);
+
         SwitchLayer();
     }
 

@@ -24,6 +24,9 @@ public class Spot : MonoBehaviour, IClickable
                     this.transform.GetChild((int)SpotEffects.Foam).gameObject.SetActive(true);
                     playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
+
+                    UIAudioManager.instance.PlaySoda(0.5f);
+
                     StartCoroutine(DisableSpot());
                     return;
                 }
@@ -34,6 +37,9 @@ public class Spot : MonoBehaviour, IClickable
                     this.transform.GetChild((int)SpotEffects.Foam).gameObject.SetActive(true);
                     playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
                     slot.DeselectItem();
+
+                    UIAudioManager.instance.PlayVinegar(0.5f);
+
                     StartCoroutine(DisableSpot());
                     return;
                 }
@@ -42,6 +48,9 @@ public class Spot : MonoBehaviour, IClickable
                 {
                     this.transform.GetChild((int)SpotEffects.Soda).gameObject.SetActive(true);
                     playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
+
+                    UIAudioManager.instance.PlaySoda(0.5f);
+
                     slot.DeselectItem();
                     return;
                 }
@@ -50,6 +59,9 @@ public class Spot : MonoBehaviour, IClickable
                 {
                     this.transform.GetChild((int)SpotEffects.Vinegar).gameObject.SetActive(true);
                     playerInventory.RemoveItemFromInventory(slot.ItemInSlot);
+
+                    UIAudioManager.instance.PlayVinegar(0.5f);
+
                     slot.DeselectItem();
                     return;
                 }

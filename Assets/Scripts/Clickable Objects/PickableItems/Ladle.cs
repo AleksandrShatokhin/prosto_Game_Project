@@ -13,6 +13,7 @@ public class Ladle : PickableItem
         if (potManager.CheckerSoup() == true)
         {
             base.OnClick();
+            UIAudioManager.instance.PlayPickupAudio(0.7f);
         }
         else
         {

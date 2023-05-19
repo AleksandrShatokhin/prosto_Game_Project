@@ -20,6 +20,9 @@ public class PotManager : PickableItem
             this.transform.GetChild(0).gameObject.SetActive(false);
             soupIngredients.Clear();
             bowlSoup.SetActive(true);
+
+            UIAudioManager.instance.PlayCookingAudio(0.5f);
+
             return;
         }
         else
@@ -58,6 +61,7 @@ public class PotManager : PickableItem
                 {
                     if (slot.ItemInSlot == correctIngredients)
                     {
+                        UIAudioManager.instance.PlayPotDropAudio(0.4f);
                         soupIngredients.Add(slot.ItemInSlot);
                         soupRecipe_Window.AddMark(numberLoop);
                         playerInventory.RemoveItemFromInventory(slot.ItemInSlot);

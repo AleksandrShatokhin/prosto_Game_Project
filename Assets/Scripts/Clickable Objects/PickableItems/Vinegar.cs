@@ -11,6 +11,7 @@ public class Vinegar : PickableItem
     public override void OnClick()
     {
         base.OnClick();
+        UIAudioManager.instance.PlayPickupAudio(0.7f);
     }
 
     public override void OnItemCombineAttempt()
