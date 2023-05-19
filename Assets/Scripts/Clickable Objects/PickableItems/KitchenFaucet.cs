@@ -16,6 +16,7 @@ public class KitchenFaucet : PickableItem
         if (isWaterActivate == true)
         {
             FillDecanterWater();
+            UIAudioManager.instance.PlayWaterToBottle(0.6f);
         }
         else
         {

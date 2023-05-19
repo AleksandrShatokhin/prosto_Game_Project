@@ -3452,6 +3452,50 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Soda
+      value: 
+      objectReference: {fileID: 8300000, guid: 75197aceb37fca041b1515e16eff43ac, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Clock
+      value: 
+      objectReference: {fileID: 8300000, guid: df6f44e56f3bda442b266b637ea3fbf4, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Spray
+      value: 
+      objectReference: {fileID: 8300000, guid: 37d882c03eb9aee4ab06a2b983a64f83, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Wiping
+      value: 
+      objectReference: {fileID: 8300000, guid: abad5f25cd6937b4ba7d8de401968d7b, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: UIClick
+      value: 
+      objectReference: {fileID: 8300000, guid: 1ae232bf1ca59a049bb416d7e844f94e, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Vinegar
+      value: 
+      objectReference: {fileID: 8300000, guid: 8323a41317f8d9840b02b1f7e5d9401d, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: LampTurn
+      value: 
+      objectReference: {fileID: 8300000, guid: d555c0c0b5b9a8b44a12af9ac3674c24, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestOpen
+      value: 
+      objectReference: {fileID: 8300000, guid: 653d00784c47fb04784f79b6f3e26816, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestClose
+      value: 
+      objectReference: {fileID: 8300000, guid: d4c806c0a1477bd469d4ade6d15024b3, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PotCooking
+      value: 
+      objectReference: {fileID: 8300000, guid: d3ef7d2434ab0a14ea30ff9871587ecf, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: WaterToBottle
+      value: 
+      objectReference: {fileID: 8300000, guid: b70db2cf09a06624997995e87be3299a, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ClockAudioClip
       value: 
       objectReference: {fileID: 8300000, guid: df6f44e56f3bda442b266b637ea3fbf4, type: 3}
@@ -3460,13 +3504,37 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 37d882c03eb9aee4ab06a2b983a64f83, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestBirdPickUp
+      value: 
+      objectReference: {fileID: 8300000, guid: 27d58b4655f914a4e8dd76cfebb17183, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: WipingAudioClip
       value: 
       objectReference: {fileID: 8300000, guid: abad5f25cd6937b4ba7d8de401968d7b, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Click.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Hover.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Mouse.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: LampTurnAudioClip
       value: 
       objectReference: {fileID: 8300000, guid: d555c0c0b5b9a8b44a12af9ac3674c24, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PickUp.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ChestBirdAudioClip
       value: 
@@ -3480,25 +3548,245 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: d4c806c0a1477bd469d4ade6d15024b3, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestUnlockedSlider
+      value: 
+      objectReference: {fileID: 8300000, guid: d0cacffa28aa5f045bf51590deb71006, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Click.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: eced8ddc4529b9c44bed7a7f84364f6b, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Click.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: e2aa60e32b8d0f24285bae50274e4190, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Click.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 170b0c27e21485444a4495f94029ad62, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Click.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 88a3b67437480d44d8ed8e57de5656f7, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Hover.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9b37a36e39689344798bf2eeea07701d, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Hover.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 87b4e5cdba323584a89011b14c53ec61, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Hover.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1420e867747c35842aa61b9ceef1b167, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Mouse.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 03cc90b237579dc4ba96b7b4ef3146a3, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Mouse.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 71884c423c00dee4eac468c6bab2a5fe, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Mouse.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: d812719bbeefafb419cd419691c11df9, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: baa09c2349bf6b847ad397c11207fa0c, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 592a99b59e565254cac3b7d9dc796a3d, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: cd861886548935c4c9c7bf2547da1ec4, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 792e72748e1b487469c481193e393bdc, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: ee722e8152dc7a641af392dea946987c, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7bba6b3105979874886fe8221f97f8cb, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5133533f89c6411489cce9cc8a47a408, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3494f194149811042ba6f11628a29051, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: Paper.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: 87e4806892af33b4aa4e861148e4d2a7, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ChestUnlockedButtons
+      value: 
+      objectReference: {fileID: 8300000, guid: a424d98f09206a94c8319bef9c33732a, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PickUp.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8466226657cf6d84396e546ca07d3770, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PickUp.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 1b4519280312ccc4d8e18ec3744fc018, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: UIItemClickAudioClip
       value: 
       objectReference: {fileID: 8300000, guid: 1ae232bf1ca59a049bb416d7e844f94e, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PourFlasks.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ButtonClick.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PotDropItem.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: SliderClick.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ChestSliderUnlockedClip
       value: 
       objectReference: {fileID: 8300000, guid: d0cacffa28aa5f045bf51590deb71006, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PuzzlePencil.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: ChestButtonsUnlockedClip
       value: 
       objectReference: {fileID: 8300000, guid: a424d98f09206a94c8319bef9c33732a, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PourFlasks.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ad87ea85674e314eb1e9a077c6c43be, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PourFlasks.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: dc9595d1f53b63c4eada142432dbf372, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PourFlasks.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 12afa5b0c73465a4d9eaa0261ce71133, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PourFlasks.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 82e50a6f1f9787d46824d9aea83f6e85, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PourFlasks.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: c1161c59303dbbd439b71e97f9f4e5fd, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: BookshelfSlide.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ButtonClick.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 38237b942e4f3324e827bb7e21f03d1b, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ButtonClick.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: bf63f4be622b20a4cb5bf7a08f5de782, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: ButtonClick.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0eabcecc0e1143b4d82c31159f73cc60, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: MouseAudioClip.Array.size
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PotDropItem.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: cfc2aec0845b9254f922ee563a417fbf, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PotDropItem.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6fc3a6444908a5d448100c1d9b7d0ca6, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PotDropItem.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: b3785cb5fd4bc104d93327e4a45ebcd4, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: SliderClick.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 38b9e93c6c43de64c910f6f9412e343d, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: SliderClick.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: b5d823fbde87fd644a5494d883ffd559, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: SliderClick.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: deb297c707207314da44d0c7d5debe13, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: PaperAudioClips.Array.size
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PuzzlePencil.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: fdaec480fc4b14a41b0b748dcdacc61a, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PuzzlePencil.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6c07938eb2c981f47bf49d47ff9f9222, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PuzzlePencil.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: fc876d0b37a6ae6428700a747e339ad9, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PuzzlePencil.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0288d1e5d54e0dc4081a6a147c35e68e, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PuzzlePencil.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: e1c8ce2e5f6f13a45bf3c2358604951d, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: PuzzlePencil.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 37defabd33201b74bad0ddf6d5c7d41e, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: BookshelfSlide.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 41855c1e51487f54cae5ad2d18c25334, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: BookshelfSlide.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 72295783889487d4f9bec6ca5cea38ee, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: BookshelfSlide.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 08de90ed380d41b4fb53faf34ce94c54, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: BookshelfSlide.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 38b9e93c6c43de64c910f6f9412e343d, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: BookshelfSlide.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: b5d823fbde87fd644a5494d883ffd559, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: BookshelfSlide.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: deb297c707207314da44d0c7d5debe13, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: MouseAudioClip.Array.data[0]
       value: 

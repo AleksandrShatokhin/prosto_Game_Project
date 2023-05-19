@@ -15,10 +15,12 @@ public class HandleHammer : PickableItem
         if (SearchHammerElementInInventory() == true)
         {
             playerInventory.AddItemToInventory(hammer);
+            UIAudioManager.instance.PlayPickupAudio(0.7f);
         }
         else
         {
             base.OnClick();
+            UIAudioManager.instance.PlayPickupAudio(0.7f);
         }
 
         this.gameObject.SetActive(false);

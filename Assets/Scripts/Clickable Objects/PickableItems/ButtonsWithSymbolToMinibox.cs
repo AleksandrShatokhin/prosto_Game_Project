@@ -22,6 +22,7 @@ public class ButtonsWithSymbolToMinibox : PickableItem
         if (CheckActivationButtons() == true)
         {
             base.OnClick();
+            UIAudioManager.instance.PlayPickupAudio(0.7f);
         }
     }
 
