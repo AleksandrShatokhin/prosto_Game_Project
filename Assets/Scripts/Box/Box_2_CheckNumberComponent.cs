@@ -42,6 +42,7 @@ public class Box_2_CheckNumberComponent : BoxCheckerManager
             }
 
             SetValueIsCorrectVariable(true);
+            this.transform.parent.GetComponent<Box_2>().ActivateOpenButton();
             indicator = 0;
         }
         else

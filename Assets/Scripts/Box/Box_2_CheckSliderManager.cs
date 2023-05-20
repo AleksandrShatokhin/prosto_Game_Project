@@ -40,6 +40,7 @@ public class Box_2_CheckSliderManager : BoxCheckerManager
             }
 
             SetValueIsCorrectVariable(true);
+            this.transform.parent.GetComponent<Box_2>().ActivateOpenButton();
         }
         else
         {

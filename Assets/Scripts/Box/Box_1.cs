@@ -111,8 +111,15 @@ public class Box_1 : BoxManager
             button_N2.GetComponent<Button>().interactable = false;
             button_N3.GetComponent<Button>().interactable = false;
 
+            ActivateOpenButton();
+
             UIAudioManager.instance.PlayButtonsUnlockedAudio(0.6f);
         }
+    }
+
+    public override void ActivateOpenButton()
+    {
+        base.ActivateOpenButton();
     }
 
     private IEnumerator ActivateClickToColorButtons()

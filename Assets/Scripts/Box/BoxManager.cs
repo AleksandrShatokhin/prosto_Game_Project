@@ -34,6 +34,11 @@ public class BoxManager : MonoBehaviour
 
     public virtual void SetClickOnButton(ButtonColor value) { }
 
+    public virtual void ActivateOpenButton()
+    {
+        buttonOpenBox.gameObject.SetActive(true);
+    }
+
     public virtual void CloseBox()
     {
         this.gameObject.transform.parent.gameObject.SetActive(false);

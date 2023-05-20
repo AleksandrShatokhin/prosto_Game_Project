@@ -16,8 +16,13 @@ public class Box_2 : BoxManager
         buttonRight.onClick.AddListener(ClickButtonRight);
     }
 
-    public override void ClickOpenBox()
+    public override void ActivateOpenButton()
     {
+        //if (isFirstRiddleComplete == true && isSecondRiddleComlete == true)
+        //{
+        //    base.ActivateOpenButton();
+        //}
+
         bool isCorrect = false;
         int countCorrect = 0;
 
@@ -33,12 +38,35 @@ public class Box_2 : BoxManager
 
         if (isCorrect == true)
         {
-            base.ClickOpenBox();
+            base.ActivateOpenButton();
         }
-        else
-        {
-            GameController.GetInstance().DisplayMessageOnScreen(messageBoxNotOpen);
-        }
+    }
+
+    public override void ClickOpenBox()
+    {
+        base.ClickOpenBox();
+
+        //bool isCorrect = false;
+        //int countCorrect = 0;
+
+        //foreach (BoxCheckerManager checker in checkers)
+        //{
+        //    if (checker.IsCorrect == true)
+        //    {
+        //        countCorrect += 1;
+        //    }
+        //}
+
+        //isCorrect = (countCorrect == checkers.Count) ? true : false;
+
+        //if (isCorrect == true)
+        //{
+        //    base.ClickOpenBox();
+        //}
+        //else
+        //{
+        //    GameController.GetInstance().DisplayMessageOnScreen(messageBoxNotOpen);
+        //}
     }
 
     public void ClickButtonOnUpPanel()

@@ -7759,6 +7759,10 @@ PrefabInstance:
       propertyPath: arrowToBack
       value: 
       objectReference: {fileID: 1308033874}
+    - target: {fileID: 21752215271631533, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3198237216896473054, guid: 2200ffb0b3355e044a07ba3853ed1408, type: 3}
       propertyPath: m_RootOrder
       value: 3
