@@ -8,13 +8,12 @@ using TMPro;
 public class DemonInventory : MonoBehaviour
 {
     [SerializeField] private List<DemonInventorySlot> demonSlots;
-    [SerializeField] private List<DemonSO> caughtDemons;
-
+    [SerializeField] public List<DemonSO> caughtDemons;
     [SerializeField] private Image demonImage;
-    [SerializeField] private TMP_Text dialogText;
     [SerializeField] private TMP_Text demonDescription;
     [SerializeField] private DemonInventoryDialog dialogContainer;
     [SerializeField] private List<PackCollection> allPossibleDialogs;
+
 
     private void OnEnable()
     {
@@ -29,8 +28,6 @@ public class DemonInventory : MonoBehaviour
     public void ChangeCurrentDemon(DemonSO chosenDemonSO)
     {
         SetDemonInventorySprite(chosenDemonSO);
-        dialogText.text = chosenDemonSO.dialogText;
-        dialogText.gameObject.SetActive(false);
         demonDescription.text = chosenDemonSO.demonName;
 
         foreach(var pack in dialogContainer.DialogPacks.Packs){
@@ -66,12 +63,6 @@ public class DemonInventory : MonoBehaviour
             caughtDemons.Add(caughtDemon);
         }
     }
-
-    public void OnTalkToDemonButtonPressed()
-    {
-        dialogText.gameObject.SetActive(true);
-    }
-
     public void OnCloseDemonInventoryButtonPressed()
     {
         gameObject.SetActive(false);
