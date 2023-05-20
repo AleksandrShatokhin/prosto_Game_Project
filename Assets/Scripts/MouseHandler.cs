@@ -10,7 +10,9 @@ public class MouseHandler : MonoBehaviour
     {
         isCircumventBanRaycast = false;
         stateMouseHandler = StateMouseHandler.Allowed;
-        EventHandler.SwitcherActionMouse += SwitchActionMouseHandler;
+
+        EventHandler.SwitcherActionMouse_On += SwitchActionMouseHandler_On;
+        EventHandler.SwitcherActionMouse_Off += SwitchActionMouseHandler_Off;
     }
 
     private void Update()
@@ -40,7 +42,8 @@ public class MouseHandler : MonoBehaviour
         }
     }
 
-    private void SwitchActionMouseHandler() => stateMouseHandler = (stateMouseHandler == StateMouseHandler.Allowed) ? StateMouseHandler.Forbidden : StateMouseHandler.Allowed;
+    private void SwitchActionMouseHandler_On() => stateMouseHandler = StateMouseHandler.Forbidden;
+    private void SwitchActionMouseHandler_Off() => stateMouseHandler = StateMouseHandler.Allowed;
 
     public void IsCircumventBanRaycast_Off() => isCircumventBanRaycast = false;
     public void IsCircumventBanRaycast_On() => isCircumventBanRaycast = true;
@@ -48,6 +51,7 @@ public class MouseHandler : MonoBehaviour
 
     private void OnDisable()
     {
-        EventHandler.SwitcherActionMouse -= SwitchActionMouseHandler;
+        EventHandler.SwitcherActionMouse_On -= SwitchActionMouseHandler_On;
+        EventHandler.SwitcherActionMouse_Off -= SwitchActionMouseHandler_Off;
     }
 }

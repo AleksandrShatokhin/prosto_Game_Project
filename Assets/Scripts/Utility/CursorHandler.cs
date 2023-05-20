@@ -12,7 +12,9 @@ public class CursorHandler : MonoBehaviour
 
     private void Start()
     {
-        EventHandler.SwitcherActionMouse += SwitchActionMouseHandler;
+        EventHandler.SwitcherActionMouse_On += SwitchActionMouseHandler_On;
+        EventHandler.SwitcherActionMouse_Off += SwitchActionMouseHandler_Off;
+
         SetCursorSprite(defaltCursor);
         StartCoroutine(CursorHandlerRuntime());
     }
@@ -67,11 +69,13 @@ public class CursorHandler : MonoBehaviour
         Cursor.SetCursor(sprite.texture, Vector2.zero, CursorMode.Auto);
     }
 
-    private void SwitchActionMouseHandler() => stateMouseHandler = (stateMouseHandler == StateMouseHandler.Allowed) ? StateMouseHandler.Forbidden : StateMouseHandler.Allowed;
+    private void SwitchActionMouseHandler_On() => stateMouseHandler = StateMouseHandler.Forbidden;
+    private void SwitchActionMouseHandler_Off() => stateMouseHandler = StateMouseHandler.Allowed;
 
     private void OnDisable()
     {
-        EventHandler.SwitcherActionMouse -= SwitchActionMouseHandler;
+        EventHandler.SwitcherActionMouse_On -= SwitchActionMouseHandler_On;
+        EventHandler.SwitcherActionMouse_Off -= SwitchActionMouseHandler_Off;
     }
 }
 
