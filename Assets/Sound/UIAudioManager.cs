@@ -19,6 +19,7 @@ public class UIAudioManager : MonoBehaviour
     public AudioClip ChestOpen;
     public AudioClip ChestClose;
     public AudioClip[] SliderClick;
+    public AudioClip DemonCapture;
 
     [Header("Level Nanogram")]
     public AudioClip ChestBirdPickUp;
@@ -75,7 +76,6 @@ public class UIAudioManager : MonoBehaviour
     }
     public void PlayPickupAudio(float volume)
     {
-        volume -= 0.2f;
         _uiAudioSource.PlayOneShot(PickUp[Random.Range(0, PickUp.Length - 1)], volume);
     }
     public void PlayShelfSlideAudio(float volume)
@@ -186,5 +186,9 @@ public class UIAudioManager : MonoBehaviour
     {
         _uiAudioSource.pitch = Random.Range(0.97f, 1.03f);
         _uiAudioSource.PlayOneShot(VaseOpen, volume);
+    }
+    public void PlayDemonCapture(float volume)
+    {
+        _uiAudioSource.PlayOneShot(DemonCapture, volume);
     }
 }
