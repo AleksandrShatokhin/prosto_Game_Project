@@ -73,4 +73,6 @@ public class PhoneInPlayerRoom : MonoBehaviour, IClickable
     }
     private void CallAnimation_On() => anim_Phone.SetBool("isPhoneCall", true);
     private void CallAnimation_Off() => anim_Phone.SetBool("isPhoneCall", false);
+
+    public void CallAnimationPause(bool animationState) => anim_Phone.enabled = animationState;
 }
