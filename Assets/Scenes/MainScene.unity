@@ -677,6 +677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textMessage: {fileID: 1928457616}
   sr_Circle: {fileID: 63705514}
+  maxSecondMessageOnScreen: 1
 --- !u!95 &492568367
 Animator:
   serializedVersion: 5
@@ -685,7 +686,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 492568360}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 87acb17e66a42b246b1d264ffabf1af1, type: 2}
   m_CullingMode: 0
