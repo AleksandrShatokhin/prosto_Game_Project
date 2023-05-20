@@ -3576,6 +3576,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: f5273240063aadf4392ded4a6e507ed9, type: 3}
     - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
+      propertyPath: DemonCapture
+      value: 
+      objectReference: {fileID: 8300000, guid: 47fbefae057da4846884907952263b10, type: 3}
+    - target: {fileID: 347174236842492525, guid: 1f875a86e12ea4a4ab1da736b2a95735, type: 3}
       propertyPath: WaterToBottle
       value: 
       objectReference: {fileID: 8300000, guid: b70db2cf09a06624997995e87be3299a, type: 3}
