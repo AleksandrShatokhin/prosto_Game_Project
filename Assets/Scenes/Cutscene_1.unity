@@ -1225,8 +1225,8 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 0688ad8a054e7ed41802a7421fb3bf7a, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.65
+  m_PlayOnAwake: 0
+  m_Volume: 0.8
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -2256,6 +2256,7 @@ GameObject:
   - component: {fileID: 2111673421}
   - component: {fileID: 2111673422}
   - component: {fileID: 2111673423}
+  - component: {fileID: 2111673424}
   m_Layer: 0
   m_Name: Scene
   m_TagString: Untagged
@@ -2327,6 +2328,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadingPanel: {fileID: 132498579}
+--- !u!114 &2111673424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2111673419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2338b37dba2c93746acc7678a927215e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cutscene: {fileID: 1203852386}
 --- !u!1 &2126857341
 GameObject:
   m_ObjectHideFlags: 0
