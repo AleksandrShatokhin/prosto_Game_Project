@@ -6,6 +6,7 @@ public class LabyrinthPuzzle : MonoBehaviour, IPuzzle
 {
     [SerializeField] private GameObject demonRoom;
     [SerializeField] private LabyrinthCircle labyrinthCircle;
+    [SerializeField] private GameObject labyrinthObject;
 
 
     public void OnRestartFromCheckpointButtonPressed()
@@ -15,6 +16,7 @@ public class LabyrinthPuzzle : MonoBehaviour, IPuzzle
 
     public void OnRestartFromThebeginningButtonPressed()
     {
+        labyrinthObject.gameObject.transform.rotation = Quaternion.identity;
         labyrinthCircle.RestartFromCheckpoint(true);
     }
 
