@@ -12,7 +12,7 @@ public class DemonVase : MonoBehaviour, IClickable
     {
         phone.CallAnimationPause(false);
         GameController.GetInstance().SwitchWindow(demonInventory, playerRoomCanvas);
-        UIAudioManager.instance.PlayVaseOpen(0.6f);
+        UIAudioManager.instance.PlayVaseOpen(0.3f);
     }
 }
 
