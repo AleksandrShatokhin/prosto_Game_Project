@@ -56,7 +56,7 @@ public class NanogramsMain : MonoBehaviour
     {
         currentStepToHint += 1;
 
-        if (currentStepToHint == 3)
+        if (currentStepToHint == 1)
         {
             foreach (Transform cell in gameGrid.transform)
             {

@@ -1339,7 +1339,6 @@ GameObject:
   - component: {fileID: 943094962}
   - component: {fileID: 943094961}
   - component: {fileID: 943094965}
-  - component: {fileID: 943094966}
   m_Layer: 5
   m_Name: PauseWindow
   m_TagString: Untagged
@@ -1448,18 +1447,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   imageBack: {fileID: 769816639}
   blurShader: {fileID: 4800000, guid: deb379a61008d814a9aca64617dcc632, type: 3}
---- !u!114 &943094966
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 943094960}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1021877182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,7 +1551,6 @@ GameObject:
   - component: {fileID: 1255704740}
   - component: {fileID: 1255704739}
   - component: {fileID: 1255704738}
-  - component: {fileID: 1255704737}
   - component: {fileID: 1255704736}
   - component: {fileID: 1255704735}
   m_Layer: 5
@@ -1601,18 +1587,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dc23d2d866c782549b1e309a6b684970, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1255704737
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1255704734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e7039428279e0314e91c2c87500c6ae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1255704738
