@@ -16,7 +16,7 @@ public class StartScreen : MonoBehaviour
 
     private void StartGame()
     {
-        SceneManager.LoadScene("MainScene");
+        SceneManager.LoadScene("Cutscene_1");
     }
 
     private void ExitGame()
