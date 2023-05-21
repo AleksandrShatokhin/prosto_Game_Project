@@ -47646,6 +47646,7 @@ MonoBehaviour:
   buttonsWithSymbol_Component: {fileID: 1288028115}
   minibox_Component: {fileID: 1644640398}
   handleHammer: {fileID: 1667854095}
+  buttonPanel: {fileID: 1277189799}
 --- !u!1001 &1931741726
 PrefabInstance:
   m_ObjectHideFlags: 0

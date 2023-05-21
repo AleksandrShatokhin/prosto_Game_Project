@@ -12,6 +12,7 @@ public class ButtonOnMinibox : MonoBehaviour
     // Work with click result
     [SerializeField] private Minibox minibox_Component;
     [SerializeField] private GameObject handleHammer;
+    [SerializeField] private Button buttonPanel;
 
     public void ClickButton()
     {
@@ -42,6 +43,7 @@ public class ButtonOnMinibox : MonoBehaviour
         UIAudioManager.instance.PlayClickAudio();
 
         StartCoroutine(CloseThisWindow());
+        buttonPanel.interactable = false;
     }
 
     private IEnumerator CloseThisWindow()
@@ -49,6 +51,7 @@ public class ButtonOnMinibox : MonoBehaviour
         yield return new WaitForSeconds(1.0f);
         minibox_Component.SwitchSpriteMinibox();
         handleHammer.SetActive(true);
+        buttonPanel.interactable = true;
         this.transform.parent.gameObject.SetActive(false);
     }
 }
