@@ -9,7 +9,7 @@ public class CanvasTextMessage : MonoBehaviour
         StartCoroutine(TimerToDisable());
     }
 
-    private IEnumerator TimerToDisable(int delay = 1)
+    private IEnumerator TimerToDisable(float delay = 0.7f)
     {
         yield return new WaitForSeconds(delay);
         this.gameObject.SetActive(false);

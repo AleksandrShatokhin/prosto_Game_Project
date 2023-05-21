@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HeadDog : PickableItem
 {
+    private Animator anim_HeadDog;
+
     private Vector2 defaultLocalPosition = new Vector3(3.2f, 1.5f, -0.02f);
     private Vector3 righttLocalPosition = new Vector3(-3.2f, 1.5f, -0.02f);
 
@@ -11,12 +13,25 @@ public class HeadDog : PickableItem
     [SerializeField] private PickableItem bowlSoup_Type;
     [SerializeField] private AudioClip audioDogBarking;
 
+    private bool isCanClick;
+
+    private void Start()
+    {
+        anim_HeadDog = GetComponent<Animator>();
+        isCanClick = true;
+    }
     public override void OnClick()
     {
+        if (isCanClick == false)
+        {
+            return;
+        }
+
         if (TakingSoup() == false)
         {
-            canvasText.SetActive(true);
+            anim_HeadDog.SetTrigger("isBarking");
             GameController.GetInstance().PlaySimpleAudio(audioDogBarking);
+            StartCoroutine(ForbbidenBarking());
         }
         else
         {
@@ -24,6 +39,8 @@ public class HeadDog : PickableItem
             transform.localPosition = righttLocalPosition;
         }
     }
+
+    public void OpenBarkingCloud() => canvasText.SetActive(true);
 
     private bool TakingSoup()
     {
@@ -41,6 +58,13 @@ public class HeadDog : PickableItem
         }
 
         return false;
+    }
+
+    private IEnumerator ForbbidenBarking()
+    {
+        isCanClick = false;
+        yield return new WaitForSeconds(1.0f);
+        isCanClick = true;
     }
 
     public override void OnItemCombineAttempt()
