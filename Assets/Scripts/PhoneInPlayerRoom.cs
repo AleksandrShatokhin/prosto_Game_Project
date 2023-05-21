@@ -58,7 +58,7 @@ public class PhoneInPlayerRoom : MonoBehaviour, IClickable
 
         GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_Off();
         GameObject house = houses.transform.GetChild(numberHouse).gameObject;
-        house.GetComponent<CallOnMiniMap>().OpenMessageWindow();
+        house.GetComponent<CallsManager>().OpenMessageWindow();
     }
 
     public void CallStatus_Accept()

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CallOnMiniMap : MonoBehaviour
+public class CallOnMiniMap : CallsManager
 {
     private Button button;
 
@@ -25,7 +25,7 @@ public class CallOnMiniMap : MonoBehaviour
         demonRoomCreator.CreateRoom();
     }
 
-    public void OpenMessageWindow()
+    public override void OpenMessageWindow()
     {
         GameObject messageWindow = Instantiate(this.demonSO.messageWindowPrefab, this.demonSO.messageWindowPrefab.transform.position, Quaternion.identity);
         messageWindow.GetComponent<IStartable>().OnStart(this.demonSO, this.gameObject);
