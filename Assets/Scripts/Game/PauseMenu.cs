@@ -17,7 +17,7 @@ public class PauseMenu : MonoBehaviour
 
     private void OnEnable()
     {
-        Sprite spriteToBack = Camera.main.GetComponent<CameraScreenshot>().GetCreenSprite();
+        Sprite spriteToBack = Camera.main.GetComponent<CameraScreenshot>().GetScreenSprite();
         imageBack.sprite = spriteToBack;
     }
 

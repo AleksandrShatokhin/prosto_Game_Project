@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraScreenshot : MonoBehaviour
 {
-    public Sprite GetCreenSprite()
+    public Sprite GetScreenSprite()
     {
         int cameraWidth = Camera.main.pixelWidth;
         int cameraHeight = Camera.main.pixelHeight;
