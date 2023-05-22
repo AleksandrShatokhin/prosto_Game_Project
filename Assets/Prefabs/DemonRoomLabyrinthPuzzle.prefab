@@ -17623,7 +17623,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerInventory: {fileID: 2373965458691367385}
-  nameItem: 
+  nameItem: "\u0413\u0440\u0430\u0444\u0438\u043D \u043D\u0430\u043F\u043E\u043B\u043D\u0435\u043D
+    \u0432\u043E\u0434\u043E\u0439"
   spriteToInventory: {fileID: 21300000, guid: c077bb81a5222284d9c8e39ad6b8cf3e, type: 3}
 --- !u!1 &2127978002
 GameObject:

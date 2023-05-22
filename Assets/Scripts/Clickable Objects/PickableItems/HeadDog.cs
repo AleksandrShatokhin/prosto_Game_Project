@@ -7,7 +7,7 @@ public class HeadDog : PickableItem
     private Animator anim_HeadDog;
 
     private Vector2 defaultLocalPosition = new Vector3(3.2f, 1.5f, -0.02f);
-    private Vector3 righttLocalPosition = new Vector3(-3.2f, 1.5f, -0.02f);
+    private Vector3 leftLocalPosition = new Vector3(-3.2f, 1.5f, -0.02f);
 
     [SerializeField] private GameObject canvasText;
     [SerializeField] private PickableItem bowlSoup_Type;
@@ -36,7 +36,8 @@ public class HeadDog : PickableItem
         else
         {
             UIAudioManager.instance.PlayDogEating(0.5f);
-            transform.localPosition = righttLocalPosition;
+            transform.localPosition = leftLocalPosition;
+            isCanClick = false;
         }
     }
 
