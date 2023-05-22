@@ -30,7 +30,7 @@ public class Box_3 : BoxManager
                     boxInRoom.ChangeSprite();
 
                     base.ClickOpenBox();
-                    UIAudioManager.instance.PlayChestBreak(0.3f);
+                    UIAudioManager.instance.PlayChestBreak(0.6f);
 
                     return;
                 }
