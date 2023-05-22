@@ -6,6 +6,6 @@ public class DemonCaptureAudio : MonoBehaviour
 {
     public void PlayDemonCaptureAudio()
     {
-        UIAudioManager.instance.PlayDemonCapture(0.8f);
+        UIAudioManager.instance.PlayDemonCapture(1f);
     }
 }
