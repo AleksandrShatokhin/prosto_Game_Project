@@ -28,7 +28,10 @@ public class ButtonOnMinibox : MonoBehaviour
             }
         }
 
-        GameController.GetInstance().DisplayMessageOnScreen("Кажется в этом замке не зватает каких-то круглых элементов!");
+        if (this.transform.GetChild(0).gameObject.activeInHierarchy == false)
+        {
+            GameController.GetInstance().DisplayMessageOnScreen("Кажется в этом замке не зватает каких-то круглых элементов!");
+        }
     }
 
     private void AddButtonFromInventoryToLockImage(InventoryItemSlot slot)
