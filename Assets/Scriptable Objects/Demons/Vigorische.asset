@@ -19,5 +19,5 @@ MonoBehaviour:
   loadingCircleToRoom: {fileID: 21300000, guid: c3ed6433fb049c24aba1dcaa8c647d55, type: 3}
   inventorySprite: {fileID: 21300000, guid: 4b019aeed1553d7448e2694d38d06ab1, type: 3}
   dialogText: Vig text
-  demonName: "\u0412\u044B\u0433\u043E\u0440\u0438\u0449\u0435"
+  demonName: "\u041F\u0440\u0435\u0441\u043B\u0435\u0434\u0443\u044E\u0449\u0438\u0439"
   demonDialogGameObject: {fileID: 4514225193513261379, guid: 275f5df97a7628d49a3c42e9ffd7a57a, type: 3}

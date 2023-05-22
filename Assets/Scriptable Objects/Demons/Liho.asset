@@ -19,5 +19,5 @@ MonoBehaviour:
   loadingCircleToRoom: {fileID: 21300000, guid: 49131da5e732b1b409cc18049b34759c, type: 3}
   inventorySprite: {fileID: 21300000, guid: 3cf9829bbe8df694fa13b22be8577389, type: 3}
   dialogText: Liho text
-  demonName: "\u041B\u0438\u0445\u043E"
+  demonName: "\u041D\u0430\u0431\u043B\u044E\u0434\u0430\u044E\u0449\u0438\u0439"
   demonDialogGameObject: {fileID: 4514225193513261379, guid: 275f5df97a7628d49a3c42e9ffd7a57a, type: 3}
