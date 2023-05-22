@@ -366,6 +366,10 @@ PrefabInstance:
       propertyPath: caughtDemons.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7837602360009327560, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
+      propertyPath: caughtDemons.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 6677565797a5aba4a95acad097c026a6, type: 2}
     - target: {fileID: 7837602360009327566, guid: 8e94333257a75934ebbe3a6aaa228735, type: 3}
       propertyPath: m_Name
       value: DemonInventory
