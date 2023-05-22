@@ -6526,6 +6526,7 @@ GameObject:
   - component: {fileID: 1680450816}
   - component: {fileID: 1768176716172418781}
   - component: {fileID: 730227942865675190}
+  - component: {fileID: 1723438331375547159}
   m_Layer: 0
   m_Name: DemonRoom_CupsPuzzle
   m_TagString: Untagged
@@ -6803,6 +6804,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1723438331375547159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4760064138631998790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 442ac1c736fce764f90697163bdb08bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  musicSource: {fileID: 730227942865675190}
 --- !u!1 &5012908094940828794
 GameObject:
   m_ObjectHideFlags: 0
