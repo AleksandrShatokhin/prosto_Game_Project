@@ -10,7 +10,7 @@ public class Cutscene_2_Manager : MonoBehaviour
     public void LoadStartScene()
     {
         loadingPanel.SetActive(true);
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("Titles");
     }
 
     private void Update()

@@ -1,6 +1,7 @@
 public static class EventHandler
 {
     public delegate void SwitcherAction();
+
     public static event SwitcherAction SwitcherActionMouse_On;
     public static event SwitcherAction SwitcherActionMouse_Off;
 
