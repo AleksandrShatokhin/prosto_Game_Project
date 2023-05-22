@@ -1046,6 +1046,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &688431037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7081960540626550568, guid: 630ec3eb057257940baf583a4bf0bb3b, type: 3}
+  m_PrefabInstance: {fileID: 1983649523}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &727277866
 GameObject:
   m_ObjectHideFlags: 0
@@ -3151,7 +3156,7 @@ MonoBehaviour:
   audioSource: {fileID: 2093106376}
   mainUIController: {fileID: 492568366}
   demonInventory: {fileID: 1701104010}
-  firstWindow: {fileID: 0}
+  firstWindow: {fileID: 688431037}
   _transitionAudioSource: {fileID: 2093106377}
 --- !u!114 &2093106373
 MonoBehaviour:
