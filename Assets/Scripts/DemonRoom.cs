@@ -16,10 +16,12 @@ public class DemonRoom : MonoBehaviour, IStartable, IFinaly
     [SerializeField] private GameObject demonRoomUi;
     [SerializeField] private GameObject roomBlock;
     [SerializeField] private GameObject captureAnimation_GO;
+    [SerializeField] private GameObject playerInventory;
 
     private void Start()
     {
         anim_DemonRoom = GetComponent<Animator>();
+        GameController.GetInstance().SetValueInventoryToClosedInTutorialBook(playerInventory);
     }
 
     void IStartable.OnStart(DemonSO demonSO, GameObject playerRoom)
@@ -52,6 +54,9 @@ public class DemonRoom : MonoBehaviour, IStartable, IFinaly
 
         GameController.GetInstance().SwitchWindow(playerRoom, this.gameObject, true, circleSprite);
         GameController.GetInstance().GetComponent<CallCreator>().GenerateCall_On();
+
+        GameController.GetInstance().SetValueInventoryToClosedInTutorialBook(null);
+
         Destroy(this.gameObject, 1.1f);
     }
 
@@ -78,23 +83,23 @@ public class DemonRoom : MonoBehaviour, IStartable, IFinaly
 
     // ¬ременно добавл€ю метод, чтоб можно было в игре выйти из комнаты
     // кнопки  UI управлени€ убрал с экрана
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            ClickComeBack();
-        }
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.Backspace))
+    //    {
+    //        ClickComeBack();
+    //    }
 
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            OnStartPuzzleButtonClicked();
-        }
+    //    if (Input.GetKeyDown(KeyCode.Space))
+    //    {
+    //        OnStartPuzzleButtonClicked();
+    //    }
 
-        if (Input.GetKeyDown(KeyCode.RightShift))
-        {
-            anim_DemonRoom.SetTrigger("isDemonAppearance");
-        }
-    }
+    //    if (Input.GetKeyDown(KeyCode.RightShift))
+    //    {
+    //        anim_DemonRoom.SetTrigger("isDemonAppearance");
+    //    }
+    //}
 }
 
 

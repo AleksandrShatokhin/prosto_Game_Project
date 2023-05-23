@@ -7,6 +7,11 @@ public class Catscene_1_Manager : MonoBehaviour
 {
     [SerializeField] private GameObject loadingPanel;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
     public void LoadMainScene()
     {
         loadingPanel.SetActive(true);

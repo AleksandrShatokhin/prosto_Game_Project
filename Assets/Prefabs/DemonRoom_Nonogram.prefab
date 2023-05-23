@@ -130079,6 +130079,7 @@ MonoBehaviour:
   demonRoomUi: {fileID: 7691723613994595250}
   roomBlock: {fileID: 1124534243257909053}
   captureAnimation_GO: {fileID: 1945868042939257002}
+  playerInventory: {fileID: 5805443543279473021}
 --- !u!95 &2048197586
 Animator:
   serializedVersion: 5

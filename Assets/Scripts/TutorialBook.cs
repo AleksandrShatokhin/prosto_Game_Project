@@ -13,6 +13,8 @@ public class TutorialBook : MonoBehaviour
     [SerializeField] private List<Sprite> pages;
     [SerializeField] private int indexPage = 0;
 
+    public ClosableInventoryComponent GetClosableComponent() => this.GetComponent<ClosableInventoryComponent>();
+
     private void Start()
     {
         buttonNextPage.onClick.AddListener(ClickNextPage);

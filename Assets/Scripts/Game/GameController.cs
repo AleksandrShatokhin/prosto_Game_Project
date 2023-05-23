@@ -32,6 +32,7 @@ public class GameController : MonoBehaviour
     private void Start()
     {
         firstWindow.SetActive(true);
+        Cursor.visible = true;
     }
 
     private void Update()
@@ -56,6 +57,18 @@ public class GameController : MonoBehaviour
         else
         {
             demonInventory.gameObject.SetActive(true);
+        }
+    }
+
+    public void SetValueInventoryToClosedInTutorialBook(GameObject inventory)
+    {
+        if (inventory == null)
+        {
+            tutorialBook.GetComponent<TutorialBook>().GetClosableComponent().RemoveInventoryObject();
+        }
+        else
+        {
+            tutorialBook.GetComponent<TutorialBook>().GetClosableComponent().SetInventoryObject(inventory);
         }
     }
 

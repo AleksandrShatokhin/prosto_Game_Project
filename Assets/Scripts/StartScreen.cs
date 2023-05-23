@@ -9,6 +9,7 @@ public class StartScreen : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1.0f;
+        Cursor.visible = true;
 
         buttonStart.onClick.AddListener(StartGame);
         buttonExit.onClick.AddListener(ExitGame);

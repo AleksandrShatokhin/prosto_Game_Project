@@ -7,6 +7,9 @@ public class ClosableInventoryComponent : MonoBehaviour
     [SerializeField] private GameObject inventory;
     [SerializeField] private GameObject arrowToBack;
 
+    public void SetInventoryObject(GameObject inventoryObject) => inventory = inventoryObject;
+    public void RemoveInventoryObject() => inventory = null;
+
     private void OnEnable()
     {
         if (inventory != null)

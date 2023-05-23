@@ -7,6 +7,11 @@ public class Cutscene_2_Manager : MonoBehaviour
 {
     [SerializeField] private GameObject loadingPanel;
 
+    private void Start()
+    {
+        Cursor.visible = false;
+    }
+
     public void LoadStartScene()
     {
         loadingPanel.SetActive(true);
