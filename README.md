@@ -1,1 +1,2 @@
-# prosto_Game_Project
+# Game Project from the "#prosto" team.
+# Lesta Game Academy
